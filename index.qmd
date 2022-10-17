@@ -16,8 +16,11 @@ This is my personal website where I am going to post my blog articles
 ------------------------------------------------------------------------
 
 ## Experience
+### Research
 
 -   Intern, BI, CT Jun 2018 - Aug 2018
 -   Project Lead, Indian Institute of Chemical Technology, Hyderabad.
 
+### Teaching
+* Teaching Assistant, Department of Computer Science, ODU, Norfolk, VA, 23508
 ------------------------------------------------------------------------
