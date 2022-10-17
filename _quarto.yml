@@ -18,7 +18,7 @@ format:
 
 
 
-image: Profile.jpg
+image: Profile.jpeg
 about: 
   template: trestles
   image-shape: rounded
