@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "mysite"
+  title: "Sanjeeva Reddy Dodlapati"
   navbar:
     left:
       - href: index.qmd
