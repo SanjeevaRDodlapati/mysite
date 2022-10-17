@@ -18,3 +18,17 @@ format:
 
 
 
+image: Profile.jpg
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 15em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
+    - text: Twitter
+      href: https://twitter.com/dodlapati_reddy
+    - text: GitHub
+      href: https://github.com/SanjeevaRDodlapati
+    - text: Email
+      href: mailto:sdodl001@odu.edu
