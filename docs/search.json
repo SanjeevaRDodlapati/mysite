@@ -2,15 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mysite",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is my personal website where I am going to post my blog articles"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "Education",
+    "text": "Education"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "Experience",
+    "text": "Experience"
   }
 ]
