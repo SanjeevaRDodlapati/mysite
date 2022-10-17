@@ -9,7 +9,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Sanjeeva Reddy Dodlapati",
+    "title": "About",
     "section": "",
     "text": "About this site"
   },
@@ -25,6 +25,20 @@
     "href": "index.html#experience",
     "title": "Sanjeeva Reddy Dodlapati",
     "section": "Experience",
-    "text": "Experience\n\nIntern, BI, CT Jun 2018 - Aug 2018\nProject Lead, Indian Institute of Chemical Technology, Hyderabad."
+    "text": "Experience\n\nResearch\n\nIntern, BI, CT Jun 2018 - Aug 2018\nProject Lead, Indian Institute of Chemical Technology, Hyderabad.\n\n\n\nTeaching\n\nTeaching Assistant, Department of Computer Science, ODU, Norfolk, VA, 23508"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "Projects",
+    "text": "Projects\n\nDNA methylation imputation via Transfer Learning.\nSample complexity study of DNA methylation prediction by DNA sequence-based deep learning\nDrug-Drug interaction prediction\nSynthesis of macrocyclic glycosamines by click reaction"
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "Publications",
+    "text": "Publications\n\nSanjeeva Dodlapati, ZC Jiang, J Sun, Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence. Frotiers in Genetics 2022 (https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full)\nLoss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction. Journal of Molecular and Cellular Cardiology 171, 117-132 (https://doi.org/10.1016/j.yjmcc.2022.08.003).\nThe landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction. Epigenetics 2021 (https://doi.org/10.1080/15592294.2021.1982158)."
   }
 ]
