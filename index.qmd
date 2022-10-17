@@ -1,7 +1,14 @@
 ---
-title: "mysite"
+title: "Sanjeeva Reddy Dodlapati"
 ---
 
-This is a Quarto website.
+## Hi there !
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This is my personal website where I am going to post my blog articles
+
+
+## Education
+
+
+
+## Experience
