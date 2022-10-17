@@ -4,8 +4,20 @@ title: "Sanjeeva Reddy Dodlapati"
 
 ## Hi there !
 
+------------------------------------------------------------------------
+
 This is my personal website where I am going to post my blog articles
 
 ## Education
 
+------------------------------------------------------------------------
+
+-   PhD in Computer Science, Old Dominion University, Norfolk, VA, 23508
+-   MS Chemistry, University of New Orleans, LA
+
 ## Experience
+
+------------------------------------------------------------------------
+
+-   Intern, BI, CT Jun 2018 - Aug 2018
+-   Project Lead, Indian Institute of Chemical Technology, Hyderabad.
