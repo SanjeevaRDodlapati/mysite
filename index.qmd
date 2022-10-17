@@ -16,11 +16,31 @@ This is my personal website where I am going to post my blog articles
 ------------------------------------------------------------------------
 
 ## Experience
+
 ### Research
 
 -   Intern, BI, CT Jun 2018 - Aug 2018
 -   Project Lead, Indian Institute of Chemical Technology, Hyderabad.
 
 ### Teaching
-* Teaching Assistant, Department of Computer Science, ODU, Norfolk, VA, 23508
+
+-   Teaching Assistant, Department of Computer Science, ODU, Norfolk, VA, 23508
+
+------------------------------------------------------------------------
+
+## Projects
+
+-   DNA methylation imputation via Transfer Learning.
+-   Sample complexity study of DNA methylation prediction by DNA sequence-based deep learning
+-   Drug-Drug interaction prediction
+-   Synthesis of macrocyclic glycosamines by click reaction
+
+------------------------------------------------------------------------
+
+## Publications
+
+-   Sanjeeva Dodlapati, ZC Jiang, J Sun, Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence. Frotiers in Genetics 2022 (https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full)
+-   Loss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction. Journal of Molecular and Cellular Cardiology 171, 117-132 (https://doi.org/10.1016/j.yjmcc.2022.08.003).
+-   The landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction. Epigenetics 2021 (https://doi.org/10.1080/15592294.2021.1982158).
+
 ------------------------------------------------------------------------
