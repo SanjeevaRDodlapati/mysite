@@ -3,3 +3,5 @@ title: "Sanjeeva Reddy Dodlapati"
 ---
 
 This page is used to write blog posts on application of machine learning to biomedical data and drug designing.
+
+[Pandas Tutorial](about.qmd)
