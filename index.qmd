@@ -39,7 +39,7 @@ This is my personal website where I am going to post my blog articles
 
 ## Publications
 
--   Sanjeeva Dodlapati, ZC Jiang, J Sun, [Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence.](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full) Frotiers in Genetics 2022 
+-   Sanjeeva Dodlapati, ZC Jiang, J Sun, [Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence.](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full) Frotiers in Genetics 2022
 
 -   [Loss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction.](https://doi.org/10.1016/j.yjmcc.2022.08.003) Journal of Molecular and Cellular Cardiology 171, 117-132.
 
