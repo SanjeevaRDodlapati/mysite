@@ -7,5 +7,15 @@
   },
   "blog.qmd": {
     "blog.html": "de21b2af"
+  },
+  "hello.ipynb": {
+    "hello.html": "88f0cc9d",
+    "hello.docx": "c5cb8d26"
+  },
+  "Untitled.ipynb": {
+    "Untitled.html": "e2f4f58d"
+  },
+  "KGCN.ipynb": {
+    "KGCN.html": "7ac2956f"
   }
 }
