@@ -2,10 +2,10 @@
 title: "Sanjeeva Reddy Dodlapati"
 ---
 
-This page is used to write blog posts on application of machine learning to biomedical data and drug designing.
+## <span style="color:#fac36b">This page is used to write blog posts on application of machine learning to biomedical data and drug designing.</span>.
 
-1. [Pandas Tutorial](about.qmd)
+1.  [Pandas Tutorial](about.qmd)
 
-1. [Demonstration of Jupyter Notebook](hello.html)
+2.  [Demonstration of Jupyter Notebook](hello.html)
 
-1. [Implementation of Knowledge Graph Convolutional Network with Pytorch](KGCN.html)
+3.  [Implementation of Knowledge Graph Convolutional Network with Pytorch](KGCN.html)
