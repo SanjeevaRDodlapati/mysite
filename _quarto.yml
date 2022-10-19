@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Blog
       - about.qmd
 
 format:
@@ -34,8 +34,8 @@ about:
       href: https://github.com/SanjeevaRDodlapati
     - text: sdodl001@odu.edu
       href: mailto:sdodl001@odu.edu
-    - text: Blog1
+    - text: Blog
       href: https://www.mlgraphgs.com
-    - text: Blog2
-      href: https://www.sdodlapati.com
+    # - text: Blog2
+    #   href: https://www.sdodlapati.com
       

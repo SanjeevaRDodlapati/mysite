@@ -37,8 +37,8 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Research Interests",
     "section": "",
-    "text": "About this site"
+    "text": "* Deep Learning\n* Graph Learning\n* Transfer Learning\n* Multi-task Learning\n* Contrastive Learning\n* Drug Designing & Discovery\n* DNA methylation prediction"
   }
 ]
