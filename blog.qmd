@@ -9,3 +9,5 @@ title: "Sanjeeva Reddy Dodlapati"
 2.  [Demonstration of Jupyter Notebook](hello.html)
 
 3.  [Implementation of Knowledge Graph Convolutional Network with Pytorch](KGCN.html)
+
+4. [Genetic Variant Effect (GVE) on the prediction of epigenetic markers](gve.html)
