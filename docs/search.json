@@ -61,5 +61,12 @@
     "title": "Sanjeeva Reddy Dodlapati",
     "section": "",
     "text": "Pandas Tutorial\nDemonstration of Jupyter Notebook\nImplementation of Knowledge Graph Convolutional Network with Pytorch"
+  },
+  {
+    "objectID": "gve.html",
+    "href": "gve.html",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "",
+    "text": "import os\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport dash_bio\nimport scipy\nimport math"
   }
 ]
