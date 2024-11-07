@@ -65,57 +65,21 @@ project:
   output-dir: docs
 
 website:
-  title: "Machine Learning for Genomics"
+  title: "AI for Science Blog"
   navbar:
     left:
       - href: index.html
-        text: Home
+        text: About
       - href: about.html
-        text: Research Interests
+        # text: Research Interests
       - href: blog.html
-        text: Blog
-  sidebar:
-    # - id: home-sidebar
-    #   style: docked
-    #   title: "About Me"
-    #   contents:
-    #     - text: "Home"
-    #       href: index.html
-    #     - text: "Research Interests"
-    #       href: about.html
-    #     - text: "Blog"
-    #       href: blog.html
-    - id: minimal-sidebar
-      style: docked
-      # contents:
-      #   - text: "Home"
-      #     href: index.html
-      #   - text: "Research Interests"
-      #     href: about.html
-      #   - text: "Blog"
-      #     href: blog.html
-        # - section: "Blog Posts"
-        #   contents:
-        #     - text: "Pandas Tutorial"
-        #       href: pandas-tutorial.html
-        #     - text: "Demonstration of Jupyter Notebook"
-        #       href: hello.html
-        #     - text: "Implementation of Knowledge Graph Convolutional Network with Pytorch"
-        #       href: docs/kgcn.html
-        #     - text: "Genetic Variant Effect on the Prediction of Epigenetic Markers"
-        #       href: gve.html
-        #     - text: "T-test Applications"
-        #       href: docs/t-test-applications.html
-        #     - text: "Top 10 Statistical Concepts Used in Bioinformatics"
-        #       href: docs/top10-bioinfo-stats.html
+        text: Machine Learning
+      - href: blog.html
+        text: AI for Genomics
+      - href: blog.html
+        text: Bioinformatics
 
-# format:
-#   html:
-#     theme:
-#       dark: slate
-#       light: minty
-#     css: styles.css
-#     toc: true
+
 format:
   html:
     theme:
@@ -125,23 +89,24 @@ format:
     toc: false
 
 
-image: Profile.jpeg
-about:
-  template: trestles
-  image-shape: rounded
-  image-width: 5em
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
-    - text: GitHub
-      href: https://github.com/SanjeevaRDodlapati
-    - text: Google Scholar
-      href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
-    - text: Twitter
-      href: https://twitter.com/dodlapati_reddy
-    - text: Blog
-      href: https://www.mlgraphs.com/
-    - text: Email
-      href: mailto:sdodl001@odu.edu
+# image: Profile.jpeg
+# about:
+#   template: trestles
+#   image-shape: rounded
+#   image-width: 5em
+#   links:
+# 
+#     - text: Scholar
+#       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
+#     - text: GitHub
+#       href: https://github.com/SanjeevaRDodlapati
+#     - text: LinkedIn
+#       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
+#     - text: Twitter
+#       href: https://twitter.com/dodlapati_reddy
+#     # - text: Blog
+#     #   href: https://www.mlgraphs.com/
+#     - text: Email - sdodl001@odu.edu
+      # href: mailto:sdodl001@odu.edu
 
       

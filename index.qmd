@@ -1,11 +1,26 @@
 ---
-title: "Home"
-sidebar: home-sidebar
+title: "Sanjeeva Reddy Dodlapati"
+about:
+  template: trestles
+  image: Profile.jpeg
+  image-shape: rounded
+  image-width: 5em
+  links:
+    - text: Scholar
+      href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
+    - text: GitHub
+      href: https://github.com/SanjeevaRDodlapati
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
+    - text: Twitter
+      href: https://twitter.com/dodlapati_reddy
+    - text: Email - sdodl001@odu.edu
 ---
 
 # Welcome to My Website
 
-Welcome to my personal website. Here, you'll find information about my research interests, blog posts, and more.
+Welcome to the personal website of Sanjeeva Reddy Dodlapati. Here you can find my CV, research interests, and blog posts.
+
 
 
 
