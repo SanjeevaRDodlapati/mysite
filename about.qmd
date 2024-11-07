@@ -1,8 +1,12 @@
 ---
-title: "Sanjeeva Reddy Dodlapati"
+title: "Research Interests"
+sidebar: minimal-sidebar
 ---
 
-### My research interests are:
+# Research Interests
+
+Details about my research interests go here.
+
 
     * Deep Learning
     * Graph Learning

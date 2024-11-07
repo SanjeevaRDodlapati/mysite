@@ -1,0 +1,157 @@
+---
+title: "BioNumpy"
+editor: visual
+---
+
+Here's the content formatted to be directly copied and pasted into a `.qmd` file:
+
+```markdown
+# BioNumPy: Top 10 Features and Applications
+
+BioNumPy is a package that integrates the efficiency of NumPy with bioinformatics, enabling efficient handling of large biological datasets. Here’s an overview of its top features, code examples, and practical applications.
+
+---
+
+## 1. Efficient Sequence Handling
+
+```python
+import bionumpy as bnp
+
+# Load a FASTA file and get the first sequence
+sequences = bnp.read_fasta("example.fasta")
+first_sequence = sequences[0]
+
+# Reverse complement
+reverse_complement = bnp.reverse_complement(first_sequence)
+```
+
+**Application**: Efficiently handle DNA sequencing data from FASTA files for genomic analyses, such as finding reverse complements in large genomic datasets.
+
+---
+
+## 2. One-Hot Encoding
+
+```python
+# Convert a DNA sequence to one-hot encoding
+one_hot_seq = bnp.one_hot_encode("ACGTGCA")
+
+# Print encoded array
+print(one_hot_seq)
+```
+
+**Application**: One-hot encoding is commonly used as input for machine learning models that predict gene functions, allowing the model to interpret sequence data numerically.
+
+---
+
+## 3. Vectorized Operations
+
+```python
+# Vectorized slicing to get subsequences
+subsequences = sequences[:, :10]  # Get the first 10 nucleotides from each sequence
+
+# Filtering sequences with a specific nucleotide count
+high_gc_sequences = sequences[bnp.gc_content(sequences) > 0.5]
+```
+
+**Application**: Quickly extract or filter specific segments of sequences for analysis, such as selecting sequences with high GC content, which might indicate certain genomic regions.
+
+---
+
+## 4. Handling of Biological Data Formats
+
+```python
+# Read sequences from FASTQ and write to FASTA
+fastq_sequences = bnp.read_fastq("example.fastq")
+bnp.write_fasta("converted.fasta", fastq_sequences)
+```
+
+**Application**: Convert sequencing reads from FASTQ to FASTA format for downstream analysis, like quality control, mapping, or assembly workflows.
+
+---
+
+## 5. Alphabet Encoding and Mapping
+
+```python
+# Map nucleotide sequences to integer arrays
+encoded_seq = bnp.map_to_alphabet("ACGTGCA", alphabet=bnp.dna_alphabet)
+
+# Print encoded sequence
+print(encoded_seq)
+```
+
+**Application**: Quickly convert sequences to integer-encoded arrays for faster comparisons or to use as input to statistical algorithms or machine learning models.
+
+---
+
+## 6. GC Content and Sequence Statistics
+
+```python
+# Calculate GC content of sequences
+gc_content = bnp.gc_content(sequences)
+print("GC Content:", gc_content)
+```
+
+**Application**: Use GC content to identify GC-rich or GC-poor regions, which can indicate functional genomic elements like promoters, exons, or repetitive regions.
+
+---
+
+## 7. Parallel Processing Support
+
+```python
+from concurrent.futures import ProcessPoolExecutor
+
+# Process sequences in parallel
+with ProcessPoolExecutor() as executor:
+    results = list(executor.map(bnp.gc_content, sequences))
+```
+
+**Application**: Efficiently calculate metrics like GC content on large datasets by utilizing multiple CPU cores, reducing processing time.
+
+---
+
+## 8. Integration with Other Python Packages
+
+```python
+import pandas as pd
+
+# Convert sequences and GC content to DataFrame
+gc_df = pd.DataFrame({
+    'Sequence': sequences,
+    'GC_Content': bnp.gc_content(sequences)
+})
+
+# Analyze using Pandas functions
+high_gc_df = gc_df[gc_df['GC_Content'] > 0.5]
+print(high_gc_df)
+```
+
+**Application**: Use BioNumPy with Pandas to perform advanced filtering, group-by operations, and aggregations for in-depth genomic analysis and visualization.
+
+---
+
+## 9. Support for Sequence Alignment and Similarity Measures
+
+```python
+# Calculate sequence similarity
+similarity_score = bnp.sequence_similarity("ACGT", "AGGT")
+print("Similarity Score:", similarity_score)
+```
+
+**Application**: Sequence similarity scores are essential in tasks like identifying homologous sequences in different species, detecting conserved motifs, or clustering similar sequences.
+
+---
+
+## 10. Sequence Motif Search
+
+```
+# Search for a motif in a DNA sequence
+motif = "GATA"
+matches = bnp.find_motif(sequences, motif)
+print("Motif Matches:", matches)
+```
+
+**Application**: Motif search is essential for tasks like identifying transcription factor binding sites, RNA binding motifs, or repeat elements within genomic sequences, often used in regulatory genomics.
+```
+
+Each section includes a code block, an explanation, and a practical application, making it ready for documentation or tutorials.
+---

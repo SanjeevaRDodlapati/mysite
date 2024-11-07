@@ -1,44 +1,147 @@
+# project:
+#   type: website
+#   output-dir: docs
+# 
+# website:
+#   title: "Sanjeeva Reddy Dodlapati"
+#   navbar:
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - href: about.qmd
+#         text: Research Interests
+#       - href: blog.qmd
+#         text: Blog
+#   sidebar:
+#     - id: home-sidebar
+#       style: docked
+#       title: "About Me"
+#       contents:
+#         - text: "Home"
+#           href: index.qmd
+#         - text: "Research Interests"
+#           href: about.qmd
+#         - text: "Blog"
+#           href: blog.qmd
+#     - id: minimal-sidebar
+#       style: docked
+#       contents:
+#         - text: "Home"
+#           href: index.qmd
+#         - text: "Research Interests"
+#           href: about.qmd
+#         - text: "Blog"
+#           href: blog.qmd
+# 
+# format:
+#   html:
+#     theme:
+#       dark: slate
+#       light: minty
+#     css: styles.css
+#     toc: true
+# 
+# image: Profile.jpeg
+# about:
+#   template: trestles
+#   image-shape: rounded
+#   image-width: 15em
+#   links:
+#     - text: LinkedIn
+#       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
+#     - text: GitHub
+#       href: https://github.com/SanjeevaRDodlapati
+#     - text: GoogleScholar
+#       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
+#     - text: Twitter
+#       href: https://twitter.com/dodlapati_reddy
+#     - text: Blog
+#       href: https://www.mlgraphs.com/
+#     - text: sdodl001@odu.edu
+
+
 project:
   type: website
   output-dir: docs
 
 website:
-  title: "Sanjeeva Reddy Dodlapati"
+  title: "Machine Learning for Genomics"
   navbar:
     left:
-      - href: index.qmd
+      - href: index.html
         text: Home
-      - href: about.qmd
+      - href: about.html
         text: Research Interests
-      - href: blog.qmd
+      - href: blog.html
         text: Blog
+  sidebar:
+    # - id: home-sidebar
+    #   style: docked
+    #   title: "About Me"
+    #   contents:
+    #     - text: "Home"
+    #       href: index.html
+    #     - text: "Research Interests"
+    #       href: about.html
+    #     - text: "Blog"
+    #       href: blog.html
+    - id: minimal-sidebar
+      style: docked
+      # contents:
+      #   - text: "Home"
+      #     href: index.html
+      #   - text: "Research Interests"
+      #     href: about.html
+      #   - text: "Blog"
+      #     href: blog.html
+        # - section: "Blog Posts"
+        #   contents:
+        #     - text: "Pandas Tutorial"
+        #       href: pandas-tutorial.html
+        #     - text: "Demonstration of Jupyter Notebook"
+        #       href: hello.html
+        #     - text: "Implementation of Knowledge Graph Convolutional Network with Pytorch"
+        #       href: docs/kgcn.html
+        #     - text: "Genetic Variant Effect on the Prediction of Epigenetic Markers"
+        #       href: gve.html
+        #     - text: "T-test Applications"
+        #       href: docs/t-test-applications.html
+        #     - text: "Top 10 Statistical Concepts Used in Bioinformatics"
+        #       href: docs/top10-bioinfo-stats.html
 
+# format:
+#   html:
+#     theme:
+#       dark: slate
+#       light: minty
+#     css: styles.css
+#     toc: true
 format:
   html:
     theme:
-      dark: slate
-      light: minty
+      light: cosmo
+      dark: cyborg
     css: styles.css
-    toc: true
-
+    toc: false
 
 
 image: Profile.jpeg
-about: 
+about:
   template: trestles
   image-shape: rounded
-  image-width: 15em
+  image-width: 5em
   links:
     - text: LinkedIn
       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
     - text: GitHub
       href: https://github.com/SanjeevaRDodlapati
-    - text: GoogleScholar
+    - text: Google Scholar
       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
     - text: Twitter
       href: https://twitter.com/dodlapati_reddy
     - text: Blog
       href: https://www.mlgraphs.com/
-    - text: sdodl001@odu.edu
-      # href: mailto:sdodl001@odu.edu
+    - text: Email
+      href: mailto:sdodl001@odu.edu
+
       

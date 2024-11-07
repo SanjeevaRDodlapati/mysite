@@ -1,10 +1,13 @@
 ---
-title: "Sanjeeva Reddy Dodlapati"
+title: "Home"
+sidebar: home-sidebar
 ---
 
-## Hi there !
+# Welcome to My Website
 
-This is my personal website where I am going to post my blog articles
+Welcome to my personal website. Here, you'll find information about my research interests, blog posts, and more.
+
+
 
 ------------------------------------------------------------------------
 

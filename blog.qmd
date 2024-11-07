@@ -1,8 +1,12 @@
 ---
 title: "Sanjeeva Reddy Dodlapati"
+sidebar: minimal-sidebar
 ---
 
-## <span style="color:#fac36b">This page is used to write blog posts on application of machine learning to biomedical data and drug designing.</span>.
+# Blog
+
+Welcome to my blog. Here, I share my thoughts on various topics.
+
 
 1.  [Pandas Tutorial](about.qmd)
 
@@ -11,3 +15,7 @@ title: "Sanjeeva Reddy Dodlapati"
 3.  [Implementation of Knowledge Graph Convolutional Network with Pytorch](KGCN.html)
 
 4. [Genetic Variant Effect (GVE) on the prediction of epigenetic markers](gve.html)
+
+5. [T-test Applications](T-test-alt.html)
+
+6. [Top 10 statistical concepts used in Bioiformatics](Top10_bioinfo_stats.html)

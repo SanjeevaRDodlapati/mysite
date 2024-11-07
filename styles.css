@@ -1,1 +1,31 @@
 /* css styles */
+/* Style for the home page sidebar */
+#home-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  padding: 1em;
+  background-color: #f8f9fa;
+}
+
+/* Style for the minimal sidebar */
+#minimal-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  padding: 1em;
+  background-color: #f8f9fa;
+}
+
+body {
+  color: #333333; /* Dark gray text */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0056b3; /* Blue headings */
+}
+
+
