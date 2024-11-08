@@ -1,9 +1,8 @@
 ---
-title: "Bioinformatics"
+title: "AI for Genomics"
 sidebar: minimal-sidebar
 ---
 
-# Statistics
 
 Welcome to my blog. Here, I share my thoughts on various topics.
 

@@ -20,5 +20,17 @@
   },
   "gve.ipynb": {
     "gve.html": "de9f3f2d"
+  },
+  "genomics-blog.qmd": {
+    "genomics-blog.html": "15ae219e"
+  },
+  "ml-blog.qmd": {
+    "ml-blog.html": "a92a6263"
+  },
+  "Top10_bioinfo_stats.ipynb": {
+    "Top10_bioinfo_stats.html": "c4ea09b2"
+  },
+  "T-test-alt.ipynb": {
+    "T-test-alt.html": "808437f8"
   }
 }

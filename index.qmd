@@ -1,5 +1,6 @@
 ---
 title: "Sanjeeva Reddy Dodlapati"
+sidebar: minimal-sidebar
 about:
   template: trestles
   image: Profile.jpeg

@@ -1,64 +1,3 @@
-# project:
-#   type: website
-#   output-dir: docs
-# 
-# website:
-#   title: "Sanjeeva Reddy Dodlapati"
-#   navbar:
-#     left:
-#       - href: index.qmd
-#         text: Home
-#       - href: about.qmd
-#         text: Research Interests
-#       - href: blog.qmd
-#         text: Blog
-#   sidebar:
-#     - id: home-sidebar
-#       style: docked
-#       title: "About Me"
-#       contents:
-#         - text: "Home"
-#           href: index.qmd
-#         - text: "Research Interests"
-#           href: about.qmd
-#         - text: "Blog"
-#           href: blog.qmd
-#     - id: minimal-sidebar
-#       style: docked
-#       contents:
-#         - text: "Home"
-#           href: index.qmd
-#         - text: "Research Interests"
-#           href: about.qmd
-#         - text: "Blog"
-#           href: blog.qmd
-# 
-# format:
-#   html:
-#     theme:
-#       dark: slate
-#       light: minty
-#     css: styles.css
-#     toc: true
-# 
-# image: Profile.jpeg
-# about:
-#   template: trestles
-#   image-shape: rounded
-#   image-width: 15em
-#   links:
-#     - text: LinkedIn
-#       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
-#     - text: GitHub
-#       href: https://github.com/SanjeevaRDodlapati
-#     - text: GoogleScholar
-#       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
-#     - text: Twitter
-#       href: https://twitter.com/dodlapati_reddy
-#     - text: Blog
-#       href: https://www.mlgraphs.com/
-#     - text: sdodl001@odu.edu
-
 
 project:
   type: website
@@ -70,11 +9,11 @@ website:
     left:
       - href: index.html
         text: About
-      - href: about.html
+      # - href: about.html
         # text: Research Interests
-      - href: blog.html
+      - href: ml-blog.html
         text: Machine Learning
-      - href: blog.html
+      - href: genomics-blog.html
         text: AI for Genomics
       - href: blog.html
         text: Bioinformatics
@@ -87,26 +26,5 @@ format:
       dark: cyborg
     css: styles.css
     toc: false
-
-
-# image: Profile.jpeg
-# about:
-#   template: trestles
-#   image-shape: rounded
-#   image-width: 5em
-#   links:
-# 
-#     - text: Scholar
-#       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
-#     - text: GitHub
-#       href: https://github.com/SanjeevaRDodlapati
-#     - text: LinkedIn
-#       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
-#     - text: Twitter
-#       href: https://twitter.com/dodlapati_reddy
-#     # - text: Blog
-#     #   href: https://www.mlgraphs.com/
-#     - text: Email - sdodl001@odu.edu
-      # href: mailto:sdodl001@odu.edu
 
       
