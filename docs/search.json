@@ -65,7 +65,7 @@
     "href": "blog.html",
     "title": "Bioinformatics",
     "section": "",
-    "text": "Statistics\nWelcome to my blog. Here, I share my thoughts on various topics.\n\nT-test Applications\nTop 10 statistical concepts used in Bioiformatics"
+    "text": "Statistics\nWelcome to my blog. Here, I share my thoughts on various topics.\n\nT-test Applications\nTop 10 statistical concepts used in Bioiformatics\nMost useful feature of BioNumpy package"
   },
   {
     "objectID": "gve.html",
@@ -91,77 +91,77 @@
   {
     "objectID": "bioNumpy.html",
     "href": "bioNumpy.html",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "",
-    "text": "Here’s the content formatted to be directly copied and pasted into a .qmd file:\nApplication: Efficiently handle DNA sequencing data from FASTA files for genomic analyses, such as finding reverse complements in large genomic datasets."
+    "text": "BioNumPy is a package that integrates the efficiency of NumPy with bioinformatics, enabling efficient handling of large biological datasets. Here’s an overview of its top features, code examples, and practical applications.\nimport bionumpy as bnp\n\n# Load a FASTA file and get the first sequence\nsequences = bnp.read_fasta(\"example.fasta\")\nfirst_sequence = sequences[0]\n\n# Reverse complement\nreverse_complement = bnp.reverse_complement(first_sequence)\nApplication: Efficiently handle DNA sequencing data from FASTA files for genomic analyses, such as finding reverse complements in large genomic datasets."
   },
   {
     "objectID": "bioNumpy.html#one-hot-encoding",
     "href": "bioNumpy.html#one-hot-encoding",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "2. One-Hot Encoding",
     "text": "2. One-Hot Encoding\n# Convert a DNA sequence to one-hot encoding\none_hot_seq = bnp.one_hot_encode(\"ACGTGCA\")\n\n# Print encoded array\nprint(one_hot_seq)\nApplication: One-hot encoding is commonly used as input for machine learning models that predict gene functions, allowing the model to interpret sequence data numerically."
   },
   {
     "objectID": "bioNumpy.html#vectorized-operations",
     "href": "bioNumpy.html#vectorized-operations",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "3. Vectorized Operations",
     "text": "3. Vectorized Operations\n# Vectorized slicing to get subsequences\nsubsequences = sequences[:, :10]  # Get the first 10 nucleotides from each sequence\n\n# Filtering sequences with a specific nucleotide count\nhigh_gc_sequences = sequences[bnp.gc_content(sequences) &gt; 0.5]\nApplication: Quickly extract or filter specific segments of sequences for analysis, such as selecting sequences with high GC content, which might indicate certain genomic regions."
   },
   {
     "objectID": "bioNumpy.html#handling-of-biological-data-formats",
     "href": "bioNumpy.html#handling-of-biological-data-formats",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "4. Handling of Biological Data Formats",
     "text": "4. Handling of Biological Data Formats\n# Read sequences from FASTQ and write to FASTA\nfastq_sequences = bnp.read_fastq(\"example.fastq\")\nbnp.write_fasta(\"converted.fasta\", fastq_sequences)\nApplication: Convert sequencing reads from FASTQ to FASTA format for downstream analysis, like quality control, mapping, or assembly workflows."
   },
   {
     "objectID": "bioNumpy.html#alphabet-encoding-and-mapping",
     "href": "bioNumpy.html#alphabet-encoding-and-mapping",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "5. Alphabet Encoding and Mapping",
     "text": "5. Alphabet Encoding and Mapping\n# Map nucleotide sequences to integer arrays\nencoded_seq = bnp.map_to_alphabet(\"ACGTGCA\", alphabet=bnp.dna_alphabet)\n\n# Print encoded sequence\nprint(encoded_seq)\nApplication: Quickly convert sequences to integer-encoded arrays for faster comparisons or to use as input to statistical algorithms or machine learning models."
   },
   {
     "objectID": "bioNumpy.html#gc-content-and-sequence-statistics",
     "href": "bioNumpy.html#gc-content-and-sequence-statistics",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "6. GC Content and Sequence Statistics",
     "text": "6. GC Content and Sequence Statistics\n# Calculate GC content of sequences\ngc_content = bnp.gc_content(sequences)\nprint(\"GC Content:\", gc_content)\nApplication: Use GC content to identify GC-rich or GC-poor regions, which can indicate functional genomic elements like promoters, exons, or repetitive regions."
   },
   {
     "objectID": "bioNumpy.html#parallel-processing-support",
     "href": "bioNumpy.html#parallel-processing-support",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "7. Parallel Processing Support",
     "text": "7. Parallel Processing Support\nfrom concurrent.futures import ProcessPoolExecutor\n\n# Process sequences in parallel\nwith ProcessPoolExecutor() as executor:\n    results = list(executor.map(bnp.gc_content, sequences))\nApplication: Efficiently calculate metrics like GC content on large datasets by utilizing multiple CPU cores, reducing processing time."
   },
   {
     "objectID": "bioNumpy.html#integration-with-other-python-packages",
     "href": "bioNumpy.html#integration-with-other-python-packages",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "8. Integration with Other Python Packages",
     "text": "8. Integration with Other Python Packages\nimport pandas as pd\n\n# Convert sequences and GC content to DataFrame\ngc_df = pd.DataFrame({\n    'Sequence': sequences,\n    'GC_Content': bnp.gc_content(sequences)\n})\n\n# Analyze using Pandas functions\nhigh_gc_df = gc_df[gc_df['GC_Content'] &gt; 0.5]\nprint(high_gc_df)\nApplication: Use BioNumPy with Pandas to perform advanced filtering, group-by operations, and aggregations for in-depth genomic analysis and visualization."
   },
   {
     "objectID": "bioNumpy.html#support-for-sequence-alignment-and-similarity-measures",
     "href": "bioNumpy.html#support-for-sequence-alignment-and-similarity-measures",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "9. Support for Sequence Alignment and Similarity Measures",
     "text": "9. Support for Sequence Alignment and Similarity Measures\n# Calculate sequence similarity\nsimilarity_score = bnp.sequence_similarity(\"ACGT\", \"AGGT\")\nprint(\"Similarity Score:\", similarity_score)\nApplication: Sequence similarity scores are essential in tasks like identifying homologous sequences in different species, detecting conserved motifs, or clustering similar sequences."
   },
   {
     "objectID": "bioNumpy.html#sequence-motif-search",
     "href": "bioNumpy.html#sequence-motif-search",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "10. Sequence Motif Search",
     "text": "10. Sequence Motif Search\n# Search for a motif in a DNA sequence\nmotif = \"GATA\"\nmatches = bnp.find_motif(sequences, motif)\nprint(\"Motif Matches:\", matches)\nApplication: Motif search is essential for tasks like identifying transcription factor binding sites, RNA binding motifs, or repeat elements within genomic sequences, often used in regulatory genomics. ```"
   },
   {
     "objectID": "bioNumpy.html#each-section-includes-a-code-block-an-explanation-and-a-practical-application-making-it-ready-for-documentation-or-tutorials.",
     "href": "bioNumpy.html#each-section-includes-a-code-block-an-explanation-and-a-practical-application-making-it-ready-for-documentation-or-tutorials.",
-    "title": "BioNumpy",
+    "title": "BioNumPy for Bioinformatics",
     "section": "Each section includes a code block, an explanation, and a practical application, making it ready for documentation or tutorials.",
     "text": "Each section includes a code block, an explanation, and a practical application, making it ready for documentation or tutorials."
   },
@@ -239,5 +239,12 @@
     "title": "Machine Learning",
     "section": "",
     "text": "Welcome to my blog. Here, I share my thoughts on various topics.\n\nT-test Applications\nTop 10 statistical concepts used in Bioiformatics"
+  },
+  {
+    "objectID": "bioNumpy.html#efficient-sequence-handling",
+    "href": "bioNumpy.html#efficient-sequence-handling",
+    "title": "BioNumPy for Bioinformatics",
+    "section": "",
+    "text": "BioNumPy is a package that integrates the efficiency of NumPy with bioinformatics, enabling efficient handling of large biological datasets. Here’s an overview of its top features, code examples, and practical applications.\nimport bionumpy as bnp\n\n# Load a FASTA file and get the first sequence\nsequences = bnp.read_fasta(\"example.fasta\")\nfirst_sequence = sequences[0]\n\n# Reverse complement\nreverse_complement = bnp.reverse_complement(first_sequence)\nApplication: Efficiently handle DNA sequencing data from FASTA files for genomic analyses, such as finding reverse complements in large genomic datasets."
   }
 ]

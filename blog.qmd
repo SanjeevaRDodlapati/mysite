@@ -12,3 +12,5 @@ Welcome to my blog. Here, I share my thoughts on various topics.
 1. [T-test Applications](T-test-alt.html)
 
 1. [Top 10 statistical concepts used in Bioiformatics](Top10_bioinfo_stats.html)
+
+1. [Most useful feature of BioNumpy package](bioNumpy.qmd)
