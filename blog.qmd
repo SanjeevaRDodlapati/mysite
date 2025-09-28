@@ -1,18 +1,139 @@
 ---
-title: "Bioinformatics"
-sidebar: minimal-sidebar
+title: "Bioinformatics & Computational Biology"
+subtitle: "Tools, methods, and applications in computational life sciences"
 ---
 
-# Statistics
+::: {.animate-fade-in}
+# 🔬 Bioinformatics & Computational Biology
 
-Welcome to my blog. Here, I share my thoughts on various topics.
+Explore practical tools, methodologies, and applications in bioinformatics and computational biology. From statistical analysis to cutting-edge AI applications, discover the computational approaches driving modern biological research.
+:::
 
+---
 
+## 📚 Featured Articles
 
-1. [AI Agents in Biomedicine](AI_agents_BioMed.html)
+::: {.row}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🤖 AI Agents in Biomedicine](AI_agents_BioMed.html)
+*The future of AI in biomedical research*
 
-1. [T-test Applications](T-test-alt.html)
+Comprehensive exploration of autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine approaches.
 
-1. [Top 10 statistical concepts used in Bioiformatics](Top10_bioinfo_stats.html)
+::: {.text-muted}
+🏷️ AI Agents • Biomedicine • Drug Discovery
+:::
+:::
+:::
+:::
 
-1. [Most useful feature of BioNumpy package](bioNumpy.qmd)
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🧬 BioNumPy: Efficient Genomic Computing](bioNumpy.qmd)
+*High-performance bioinformatics with Python*
+
+Deep dive into BioNumPy's most powerful features for fast, memory-efficient genomic data analysis and computational biology workflows.
+
+::: {.text-muted}
+🏷️ Python • Genomics • Performance
+:::
+:::
+:::
+:::
+:::
+
+::: {.row .mt-3}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [📊 Statistical Methods in Bioinformatics](Top10_bioinfo_stats.html)
+*Essential statistics for biological data*
+
+Master the fundamental statistical concepts and methods that form the backbone of modern bioinformatics and computational biology research.
+
+::: {.text-muted}
+🏷️ Statistics • Bioinformatics • Data Analysis
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [📈 Advanced Hypothesis Testing](T-test-alt.html)
+*Statistical rigor in biological research*
+
+Practical guide to proper statistical testing in biological contexts, covering experimental design, power analysis, and result interpretation.
+
+::: {.text-muted}
+🏷️ Statistics • Experimental Design • Testing
+:::
+:::
+:::
+:::
+:::
+
+---
+
+## 🛠️ Tool Categories
+
+::: {.row}
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🐍 Python Tools**  
+Libraries and packages for computational biology
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**📊 Statistical Analysis**  
+Methods and best practices for biological data
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🤖 AI Applications**  
+Machine learning in biological research
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🧬 Genomic Analysis**  
+Sequence analysis and variant calling
+:::
+:::
+:::
+:::
+
+---
+
+## 🔍 Research Focus
+
+- **Computational Genomics**: Advanced algorithms for sequence analysis
+- **Statistical Bioinformatics**: Robust methods for biological inference  
+- **AI-Driven Discovery**: Machine learning for biological insight
+- **Tool Development**: Creating efficient bioinformatics software
+- **Data Integration**: Multi-omics analysis and systems biology
+
+---
+
+::: {.text-center .mt-4}
+*Bridging computational innovation with biological discovery through rigorous methodology and practical applications.*
+
+[🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
+[🧬 **AI for Genomics**](genomics-blog.html){.btn .btn-outline-primary}
+:::

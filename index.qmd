@@ -1,67 +1,146 @@
 ---
-title: "Sanjeeva Reddy Dodlapati"
-sidebar: minimal-sidebar
+title: "Dr. Sanjeeva Reddy Dodlapati"
+subtitle: "AI Research Scientist • Computational Biology Expert"
 about:
   template: trestles
   image: Profile.jpeg
   image-shape: rounded
-  image-width: 5em
+  image-width: 8em
   links:
-    - text: Scholar
+    - icon: mortarboard-fill
+      text: "Google Scholar"
       href: https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1
-    - text: GitHub
+      aria-label: "Google Scholar Profile"
+    - icon: github
+      text: "GitHub"
       href: https://github.com/SanjeevaRDodlapati
-    - text: LinkedIn
+      aria-label: "GitHub Profile"
+    - icon: linkedin
+      text: "LinkedIn"
       href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
-    - text: Twitter
+      aria-label: "LinkedIn Profile"
+    - icon: twitter
+      text: "Twitter"
       href: https://twitter.com/dodlapati_reddy
-    - text: Email - sdodl001@odu.edu
+      aria-label: "Twitter Profile"
+    - icon: envelope-fill
+      text: "Email"
+      href: mailto:sdodl001@odu.edu
+      aria-label: "Send Email"
 ---
 
-# Welcome to My Website
+:::{.animate-fade-in}
+# Welcome to My Research Hub
 
-Welcome to the personal website of Sanjeeva Reddy Dodlapati. Here you can find my CV, research interests, and blog posts.
+I'm an **AI Research Scientist** specializing in the intersection of artificial intelligence, machine learning, and biological systems. With 6+ years of experience developing predictive models and scalable pipelines for genomic, transcriptomic, and imaging data.
 
+Currently pursuing my **PhD in Computer Science** at Old Dominion University, I focus on deep learning, uncertainty modeling, and transfer learning for biomedical applications.
+:::
 
+---
 
+## 🎓 Education
 
-------------------------------------------------------------------------
+::: {.card}
+::: {.card-body}
+**PhD in Computer Science** • *Old Dominion University, Norfolk, VA*  
+*Specialization: AI/ML for Computational Biology*
 
-## Education
+**MS in Chemistry** • *University of New Orleans, LA*  
+*Focus: Chemical Informatics and Drug Discovery*
+:::
+:::
 
--   PhD in Computer Science, Old Dominion University, Norfolk, VA, 23508
--   MS Chemistry, University of New Orleans, LA
+---
 
-------------------------------------------------------------------------
+## 💼 Professional Experience
 
-## Experience
+::: {.row}
+::: {.col-md-6}
+::: {.card}
+::: {.card-header}
+### 🔬 Research
+:::
+::: {.card-body}
+- **Research Intern** • *BI, CT* (Jun 2018 - Aug 2018)
+- **Project Lead** • *Indian Institute of Chemical Technology, Hyderabad*
+- **Research Assistant** • *Old Dominion University*
+:::
+:::
+:::
 
-### Research
+::: {.col-md-6}
+::: {.card}
+::: {.card-header}
+### 👨‍🏫 Teaching
+:::
+::: {.card-body}
+- **Teaching Assistant** • *Department of Computer Science, ODU*
+- **Graduate Instructor** • *Data Structures & Algorithms*
+- **Mentor** • *Undergraduate Research Projects*
+:::
+:::
+:::
+:::
 
--   Intern, BI, CT Jun 2018 - Aug 2018
--   Project Lead, Indian Institute of Chemical Technology, Hyderabad.
+---
 
-### Teaching
+## 🚀 Featured Research Projects
 
--   Teaching Assistant, Department of Computer Science, ODU, Norfolk, VA, 23508
+::: {.row}
+::: {.col-lg-4}
+::: {.card}
+::: {.card-body}
+**🧬 DNA Methylation Imputation**  
+Transfer learning approaches for single-cell epigenomics data completion and analysis.
+:::
+:::
+:::
 
-------------------------------------------------------------------------
+::: {.col-lg-4}
+::: {.card}
+::: {.card-body}
+**🤖 Deep Learning for Genomics**  
+Sample complexity studies in DNA sequence-based prediction models.
+:::
+:::
+:::
 
-## Projects
+::: {.col-lg-4}
+::: {.card}
+::: {.card-body}
+**💊 Drug Discovery AI**  
+Predictive modeling for drug-drug interactions and molecular design.
+:::
+:::
+:::
+:::
 
--   DNA methylation imputation via Transfer Learning.
--   Sample complexity study of DNA methylation prediction by DNA sequence-based deep learning
--   Drug-Drug interaction prediction
--   Synthesis of macrocyclic glycosamines by click reaction
+---
 
-------------------------------------------------------------------------
+## 📚 Recent Publications
 
-## Publications
+::: {.content}
+1. **Sanjeeva Dodlapati**, ZC Jiang, J Sun. [*Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence*](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full). **Frontiers in Genetics** (2022)
 
--   Sanjeeva Dodlapati, ZC Jiang, J Sun, [Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence.](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full) Frotiers in Genetics 2022
+2. [*Loss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction*](https://doi.org/10.1016/j.yjmcc.2022.08.003). **Journal of Molecular and Cellular Cardiology** 171, 117-132 (2022)
 
--   [Loss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction.](https://doi.org/10.1016/j.yjmcc.2022.08.003) Journal of Molecular and Cellular Cardiology 171, 117-132.
+3. [*The landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction*](https://doi.org/10.1080/15592294.2021.1982158). **Epigenetics** (2021)
+:::
 
--   [The landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction.](https://doi.org/10.1080/15592294.2021.1982158). Epigenetics 2021.
+---
 
-------------------------------------------------------------------------
+::: {.text-center}
+## 🎯 Research Focus Areas
+
+**Artificial Intelligence** • **Machine Learning** • **Computational Biology** • **Bioinformatics** • **Genomics** • **Data Science** • **Transfer Learning** • **Deep Learning**
+:::
+
+---
+
+::: {.text-center .mt-4}
+*Exploring the intersection of AI and biological systems to advance scientific discovery and improve human health.*
+
+[**Explore My Research**](ml-blog.html){.btn .btn-primary .me-2}
+[**View Publications**](https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1){.btn .btn-outline-primary}
+:::

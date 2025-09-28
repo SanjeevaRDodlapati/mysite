@@ -1,13 +1,97 @@
 ---
 title: "AI for Genomics"
-sidebar: minimal-sidebar
+subtitle: "Artificial intelligence applications in genomic research and computational biology"
 ---
 
+::: {.animate-fade-in}
+# 🧬 AI for Genomics Research
 
-Welcome to my blog. Here, I share my thoughts on various topics.
+Discover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems.
+:::
 
+---
 
+## 🔬 Featured Research
 
-1. [T-test Applications](T-test-alt.html)
+::: {.row}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🧮 Statistical Methods in Genomics](Top10_bioinfo_stats.html)
+*Essential biostatistics for genomic analysis*
 
-1. [Top 10 statistical concepts used in Bioiformatics](Top10_bioinfo_stats.html)
+Comprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.
+
+::: {.text-muted}
+🏷️ Genomics • Statistics • Population Genetics
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [📊 Advanced Statistical Testing](T-test-alt.html)
+*Hypothesis testing in biological contexts*
+
+Deep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.
+
+::: {.text-muted}
+🏷️ Statistics • Experimental Design • Genomics
+:::
+:::
+:::
+:::
+:::
+
+---
+
+## 🎯 Research Areas
+
+::: {.row}
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**🔬 DNA Methylation**  
+Epigenomic analysis and imputation methods using transfer learning
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**🧠 Deep Learning**  
+Neural network architectures for genomic sequence analysis
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**📈 Predictive Modeling**  
+Machine learning approaches for biomarker discovery
+:::
+:::
+:::
+:::
+
+---
+
+## 🔮 Upcoming Topics
+
+- **Single-Cell Genomics**: AI approaches to cellular heterogeneity analysis
+- **Pharmacogenomics**: Personalized medicine through AI-driven drug discovery  
+- **Multi-omics Integration**: Computational frameworks for systems biology
+- **Evolutionary Genomics**: Machine learning in phylogenetics and population studies
+
+---
+
+::: {.text-center .mt-4}
+*Advancing genomic research through the power of artificial intelligence and computational innovation.*
+
+[🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
+[🔬 **Bioinformatics Tools**](blog.html){.btn .btn-outline-primary}
+:::

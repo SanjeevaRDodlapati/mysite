@@ -1,13 +1,97 @@
 ---
-title: "Machine Learning"
-sidebar: minimal-sidebar
+title: "Machine Learning & AI"
+subtitle: "Advanced tutorials and research insights in artificial intelligence"
 ---
 
+::: {.animate-fade-in}
+# 🤖 Machine Learning & AI Research
 
-Welcome to my blog. Here, I share my thoughts on various topics.
+Explore cutting-edge machine learning techniques, deep learning applications, and AI research methodologies. From statistical foundations to advanced neural architectures, these posts cover the essential concepts driving modern artificial intelligence.
+:::
 
+---
 
+## 📊 Featured Posts
 
-1. [T-test Applications](T-test-alt.html)
+::: {.row}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [📈 T-test Applications](T-test-alt.html)
+*Statistical hypothesis testing fundamentals*
 
-1. [Top 10 statistical concepts used in Bioiformatics](Top10_bioinfo_stats.html)
+Comprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.
+
+::: {.text-muted}
+🏷️ Statistics • Python • Data Analysis
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🔟 Top 10 Statistical Concepts in Bioinformatics](Top10_bioinfo_stats.html)
+*Essential statistics for biological data*
+
+Deep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.
+
+::: {.text-muted}
+🏷️ Bioinformatics • Statistics • Research Methods
+:::
+:::
+:::
+:::
+:::
+
+---
+
+## 🎯 Topics Covered
+
+::: {.row}
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🧠 Deep Learning**  
+Neural networks, architectures, and advanced techniques
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**📊 Statistical Methods**  
+Hypothesis testing, regression, and probabilistic models
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🔬 Research Methods**  
+Experimental design and computational methodologies
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**💻 Implementation**  
+Python, R, and practical coding tutorials
+:::
+:::
+:::
+:::
+
+---
+
+::: {.text-center .mt-4}
+*Stay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.*
+
+[🧬 **Explore Genomics AI**](genomics-blog.html){.btn .btn-primary .me-2}
+[🔬 **View Bioinformatics**](blog.html){.btn .btn-outline-primary}
+:::
