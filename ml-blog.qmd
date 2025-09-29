@@ -9,8 +9,6 @@ Explore cutting-edge machine learning techniques, deep learning applications, an
 
 ---
 
-## 📊 Featured Posts
-
 ::: {.row}
 ::: {.col-lg-6}
 ::: {.card}

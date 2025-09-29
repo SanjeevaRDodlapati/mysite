@@ -9,8 +9,6 @@ Discover how artificial intelligence is revolutionizing genomic research, from D
 
 ---
 
-## 🔬 Featured Research
-
 ::: {.row}
 ::: {.col-lg-6}
 ::: {.card}
@@ -30,6 +28,23 @@ A comprehensive exploration of human biology across multiple organizational leve
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
+### [🧬 Decoding DNA: Sequence Encoding Guide](dna-sequence-encoding-guide.html)
+*Comprehensive Methods for ML Applications*
+
+Complete guide to DNA sequence encoding techniques for machine learning, covering one-hot encoding, k-mer tokenization, BPE, embeddings, and advanced methods with practical implementations and performance comparisons.
+
+::: {.text-muted}
+🏷️ DNA Encoding • Machine Learning • Bioinformatics • Sequence Analysis
+:::
+:::
+:::
+:::
+:::
+
+::: {.row .mt-3}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
 ### [ Statistical Methods in Genomics](Top10_bioinfo_stats.html)
 *Essential biostatistics for genomic analysis*
 
@@ -41,9 +56,7 @@ Comprehensive overview of the statistical foundations underlying modern genomics
 :::
 :::
 :::
-:::
 
-::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}

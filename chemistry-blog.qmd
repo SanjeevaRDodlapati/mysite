@@ -9,8 +9,6 @@ Explore the revolutionary intersection of artificial intelligence and chemistry,
 
 ---
 
-## 🧪 Featured Research
-
 ::: {.row}
 ::: {.col-lg-6}
 ::: {.card}
