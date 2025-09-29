@@ -6,13 +6,16 @@ project:
 website:
   title: "Sanjeev's AI Research Blog"
   description: "Advanced AI research, computational biology, and data science insights"
+  search:
+    location: navbar
+    type: overlay
   navbar:
     background: light
     style: floating
     left:
       - href: index.html
-        text: About
-        icon: person-circle
+        text: Home
+        icon: house-fill
       - href: ml-blog.html
         text: Machine Learning
         icon: cpu

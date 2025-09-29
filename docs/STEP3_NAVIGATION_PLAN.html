@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>modernization-complete – Sanjeev's AI Research Blog</title>
+<title>step3_navigation_plan – Sanjeev's AI Research Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,23 +179,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#modern-quarto-site-customization-guide" id="toc-modern-quarto-site-customization-guide" class="nav-link active" data-scroll-target="#modern-quarto-site-customization-guide">🎨 Modern Quarto Site Customization Guide</a>
+  <li><a href="#step-3-navigation-structure-fix" id="toc-step-3-navigation-structure-fix" class="nav-link active" data-scroll-target="#step-3-navigation-structure-fix">🧭 STEP 3: Navigation Structure Fix</a>
   <ul class="collapse">
-  <li><a href="#what-weve-accomplished" id="toc-what-weve-accomplished" class="nav-link" data-scroll-target="#what-weve-accomplished">What We’ve Accomplished</a></li>
-  <li><a href="#key-features-added" id="toc-key-features-added" class="nav-link" data-scroll-target="#key-features-added">Key Features Added</a>
+  <li><a href="#current-problems" id="toc-current-problems" class="nav-link" data-scroll-target="#current-problems">🎯 Current Problems</a>
   <ul class="collapse">
-  <li><a href="#modern-design-system" id="toc-modern-design-system" class="nav-link" data-scroll-target="#modern-design-system">1. Modern Design System</a></li>
-  <li><a href="#enhanced-blog-structure" id="toc-enhanced-blog-structure" class="nav-link" data-scroll-target="#enhanced-blog-structure">2. Enhanced Blog Structure</a></li>
-  <li><a href="#jupyter-notebook-integration" id="toc-jupyter-notebook-integration" class="nav-link" data-scroll-target="#jupyter-notebook-integration">3. Jupyter Notebook Integration</a></li>
+  <li><a href="#issue-1-confusing-about-label-for-homepage" id="toc-issue-1-confusing-about-label-for-homepage" class="nav-link" data-scroll-target="#issue-1-confusing-about-label-for-homepage">Issue 1: Confusing “About” Label for Homepage</a></li>
+  <li><a href="#issue-2-missing-about-me-page" id="toc-issue-2-missing-about-me-page" class="nav-link" data-scroll-target="#issue-2-missing-about-me-page">Issue 2: Missing “About Me” Page</a></li>
+  <li><a href="#issue-3-no-search-functionality" id="toc-issue-3-no-search-functionality" class="nav-link" data-scroll-target="#issue-3-no-search-functionality">Issue 3: No Search Functionality</a></li>
   </ul></li>
-  <li><a href="#quick-customizations" id="toc-quick-customizations" class="nav-link" data-scroll-target="#quick-customizations">Quick Customizations</a>
+  <li><a href="#solution-plan" id="toc-solution-plan" class="nav-link" data-scroll-target="#solution-plan">✅ Solution Plan</a>
   <ul class="collapse">
-  <li><a href="#change-colors" id="toc-change-colors" class="nav-link" data-scroll-target="#change-colors">Change Colors</a></li>
-  <li><a href="#add-new-blog-posts" id="toc-add-new-blog-posts" class="nav-link" data-scroll-target="#add-new-blog-posts">Add New Blog Posts</a></li>
-  <li><a href="#modify-navigation" id="toc-modify-navigation" class="nav-link" data-scroll-target="#modify-navigation">Modify Navigation</a></li>
+  <li><a href="#fix-1-rename-homepage-link" id="toc-fix-1-rename-homepage-link" class="nav-link" data-scroll-target="#fix-1-rename-homepage-link">Fix 1: Rename Homepage Link</a></li>
+  <li><a href="#fix-2-update-about-page" id="toc-fix-2-update-about-page" class="nav-link" data-scroll-target="#fix-2-update-about-page">Fix 2: Update About Page</a></li>
+  <li><a href="#fix-3-add-search-functionality" id="toc-fix-3-add-search-functionality" class="nav-link" data-scroll-target="#fix-3-add-search-functionality">Fix 3: Add Search Functionality</a></li>
+  <li><a href="#fix-4-improve-navigation-structure" id="toc-fix-4-improve-navigation-structure" class="nav-link" data-scroll-target="#fix-4-improve-navigation-structure">Fix 4: Improve Navigation Structure</a></li>
   </ul></li>
-  <li><a href="#performance-features" id="toc-performance-features" class="nav-link" data-scroll-target="#performance-features">Performance Features</a></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#implementation-steps" id="toc-implementation-steps" class="nav-link" data-scroll-target="#implementation-steps">🔨 Implementation Steps</a>
+  <ul class="collapse">
+  <li><a href="#step-3a-update-navigation-labels" id="toc-step-3a-update-navigation-labels" class="nav-link" data-scroll-target="#step-3a-update-navigation-labels">Step 3A: Update Navigation Labels ✅</a></li>
+  <li><a href="#step-3b-enable-search" id="toc-step-3b-enable-search" class="nav-link" data-scroll-target="#step-3b-enable-search">Step 3B: Enable Search ✅</a></li>
+  <li><a href="#step-3c-create-proper-about-page-optional" id="toc-step-3c-create-proper-about-page-optional" class="nav-link" data-scroll-target="#step-3c-create-proper-about-page-optional">Step 3C: Create Proper About Page (Optional)</a></li>
+  <li><a href="#step-3d-optional---organize-blog-dropdown" id="toc-step-3d-optional---organize-blog-dropdown" class="nav-link" data-scroll-target="#step-3d-optional---organize-blog-dropdown">Step 3D: Optional - Organize Blog Dropdown</a></li>
+  </ul></li>
+  <li><a href="#expected-results" id="toc-expected-results" class="nav-link" data-scroll-target="#expected-results">📊 Expected Results</a>
+  <ul class="collapse">
+  <li><a href="#before" id="toc-before" class="nav-link" data-scroll-target="#before">Before:</a></li>
+  <li><a href="#after" id="toc-after" class="nav-link" data-scroll-target="#after">After:</a></li>
+  </ul></li>
+  <li><a href="#user-benefits" id="toc-user-benefits" class="nav-link" data-scroll-target="#user-benefits">🎯 User Benefits</a>
+  <ul class="collapse">
+  <li><a href="#improved-discoverability" id="toc-improved-discoverability" class="nav-link" data-scroll-target="#improved-discoverability">Improved Discoverability:</a></li>
+  <li><a href="#better-information-architecture" id="toc-better-information-architecture" class="nav-link" data-scroll-target="#better-information-architecture">Better Information Architecture:</a></li>
+  <li><a href="#professional-presentation" id="toc-professional-presentation" class="nav-link" data-scroll-target="#professional-presentation">Professional Presentation:</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -206,90 +222,167 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="modern-quarto-site-customization-guide" class="level1">
-<h1>🎨 Modern Quarto Site Customization Guide</h1>
-<section id="what-weve-accomplished" class="level2">
-<h2 class="anchored" data-anchor-id="what-weve-accomplished">What We’ve Accomplished</h2>
-<p>✅ <strong>Complete Visual Overhaul</strong>: Modern design system with professional color palette<br>
-✅ <strong>Enhanced Typography</strong>: Inter + JetBrains Mono font combination<br>
-✅ <strong>Improved Navigation</strong>: Floating navbar with icons and better organization<br>
-✅ <strong>Beautiful Code Blocks</strong>: Gradient headers and syntax highlighting<br>
-✅ <strong>Modern Cards &amp; Components</strong>: Hover effects and professional styling<br>
-✅ <strong>Responsive Design</strong>: Perfect mobile experience<br>
-✅ <strong>Professional Content</strong>: Enhanced about page and blog listings</p>
+<section id="step-3-navigation-structure-fix" class="level1">
+<h1>🧭 STEP 3: Navigation Structure Fix</h1>
+<p><strong>Date:</strong> September 29, 2025<br>
+<strong>Status:</strong> 🔄 IN PROGRESS</p>
+<hr>
+<section id="current-problems" class="level2">
+<h2 class="anchored" data-anchor-id="current-problems">🎯 Current Problems</h2>
+<section id="issue-1-confusing-about-label-for-homepage" class="level3">
+<h3 class="anchored" data-anchor-id="issue-1-confusing-about-label-for-homepage">Issue 1: Confusing “About” Label for Homepage</h3>
+<p><strong>Current Navigation:</strong></p>
+<pre><code>[About] [Machine Learning] [AI for Genomics] [AI for Chemistry]</code></pre>
+<p><strong>Problems:</strong> ❌ Homepage labeled as “About” - confusing for users ❌ “About” typically means biography/CV page ❌ Users expect “Home” icon to return to start ❌ No clear separation between homepage and other content</p>
 </section>
-<section id="key-features-added" class="level2">
-<h2 class="anchored" data-anchor-id="key-features-added">Key Features Added</h2>
-<section id="modern-design-system" class="level3">
-<h3 class="anchored" data-anchor-id="modern-design-system">1. Modern Design System</h3>
-<ul>
-<li>Scientific color palette (blues, purples, teals)</li>
-<li>Professional typography with gradient text effects</li>
-<li>Card-based layouts with hover animations</li>
-<li>Floating navigation bar with backdrop blur</li>
-</ul>
+<section id="issue-2-missing-about-me-page" class="level3">
+<h3 class="anchored" data-anchor-id="issue-2-missing-about-me-page">Issue 2: Missing “About Me” Page</h3>
+<p><strong>Current Situation:</strong> - Homepage (index.qmd) is labeled “About” in navbar - No dedicated About/CV page exists - Biography information mixed with hero landing page</p>
+<p><strong>What Should Exist:</strong> - index.qmd = Homepage (landing page with hero) - about.qmd = About Me (detailed bio, education, experience, publications)</p>
 </section>
-<section id="enhanced-blog-structure" class="level3">
-<h3 class="anchored" data-anchor-id="enhanced-blog-structure">2. Enhanced Blog Structure</h3>
-<ul>
-<li>Categorized content areas (ML, Genomics, Bioinformatics)</li>
-<li>Beautiful preview cards for blog posts</li>
-<li>Topic tags and reading indicators</li>
-<li>Professional layout with clear hierarchy</li>
-</ul>
-</section>
-<section id="jupyter-notebook-integration" class="level3">
-<h3 class="anchored" data-anchor-id="jupyter-notebook-integration">3. Jupyter Notebook Integration</h3>
-<ul>
-<li>Your existing notebooks render perfectly</li>
-<li>Modern code block styling with gradients</li>
-<li>Beautiful tables and data visualizations</li>
-<li>Professional presentation of research content</li>
-</ul>
+<section id="issue-3-no-search-functionality" class="level3">
+<h3 class="anchored" data-anchor-id="issue-3-no-search-functionality">Issue 3: No Search Functionality</h3>
+<p><strong>Current State:</strong> - Search not enabled in _quarto.yml - Users can’t search blog posts or content - Poor discoverability</p>
+<hr>
 </section>
 </section>
-<section id="quick-customizations" class="level2">
-<h2 class="anchored" data-anchor-id="quick-customizations">Quick Customizations</h2>
-<section id="change-colors" class="level3">
-<h3 class="anchored" data-anchor-id="change-colors">Change Colors</h3>
-<p>Edit <code>custom-modern.scss</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">$primary</span>: #your-color <span class="at">!default</span><span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">$secondary</span>: #your-secondary-color <span class="at">!default</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="solution-plan" class="level2">
+<h2 class="anchored" data-anchor-id="solution-plan">✅ Solution Plan</h2>
+<section id="fix-1-rename-homepage-link" class="level3">
+<h3 class="anchored" data-anchor-id="fix-1-rename-homepage-link">Fix 1: Rename Homepage Link</h3>
+<p><strong>Change navbar:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BEFORE:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.html</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">text</span><span class="kw">:</span><span class="at"> About</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> person-circle</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># AFTER:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.html</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> house-fill</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Impact:</strong> ✅ Clear that this returns to landing page ✅ Standard web convention (Home = start) ✅ Frees up “About” for proper bio page</p>
 </section>
-<section id="add-new-blog-posts" class="level3">
-<h3 class="anchored" data-anchor-id="add-new-blog-posts">Add New Blog Posts</h3>
+<section id="fix-2-update-about-page" class="level3">
+<h3 class="anchored" data-anchor-id="fix-2-update-about-page">Fix 2: Update About Page</h3>
+<p><strong>Current about.qmd:</strong> - Check what content exists - Either repurpose for detailed bio OR delete and recreate</p>
+<p><strong>New about.qmd should contain:</strong> - Full professional biography - Detailed education section (3 degrees with coursework) - Work experience timeline - Complete publications list (all 7 papers) - All research projects (with details) - Certifications and skills - Awards and recognition - Professional memberships</p>
+<p><strong>Difference from Homepage:</strong> - Homepage = Hero + highlights + CTA - About = Comprehensive CV/portfolio</p>
+</section>
+<section id="fix-3-add-search-functionality" class="level3">
+<h3 class="anchored" data-anchor-id="fix-3-add-search-functionality">Fix 3: Add Search Functionality</h3>
+<p>**Add to _quarto.yml:**</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">search</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">location</span><span class="kw">:</span><span class="at"> navbar</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> overlay</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Benefits:</strong> ✅ Users can search all content ✅ Find blog posts by keyword ✅ Navigate to specific topics quickly ✅ Better SEO</p>
+</section>
+<section id="fix-4-improve-navigation-structure" class="level3">
+<h3 class="anchored" data-anchor-id="fix-4-improve-navigation-structure">Fix 4: Improve Navigation Structure</h3>
+<p><strong>Complete navbar hierarchy:</strong></p>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│ [🏠 Home] [👤 About] [🎓 Blog ▼]  [GitHub] [Twitter]│
+└─────────────────────────────────────────────────────┘
+            └─ Machine Learning
+            └─ AI for Genomics  
+            └─ AI for Chemistry</code></pre>
+<p><strong>Optional: Group blog categories under dropdown:</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.html</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> house-fill</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.html</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> About</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> person-circle</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Blog</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> journal-text</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> ml-blog.html</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Machine Learning</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> cpu</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> genomics-blog.html</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> AI for Genomics</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> dna</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> chemistry-blog.html</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> AI for Chemistry</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> flask</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="implementation-steps" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-steps">🔨 Implementation Steps</h2>
+<section id="step-3a-update-navigation-labels" class="level3">
+<h3 class="anchored" data-anchor-id="step-3a-update-navigation-labels">Step 3A: Update Navigation Labels ✅</h3>
 <ol type="1">
-<li>Add new <code>.ipynb</code> file to directory</li>
-<li>Update relevant blog page (ml-blog.qmd, genomics-blog.qmd, etc.)</li>
-<li>Run <code>quarto render</code></li>
+<li>Change “About” → “Home” in navbar</li>
+<li>Change icon from “person-circle” → “house-fill”</li>
+<li>Render and test</li>
 </ol>
 </section>
-<section id="modify-navigation" class="level3">
-<h3 class="anchored" data-anchor-id="modify-navigation">Modify Navigation</h3>
-<p>Edit <code>_quarto.yml</code> navbar section to add/remove links</p>
-</section>
-</section>
-<section id="performance-features" class="level2">
-<h2 class="anchored" data-anchor-id="performance-features">Performance Features</h2>
-<ul>
-<li>Optimized fonts loading</li>
-<li>Efficient CSS with SCSS compilation</li>
-<li>Modern browser features (backdrop-filter, grid)</li>
-<li>Mobile-first responsive design</li>
-</ul>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<section id="step-3b-enable-search" class="level3">
+<h3 class="anchored" data-anchor-id="step-3b-enable-search">Step 3B: Enable Search ✅</h3>
 <ol type="1">
-<li>✅ Site is production ready</li>
-<li>🔄 Add more blog posts by creating new notebooks</li>
-<li>🎨 Customize colors/fonts if desired</li>
-<li>📱 Test on various devices</li>
-<li>🚀 Deploy to your hosting platform</li>
+<li>Add search configuration to _quarto.yml</li>
+<li>Render site to generate search index</li>
+<li>Test search functionality</li>
 </ol>
-<p>Your site now looks professional, modern, and showcases your research beautifully!</p>
+</section>
+<section id="step-3c-create-proper-about-page-optional" class="level3">
+<h3 class="anchored" data-anchor-id="step-3c-create-proper-about-page-optional">Step 3C: Create Proper About Page (Optional)</h3>
+<ol type="1">
+<li>Read current about.qmd</li>
+<li>Decide: repurpose or recreate</li>
+<li>Add comprehensive bio content</li>
+<li>Add to navbar</li>
+<li>Render and test</li>
+</ol>
+</section>
+<section id="step-3d-optional---organize-blog-dropdown" class="level3">
+<h3 class="anchored" data-anchor-id="step-3d-optional---organize-blog-dropdown">Step 3D: Optional - Organize Blog Dropdown</h3>
+<ol type="1">
+<li>Group ML/Genomics/Chemistry under “Blog” menu</li>
+<li>Test dropdown functionality</li>
+<li>Ensure mobile compatibility</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="expected-results" class="level2">
+<h2 class="anchored" data-anchor-id="expected-results">📊 Expected Results</h2>
+<section id="before" class="level3">
+<h3 class="anchored" data-anchor-id="before">Before:</h3>
+<pre><code>Navigation: [About] [ML] [Genomics] [Chemistry]
+Search: None
+About page: Unclear purpose</code></pre>
+</section>
+<section id="after" class="level3">
+<h3 class="anchored" data-anchor-id="after">After:</h3>
+<pre><code>Navigation: [Home] [About] [ML] [Genomics] [Chemistry] [🔍 Search]
+Search: Working overlay search
+About page: Dedicated bio/CV page
+Homepage: Clear landing page identity</code></pre>
+<hr>
+</section>
+</section>
+<section id="user-benefits" class="level2">
+<h2 class="anchored" data-anchor-id="user-benefits">🎯 User Benefits</h2>
+<section id="improved-discoverability" class="level3">
+<h3 class="anchored" data-anchor-id="improved-discoverability">Improved Discoverability:</h3>
+<p>✅ Search finds blog posts instantly ✅ Clear navigation labels ✅ Obvious homepage return path</p>
+</section>
+<section id="better-information-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="better-information-architecture">Better Information Architecture:</h3>
+<p>✅ Homepage = First impression + CTA ✅ About = Detailed credentials ✅ Blog = Content organized by topic</p>
+</section>
+<section id="professional-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="professional-presentation">Professional Presentation:</h3>
+<p>✅ Standard web conventions followed ✅ Easy to navigate ✅ Mobile-friendly dropdown (optional)</p>
+<hr>
+<p><strong>Let’s implement Step 3A and 3B first (navigation + search), then decide on 3C/3D!</strong></p>
 
 
+</section>
 </section>
 </section>
 
