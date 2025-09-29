@@ -366,9 +366,47 @@ code:not(pre code) {
     border-radius: $border-radius-lg;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     
     &:hover {
       transform: scale(1.02);
+    }
+  }
+  
+  // Center figure captions - targeting Quarto's generated HTML structure
+  
+  // Style the figcaption element (from alt text)
+  .quarto-figure figcaption {
+    text-align: center;
+    font-style: italic;
+    color: $gray-600;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  // Style the italic text paragraph that follows figures (your custom captions)
+  .quarto-figure + p em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: $gray-600;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  // Also center any paragraph that contains only italic text (likely captions)
+  p:has(> em:only-child) {
+    text-align: center;
+    
+    em {
+      color: $gray-600;
+      font-size: 0.9rem;
+      line-height: 1.4;
     }
   }
 }
@@ -398,6 +436,13 @@ code:not(pre code) {
     background: $gray-800;
     color: $gray-200;
     border-color: $gray-700;
+  }
+  
+  // Dark mode caption styling
+  .quarto-figure figcaption,
+  .quarto-figure + p em,
+  p:has(> em:only-child) em {
+    color: $gray-400;
   }
 }
 
