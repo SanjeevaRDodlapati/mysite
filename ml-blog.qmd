@@ -17,6 +17,21 @@ Explore cutting-edge machine learning techniques, deep learning applications, an
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
+### [🤖 Multi-Teacher Knowledge Distillation](multi-teacher-knowledge-distillation.html)
+*Advanced AI Techniques for Model Efficiency*
+
+Deep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.
+
+::: {.text-muted}
+🏷️ AI • Knowledge Distillation • Ensemble Learning • Deep Learning
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
 ### [📈 T-test Applications](T-test-alt.html)
 *Statistical hypothesis testing fundamentals*
 
@@ -28,7 +43,9 @@ Comprehensive guide to T-test applications in data science, covering one-sample,
 :::
 :::
 :::
+:::
 
+::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
@@ -39,6 +56,21 @@ Deep dive into the most important statistical methods used in bioinformatics res
 
 ::: {.text-muted}
 🏷️ Bioinformatics • Statistics • Research Methods
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🧠 Coming Soon: Neural Architecture Search]()
+*Automated ML model design*
+
+Explore automated neural architecture search techniques and their applications in optimizing deep learning models for specific tasks.
+
+::: {.text-muted}
+🏷️ AutoML • Neural Networks • Model Optimization
 :::
 :::
 :::

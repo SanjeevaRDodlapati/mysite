@@ -492,23 +492,23 @@
   {
     "objectID": "ml-blog.html",
     "href": "ml-blog.html",
-    "title": "Machine Learning & AI",
+    "title": "AI for Genomics",
     "section": "",
     "text": "Explore cutting-edge machine learning techniques, deep learning applications, and AI research methodologies. From statistical foundations to advanced neural architectures, these posts cover the essential concepts driving modern artificial intelligence."
   },
   {
     "objectID": "ml-blog.html#featured-posts",
     "href": "ml-blog.html#featured-posts",
-    "title": "Machine Learning & AI",
+    "title": "AI for Genomics",
     "section": "📊 Featured Posts",
-    "text": "📊 Featured Posts\n\n\n\n\n📈 T-test Applications\nStatistical hypothesis testing fundamentals\nComprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.\n\n🏷️ Statistics • Python • Data Analysis\n\n\n\n\n\n\n\n🔟 Top 10 Statistical Concepts in Bioinformatics\nEssential statistics for biological data\nDeep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.\n\n🏷️ Bioinformatics • Statistics • Research Methods"
+    "text": "📊 Featured Posts\n\n\n\n\n🤖 Multi-Teacher Knowledge Distillation\nAdvanced AI Techniques for Model Efficiency\nDeep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.\n\n🏷️ AI • Knowledge Distillation • Ensemble Learning • Deep Learning\n\n\n\n\n\n\n\n📈 T-test Applications\nStatistical hypothesis testing fundamentals\nComprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.\n\n🏷️ Statistics • Python • Data Analysis\n\n\n\n\n\n\n\n\n\n🔟 Top 10 Statistical Concepts in Bioinformatics\nEssential statistics for biological data\nDeep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.\n\n🏷️ Bioinformatics • Statistics • Research Methods\n\n\n\n\n\n\n\n🧠 Coming Soon: Neural Architecture Search\nAutomated ML model design\nExplore automated neural architecture search techniques and their applications in optimizing deep learning models for specific tasks.\n\n🏷️ AutoML • Neural Networks • Model Optimization"
   },
   {
     "objectID": "ml-blog.html#topics-covered",
     "href": "ml-blog.html#topics-covered",
-    "title": "Machine Learning & AI",
+    "title": "AI for Genomics",
     "section": "🎯 Topics Covered",
-    "text": "🎯 Topics Covered\n\n\n\n\n🧠 Deep Learning\nNeural networks, architectures, and advanced techniques\n\n\n\n\n\n\n📊 Statistical Methods\nHypothesis testing, regression, and probabilistic models\n\n\n\n\n\n\n🔬 Research Methods\nExperimental design and computational methodologies\n\n\n\n\n\n\n💻 Implementation\nPython, R, and practical coding tutorials\n\n\n\n\n\n\nStay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.\n🧬 Explore Genomics AI 🔬 View Bioinformatics"
+    "text": "🎯 Topics Covered\n\n\n\n\n🧠 Deep Learning\nNeural networks, architectures, and advanced techniques\n\n\n\n\n\n\n📊 Statistical Methods\nHypothesis testing, regression, and probabilistic models\n\n\n\n\n\n\n🔬 Research Methods\nExperimental design and computational methodologies\n\n\n\n\n\n\n💻 Implementation\nPython, R, and practical coding tutorials\n\n\n\n\n\n\nStay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.\n🧬 Explore Genomics AI 🔬 View Bioinformatics\n\n\n\n\nDiscover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems.\n\n\n\n\n\n\nUnraveling Human Biology: From Organism to Atom\nSetting the Foundation for Digital Biology\nA comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.\n\n🏷️ Digital Biology • Multi-scale Analysis • Computational Genomics\n\n\n\n\n\n\n\nStatistical Methods in Genomics\nEssential biostatistics for genomic analysis\nComprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.\n\n🏷️ Genomics • Statistics • Population Genetics\n\n\n\n\n\n\n\n\n\n📊 Advanced Statistical Testing\nHypothesis testing in biological contexts\nDeep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.\n\n🏷️ Statistics • Experimental Design • Genomics\n\n\n\n\n\n\n\n📊 Advanced Statistical Testing\nHypothesis testing in biological contexts\nDeep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.\n\n🏷️ Statistics • Experimental Design • Genomics\n\n\n\n\n\n\n\n\n\n🔬 Basic Statistical Testing\nFoundational statistical concepts\nIntroduction to fundamental statistical testing methods used in genomics research, covering t-tests, significance testing, and data interpretation.\n\n🏷️ Statistics • Hypothesis Testing • Fundamentals"
   },
   {
     "objectID": "hero_stats_update.html",
@@ -845,5 +845,19 @@
     "title": "Multi-Teacher Knowledge Distillation: How to Merge the Wisdom of Many Models into One",
     "section": "🎯 Conclusion",
     "text": "🎯 Conclusion\nMulti-teacher knowledge distillation is a powerful technique that combines the strengths of ensemble learning with the efficiency of a single student model. Methods like UEKD, ATMKD, and meta-learning approaches are paving the way for more effective and scalable knowledge transfer, enabling robust performance across a wide range of applications. As research continues to advance, we can expect even more innovative strategies that push the boundaries of what’s possible in distillation.\n\nFuture Directions\n\nAutomated Teacher Selection: Developing methods to automatically select the most suitable teachers for a given task\nHierarchical Knowledge Transfer: Exploring multi-level knowledge distillation from different layers of teacher models\nContinual Learning Integration: Combining multi-teacher distillation with continual learning for lifelong model adaptation\n\nIf you’re interested in implementing these techniques, explore the provided references for in-depth insights and code examples. Have you tried multi-teacher distillation in your projects? Share your experiences and thoughts!\n\n\n\n\n\n\n\nAbout This Series\n\n\n\nThis post is part of my ongoing series on AI for precision medicine and advanced machine learning techniques. Subscribe for more insights into cutting-edge AI research and applications.\n\n\nTags: #ArtificialIntelligence #MachineLearning #KnowledgeDistillation #EnsembleLearning #DeepLearning #ModelCompression #AIResearch #PrecisionMedicine"
+  },
+  {
+    "objectID": "ml-blog.html#research-areas",
+    "href": "ml-blog.html#research-areas",
+    "title": "AI for Genomics",
+    "section": "🎯 Research Areas",
+    "text": "🎯 Research Areas\n\n\n\n\n🔬 DNA Methylation\nEpigenomic analysis and imputation methods using transfer learning\n\n\n\n\n\n\n🧠 Deep Learning\nNeural network architectures for genomic sequence analysis\n\n\n\n\n\n\n📈 Predictive Modeling\nMachine learning approaches for biomarker discovery"
+  },
+  {
+    "objectID": "ml-blog.html#upcoming-topics",
+    "href": "ml-blog.html#upcoming-topics",
+    "title": "AI for Genomics",
+    "section": "🔮 Upcoming Topics",
+    "text": "🔮 Upcoming Topics\n\nSingle-Cell Genomics: AI approaches to cellular heterogeneity analysis\nPharmacogenomics: Personalized medicine through AI-driven drug discovery\n\nMulti-omics Integration: Computational frameworks for systems biology\nEvolutionary Genomics: Machine learning in phylogenetics and population studies\n\n\n\nAdvancing genomic research through the power of artificial intelligence and computational innovation.\n🤖 Machine Learning 🔬 Bioinformatics Tools"
   }
 ]
