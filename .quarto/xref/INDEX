@@ -71,5 +71,44 @@
   },
   "dna-sequence-encoding-guide.qmd": {
     "dna-sequence-encoding-guide.html": "c4f2b0df"
+  },
+  "design-comparison-test.qmd": {
+    "design-comparison-test.html": "9f8fece4"
+  },
+  "design-exploration/testing-guide.md": {
+    "testing-guide.html": "c3724373"
+  },
+  "design-exploration-plan.md": {
+    "design-exploration-plan.html": "d497c156"
+  },
+  "aleksa-style-test.qmd": {
+    "aleksa-style-test.html": "6a99dd59"
+  },
+  "aleksa-direct-test.qmd": {
+    "aleksa-direct-test.html": "29f227b8"
+  },
+  "aleksa-pure-test.qmd": {
+    "aleksa-pure-test.html": "3138a90d"
+  },
+  "design-exploration/enhanced-analysis.md": {
+    "enhanced-analysis.html": "73e8a86d"
+  },
+  "typography-contrast-test.qmd": {
+    "typography-contrast-test.html": "959d265a"
+  },
+  "extreme-contrast-test.qmd": {
+    "extreme-contrast-test.html": "4e993e07"
+  },
+  "fira-code-test.qmd": {
+    "fira-code-test.html": "d2521435"
+  },
+  "jetbrains-mono-test.qmd": {
+    "jetbrains-mono-test.html": "80058aaa"
+  },
+  "aleksa-exact-recreation.qmd": {
+    "aleksa-exact-recreation.html": "5b5c9a1c"
+  },
+  "system-font-test.qmd": {
+    "system-font-test.html": "407b0312"
   }
 }
