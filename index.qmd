@@ -1,6 +1,6 @@
 ---
 title: "Sanjeeva Reddy Dodlapati"
-subtitle: "Software Engineer & AI/ML Researcher • 6+ Years Experience • Genomics & Drug Discovery Expert"
+subtitle: "AI/ML Researcher • 6+ Years Experience • Genomics & Drug Discovery Expert"
 about:
   template: trestles
   image: Profile.jpeg
@@ -33,11 +33,11 @@ about:
 # Welcome to My Research Hub
 
 <div class="hero-content">
-I'm a **Software Engineer & AI/ML Researcher** specializing in designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG). With 6+ years of experience developing predictive models and scalable ML pipelines for genomics, drug discovery, and healthcare applications.
+I'm a **AI/ML Researcher** specializing in designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG). With 6+ years of experience developing predictive models and scalable ML pipelines for genomics, drug discovery, and healthcare applications.
 
 <div class="achievement-stats">
 <div class="stat-item">
-  <div class="stat-number">4</div>
+  <div class="stat-number">7</div>
   <div class="stat-label">Publications</div>
 </div>
 <div class="stat-item">
@@ -69,6 +69,9 @@ I'm a **Software Engineer & AI/ML Researcher** specializing in designing AI-powe
 *Specialization: AI/ML for Computational Biology*
 
 **MS in Computer Science (GPA: 3.5/4.0)** • *Georgia Institute of Technology, Atlanta, GA* (2023-Present)  
+*Focus: Advanced Machine Learning Systems*
+
+**MS in Chemistry (GPA: 3.7/4.0)** • *University of New Orleans, New Orleans, LA* (2009-2011)  
 *Focus: Advanced Machine Learning Systems*
 :::
 :::
@@ -192,14 +195,26 @@ Developed chiral sulfanilamide candidates with >99% enantio-selectivity at Boehr
 
 ---
 
-## 📚 Recent Publications
+## 📚 Selected Publications
 
 ::: {.content}
-1. **Sanjeeva Dodlapati**, ZC Jiang, J Sun. [*Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence*](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full). **Frontiers in Genetics** (2022)
+### Published Papers
 
-2. [*Loss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction*](https://doi.org/10.1016/j.yjmcc.2022.08.003). **Journal of Molecular and Cellular Cardiology** 171, 117-132 (2022)
+1. **Dodlapati, Sanjeeva**, Z. Jiang, and J. Sun. [*Completing single-cell DNA methylome profiles via transfer learning together with KL-divergence*](https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full). **Frontiers in Genetics**, vol. 13, p. 910,439, 2022
 
-3. [*The landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction*](https://doi.org/10.1080/15592294.2021.1982158). **Epigenetics** (2021)
+2. C. Li, J. Sun, Q. Liu, **Dodlapati, Sanjeeva**, H. Ming, L. Wang, Y. Li, R. Li, Z. Jiang, J. Francis, et al. *The landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction*. **Epigenetics**, vol. 17, no. 9, pp. 1020-1039, 2022
+
+3. Y. Li, C. Li, Q. Liu, L. Wang, A. X. Bao, J. P. Jung, **Dodlapati, Sanjeeva**, J. Sun, P. Gao, X. Zhang, et al. [*Loss of acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction*](https://doi.org/10.1016/j.yjmcc.2022.08.003). **Journal of Molecular and Cellular Cardiology**, vol. 171, pp. 117-132, 2022
+
+4. A. Chen, L. P. Samankumara, **Dodlapati, Sanjeeva**, D. Wang, S. Adhikari, and G. Wang. *Syntheses of bis-triazole linked carbohydrate based macrocycles and their applications for accelerating copper sulfate mediated click reaction*. **European Journal of Organic Chemistry**, vol. 2019, no. 6, pp. 1189-1194, 2019
+
+### Under Preparation
+
+5. **Dodlapati S**, Sun J. *Training Deep Neural Networks for DNA Methylation Prediction from DNA Sequence: A Data-centric Perspective*. (under preparation)
+
+6. **Dodlapati S**, Sun J. *Uncertainty-Aware Variant Effect Prediction for Genome-wide Prioritization of Non-coding Variants*. (under preparation)
+
+7. Du H, **Dodlapati S**, Parsons Z, Sun J & Lu J. *Learning more diverse genomic representations through hinge loss function*. (under preparation)
 :::
 
 ---
