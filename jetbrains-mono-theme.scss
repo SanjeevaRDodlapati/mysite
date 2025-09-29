@@ -1,0 +1,224 @@
+/*-- scss:defaults --*/
+
+// Import JetBrains Mono from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+// Define font variables
+$font-family-base: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+$font-family-monospace: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+
+/*-- scss:rules --*/
+
+// Override Quarto's font settings with maximum specificity
+html,
+body {
+    font-family: $font-family-base !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    font-feature-settings: "liga" 1, "calt" 1 !important; // Enable ligatures
+}
+
+// Headers with Fira Code
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-base !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    margin-bottom: 0.75rem !important;
+}
+
+h1, .h1 {
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+}
+
+h2, .h2 {
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 2rem !important;
+}
+
+h3, .h3 {
+    font-size: 1.375rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+}
+
+// Paragraph and body text
+p, .p {
+    font-family: $font-family-base !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
+    margin-bottom: 1rem !important;
+}
+
+// Code blocks and inline code with enhanced visibility
+code, pre, .code, .pre {
+    font-family: $font-family-monospace !important;
+    font-feature-settings: "liga" 1, "calt" 1 !important;
+    font-size: 0.95em !important;
+    font-weight: 400 !important;
+}
+
+// Inline code styling with better contrast
+code:not(pre code) {
+    background-color: #e2e8f0 !important;
+    color: #1e293b !important;
+    padding: 0.2rem 0.5rem !important;
+    border-radius: 4px !important;
+    font-size: 0.9em !important;
+    font-weight: 500 !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+// Code blocks with dark background for better visibility
+pre {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    overflow-x: auto !important;
+    font-size: 0.95em !important;
+    line-height: 1.6 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+pre code {
+    background: transparent !important;
+    color: #e2e8f0 !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: 400 !important;
+}
+
+// Lists with proper Fira Code styling
+ul, ol, li {
+    font-family: $font-family-base !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
+}
+
+// Links
+a, .a {
+    color: #2563eb !important;
+    text-decoration: none !important;
+    font-family: $font-family-base !important;
+}
+
+a:hover, .a:hover {
+    color: #1d4ed8 !important;
+    text-decoration: underline !important;
+}
+
+// Navigation
+.navbar, .nav, .navbar-nav {
+    font-family: $font-family-base !important;
+    font-weight: 500 !important;
+}
+
+// Blockquotes
+blockquote {
+    font-family: $font-family-base !important;
+    border-left: 4px solid #3b82f6 !important;
+    margin: 1.5rem 0 !important;
+    padding: 1rem 1.5rem !important;
+    background-color: #f8fafc !important;
+    font-style: italic !important;
+    color: #475569 !important;
+}
+
+// Tables
+table, th, td {
+    font-family: $font-family-base !important;
+    font-size: 0.95em !important;
+}
+
+th {
+    font-weight: 600 !important;
+    background-color: #f1f5f9 !important;
+    color: #1e293b !important;
+}
+
+// Buttons and interactive elements
+.btn, button, input, select, textarea {
+    font-family: $font-family-base !important;
+}
+
+// Ensure Fira Code is used in content areas
+.quarto-container,
+.content,
+.main,
+article,
+section {
+    font-family: $font-family-base !important;
+}
+
+// Footer
+.footer, footer {
+    font-family: $font-family-base !important;
+    font-size: 0.9em !important;
+}
+
+// Special styling for AI/Tech content emphasis
+.ai-highlight {
+    background: linear-gradient(120deg, #a78bfa 0%, #3b82f6 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 600 !important;
+}
+
+// Research paper citation style
+.citation {
+    font-family: $font-family-base !important;
+    font-size: 0.9em !important;
+    color: #64748b !important;
+    font-style: italic !important;
+}
+
+// Code comment styling for technical explanations
+.tech-note {
+    font-family: $font-family-base !important;
+    font-size: 0.95em !important;
+    color: #6b7280 !important;
+    border-left: 3px solid #d1d5db !important;
+    padding-left: 1rem !important;
+    margin: 1rem 0 !important;
+}
+
+// Performance optimization
+* {
+    font-display: swap !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    body {
+        font-size: 15px !important;
+    }
+    
+    h1, .h1 {
+        font-size: 1.875rem !important;
+    }
+    
+    h2, .h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3, .h3 {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px !important;
+    }
+}
