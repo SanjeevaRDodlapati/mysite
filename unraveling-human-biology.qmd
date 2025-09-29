@@ -9,7 +9,7 @@ description: "Exploring human biology across multiple levels of resolution, from
 ---
 
 ::: {.animate-fade-in}
-# 🧬 Setting the Foundation for Computational Genomics and Beyond
+# Setting the Foundation for Computational Genomics and Beyond
 
 ![Biological Organization Levels](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcf375d6-16e3-49cc-b778-712492a4d97b_600x600.jpeg)
 

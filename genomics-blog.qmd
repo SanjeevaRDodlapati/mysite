@@ -4,14 +4,11 @@ subtitle: "Artificial intelligence applications in genomic research and computat
 ---
 
 ::: {.animate-fade-in}
-# 🧬 AI for Genomics Research
 
 Discover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems.
 :::
 
 ---
-
-## 🔬 Featured Research
 
 ::: {.row}
 ::: {.col-lg-6}
@@ -32,6 +29,23 @@ A comprehensive exploration of human biology across multiple organizational leve
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
+### [Multi-Teacher Knowledge Distillation](multi-teacher-knowledge-distillation.html)
+*Advanced AI Techniques for Model Efficiency*
+
+Deep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.
+
+::: {.text-muted}
+🏷️ AI • Knowledge Distillation • Ensemble Learning • Deep Learning
+:::
+:::
+:::
+:::
+:::
+
+::: {.row .mt-3}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
 ### [ Statistical Methods in Genomics](Top10_bioinfo_stats.html)
 *Essential biostatistics for genomic analysis*
 
@@ -43,9 +57,7 @@ Comprehensive overview of the statistical foundations underlying modern genomics
 :::
 :::
 :::
-:::
 
-::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
@@ -60,7 +72,9 @@ Deep exploration of statistical hypothesis testing specifically applied to genom
 :::
 :::
 :::
+:::
 
+::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
