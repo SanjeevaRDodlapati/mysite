@@ -1,17 +1,135 @@
 ---
-title: "Research Interests"
+title: "About Me"
 sidebar: minimal-sidebar
 ---
 
-# Research Interests
+# About Sanjeeva Reddy Dodlapati
 
-Details about my research interests go here.
+## 👋 Personal Introduction
 
+I'm a passionate **Software Engineer & AI/ML Researcher** with over 6 years of experience at the intersection of artificial intelligence and biological sciences. My journey began with chemistry and evolved into developing cutting-edge AI systems that solve real-world problems in genomics, drug discovery, and healthcare.
 
-    * Deep Learning
-    * Graph Learning
-    * Transfer Learning
-    * Multi-task Learning
-    * Contrastive Learning
-    * Drug Designing & Discovery
-    * DNA methylation prediction
+Currently pursuing my **PhD in Computer Science** at Old Dominion University (GPA: 3.9/4.0) while simultaneously earning an **MS in Computer Science** from Georgia Tech, I believe in continuous learning and pushing the boundaries of what's possible with AI.
+
+---
+
+## 🎯 Professional Philosophy
+
+I'm driven by the belief that **AI can accelerate scientific discovery** and improve human health. My work focuses on developing intelligent systems that can:
+
+- 🤖 **Automate complex data analysis** through agentic AI systems
+- 🧬 **Unlock insights from biological data** using deep learning
+- 💊 **Accelerate drug discovery** through computational methods
+- 🔬 **Bridge the gap** between computer science and life sciences
+
+---
+
+## 🚀 Key Achievements & Impact
+
+### Research Excellence
+- **📄 4 peer-reviewed publications** in top-tier journals (Frontiers in Genetics, Journal of Molecular and Cellular Cardiology)
+- **🎤 3 conference presentations** sharing research insights
+- **🏆 Best Mentor Award** from ODU for guiding students to competition victory
+- **🔬 5 major research projects** leading to significant scientific contributions
+
+### Technical Innovation
+- **📈 Improved DNA methylation prediction** by 38% using novel transfer learning approaches
+- **🎯 Boosted methylome coverage** from 1.5% to 50% in sparse single-cell data
+- **⚡ Reduced computational costs** by 65-80% through innovative algorithms
+- **🤖 Developed OmicsOracle**, an AI agent for automated genomic data analysis
+
+### Industry Impact
+- **💼 Research Intern at Boehringer Ingelheim** - developed chiral drug candidates with >99% selectivity
+- **🤝 Cross-institutional collaborations** with LSU, University of Michigan
+- **📚 40+ certifications** in AI/ML from leading platforms (Coursera, edX)
+
+---
+
+## 🛠️ Technical Expertise
+
+### Programming & Frameworks
+**Expert:** Python, PyTorch, TensorFlow  
+**Advanced:** R, Java, JavaScript, C/C++, SQL  
+**Specialized:** LangChain, LlamaIndex, DeepChem, RDKit
+
+### AI/ML Specializations
+- **🧠 Deep Learning:** CNNs, RNNs, Transformers, Graph Neural Networks
+- **🤖 Agentic AI:** Multi-agent systems, RAG, LLM orchestration
+- **🔄 Transfer Learning:** Domain adaptation, few-shot learning
+- **📊 MLOps:** CI/CD pipelines, Docker, Kubernetes, MLflow
+
+### Domain Expertise
+- **🧬 Genomics & Bioinformatics:** Single-cell analysis, epigenomics, variant calling
+- **💊 Drug Discovery:** Cheminformatics, molecular optimization, DDI prediction
+- **🏥 Healthcare AI:** Clinical text processing, medical data analysis
+
+---
+
+## 📖 My Research Journey
+
+### PhD Research Focus
+My doctoral research centers on developing **uncertainty-aware AI models** for genomic applications. Key projects include:
+
+1. **DNA Methylation Prediction** - Using transfer learning to complete sparse methylome profiles
+2. **Variant Effect Prediction** - Quantifying uncertainty in genomic variant impact assessment
+3. **Data-Centric AI** - Optimizing training data quality for better model performance
+
+### Independent Projects
+Beyond my formal research, I've developed several innovative projects:
+
+- **🤖 OmicsOracle:** AI agent for automated genomic data extraction and analysis
+- **🩺 ClinicalNormBERT:** Personalized clinical text normalization model
+- **📈 ML4Trading:** Algorithmic trading systems using RL and decision trees
+- **🦠 COVID-19 Analytics:** Healthcare applications for pandemic data analysis
+
+---
+
+## 🌟 Community Impact
+
+### Teaching & Mentoring
+- **👨‍🏫 Teaching Assistant** for CS courses at ODU (2019-2023)
+- **🎯 Student Mentor** - guided team to win 2023 Speed Notes Competition
+- **📝 Technical Writing** - active blogger on AI for Science topics
+
+### Professional Service
+- **📋 Peer Reviewer** for top-tier conferences (NeurIPS, ICML, ICLR, IJCAI)
+- **🤝 Collaborative Research** with industry and academic partners
+- **📚 Open Source Contributions** to the ML research community
+
+---
+
+## 🎨 Personal Interests
+
+When I'm not coding or researching, you can find me:
+
+- **✍️ Writing** technical blog posts on Medium and Substack
+- **📚 Learning** through online courses (40+ certifications and counting!)
+- **🌱 Exploring** the latest developments in AI and biotechnology
+- **🔬 Experimenting** with new ML techniques and frameworks
+
+---
+
+## 🎓 Educational Background
+
+**PhD Computer Science** | Old Dominion University (2019-2025)  
+*GPA: 3.9/4.0 • Focus: AI for Computational Biology*
+
+**MS Computer Science** | Georgia Institute of Technology (2023-Present)  
+*GPA: 3.5/4.0 • Focus: Advanced Machine Learning Systems*
+
+---
+
+## 📞 Let's Connect
+
+I'm always excited to discuss **AI research**, **collaborative opportunities**, or **innovative projects** that can make a real-world impact. Whether you're interested in:
+
+- 🤝 **Research collaborations**
+- 💼 **Professional opportunities** 
+- 🎓 **Academic discussions**
+- 💡 **Technical consulting**
+
+Feel free to reach out through any of the channels below!
+
+---
+
+*"The best way to predict the future is to create it. In my case, that means building AI systems that can accelerate scientific discovery and improve human health."*

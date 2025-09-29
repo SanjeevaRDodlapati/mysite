@@ -4,7 +4,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Dr. Sanjeeva Dodlapati - AI Research Blog"
+  title: "Sanjeev's AI Research Blog"
   description: "Advanced AI research, computational biology, and data science insights"
   navbar:
     background: light
@@ -29,18 +29,23 @@ website:
       - icon: twitter
         href: https://twitter.com/dodlapati_reddy
         aria-label: Twitter
+    tools:
+      - icon: moon
+        href: "#"
+        text: "Toggle Dark Mode"
+        toggle: dark
   
   page-footer:
     background: light
     left: |
-      © 2025 Dr. Sanjeeva Reddy Dodlapati  
+      © 2025 Sanjeeva Reddy Dodlapati  
       AI Research • Computational Biology • Data Science
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
         aria-label: LinkedIn
       - icon: envelope
-        href: mailto:sdodl001@odu.edu
+        href: mailto:sdodlapa@gamil.com
         aria-label: Email
 
 format:
@@ -63,8 +68,13 @@ format:
     include-in-header:
       - text: |
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta name="author" content="Dr. Sanjeeva Reddy Dodlapati">
+          <meta name="author" content="Sanjeeva Reddy Dodlapati">
           <meta name="keywords" content="AI, machine learning, computational biology, bioinformatics, genomics, data science">
+          <script src="custom.js" defer></script>
+          <style>
+            body { opacity: 0; transition: opacity 0.3s ease; }
+            body.loaded { opacity: 1; }
+          </style>
     lang: en
 
       

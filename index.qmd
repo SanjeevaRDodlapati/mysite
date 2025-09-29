@@ -1,6 +1,41 @@
 ---
-title: "Dr. Sanjeeva Reddy Dodlapati"
-subtitle: "AI Research Scientist • Computational Biology Expert"
+title: "Sanjeeva Reddy Dodlapati"
+subtitle: "Software Engineer & AI/ML Researcher • 6+ Years Experience • Genomics & Drug---
+
+## 💻 Technical Expertise
+
+::: {.row}
+::: {.col-md-4}
+::: {.card}
+::: {.card-body}
+**🤖 AI/ML Technologies**  
+PyTorch, TensorFlow, LangChain, LlamaIndex, RAG Systems, Vector Databases
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card}
+::: {.card-body}
+**🧬 Bioinformatics**  
+Bioconductor, DESeq2, RDKit, DeepChem, ChemProp, MEME-suite
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card}
+::: {.card-body}
+**☁️ MLOps & Cloud**  
+Docker, MLflow, AWS, GCP, Kubernetes, CI/CD Pipelines
+:::
+:::
+:::
+:::
+
+---
+
+## 🚀 Featured Research Projectsscovery Expert"
 about:
   template: trestles
   image: Profile.jpeg
@@ -32,9 +67,31 @@ about:
 :::{.animate-fade-in}
 # Welcome to My Research Hub
 
-I'm an **AI Research Scientist** specializing in the intersection of artificial intelligence, machine learning, and biological systems. With 6+ years of experience developing predictive models and scalable pipelines for genomic, transcriptomic, and imaging data.
+<div class="hero-content">
+I'm a **Software Engineer & AI/ML Researcher** specializing in designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG). With 6+ years of experience developing predictive models and scalable ML pipelines for genomics, drug discovery, and healthcare applications.
 
-Currently pursuing my **PhD in Computer Science** at Old Dominion University, I focus on deep learning, uncertainty modeling, and transfer learning for biomedical applications.
+<div class="achievement-stats">
+<div class="stat-item">
+  <div class="stat-number">4</div>
+  <div class="stat-label">Publications</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number">50%</div>
+  <div class="stat-label">Coverage Boost</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number">38%</div>
+  <div class="stat-label">F1 Improvement</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number">6+</div>
+  <div class="stat-label">Years Experience</div>
+</div>
+</div>
+
+**🏆 Recent Recognition:** Best Mentor Award from ODU (2023)
+</div>
+
 :::
 
 ---
@@ -43,11 +100,11 @@ Currently pursuing my **PhD in Computer Science** at Old Dominion University, I 
 
 ::: {.card}
 ::: {.card-body}
-**PhD in Computer Science** • *Old Dominion University, Norfolk, VA*  
+**PhD in Computer Science (GPA: 3.9/4.0)** • *Old Dominion University, Norfolk, VA* (2019-2025)  
 *Specialization: AI/ML for Computational Biology*
 
-**MS in Chemistry** • *University of New Orleans, LA*  
-*Focus: Chemical Informatics and Drug Discovery*
+**MS in Computer Science (GPA: 3.5/4.0)** • *Georgia Institute of Technology, Atlanta, GA* (2023-Present)  
+*Focus: Advanced Machine Learning Systems*
 :::
 :::
 
@@ -59,12 +116,13 @@ Currently pursuing my **PhD in Computer Science** at Old Dominion University, I 
 ::: {.col-md-6}
 ::: {.card}
 ::: {.card-header}
-### 🔬 Research
+### 🔬 Research Experience
 :::
 ::: {.card-body}
-- **Research Intern** • *BI, CT* (Jun 2018 - Aug 2018)
-- **Project Lead** • *Indian Institute of Chemical Technology, Hyderabad*
-- **Research Assistant** • *Old Dominion University*
+- **Graduate Research Assistant** • *Old Dominion University* (2019-Present)
+- **Research Intern** • *Boehringer Ingelheim, CT* (2018)
+- **Research Leadership** • 5+ independent projects
+- **Collaborative Research** • LSU, UMich partnerships
 :::
 :::
 :::
@@ -85,32 +143,85 @@ Currently pursuing my **PhD in Computer Science** at Old Dominion University, I 
 
 ---
 
-## 🚀 Featured Research Projects
+## � Technical Expertise
 
 ::: {.row}
-::: {.col-lg-4}
+::: {.col-md-4}
 ::: {.card}
 ::: {.card-body}
-**🧬 DNA Methylation Imputation**  
-Transfer learning approaches for single-cell epigenomics data completion and analysis.
+**🤖 AI/ML Technologies**  
+PyTorch, TensorFlow, LangChain, LlamaIndex, RAG Systems, Vector Databases
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card}
+::: {.card-body}
+**🧬 Bioinformatics**  
+Bioconductor, DESeq2, RDKit, DeepChem, ChemProp, MEME-suite
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card}
+::: {.card-body}
+**☁️ MLOps & Cloud**  
+Docker, MLflow, AWS, GCP, Kubernetes, CI/CD Pipelines
+:::
+:::
+:::
+:::
+
+---
+
+## �🚀 Featured Research Projects
+
+::: {.row}
+::: {.row}
+::: {.col-lg-4}
+::: {.card .project-card}
+::: {.card-body}
+<div class="project-icon">🧬</div>
+**OmicsOracle AI Agent**  
+Intelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.
+<div class="project-tech">
+<span class="skill-badge">Python</span>
+<span class="skill-badge">LangChain</span>
+<span class="skill-badge">RAG</span>
+</div>
 :::
 :::
 :::
 
 ::: {.col-lg-4}
-::: {.card}
+::: {.card .project-card}
 ::: {.card-body}
-**🤖 Deep Learning for Genomics**  
-Sample complexity studies in DNA sequence-based prediction models.
+<div class="project-icon">🤖</div>
+**ClinicalNormBERT**  
+Personalized clinical text normalization model improving healthcare data extraction accuracy.
+<div class="project-tech">
+<span class="skill-badge">BERT</span>
+<span class="skill-badge">NLP</span>
+<span class="skill-badge">Healthcare</span>
+</div>
 :::
 :::
 :::
 
 ::: {.col-lg-4}
-::: {.card}
+::: {.card .project-card}
 ::: {.card-body}
-**💊 Drug Discovery AI**  
-Predictive modeling for drug-drug interactions and molecular design.
+<div class="project-icon">💊</div>
+**Chiral Drug Synthesis**  
+Developed chiral sulfanilamide candidates with >99% enantio-selectivity at Boehringer Ingelheim.
+<div class="project-tech">
+<span class="skill-badge">Cheminformatics</span>
+<span class="skill-badge">RDKit</span>
+<span class="skill-badge">Drug Discovery</span>
+</div>
+:::
 :::
 :::
 :::
@@ -133,7 +244,7 @@ Predictive modeling for drug-drug interactions and molecular design.
 ::: {.text-center}
 ## 🎯 Research Focus Areas
 
-**Artificial Intelligence** • **Machine Learning** • **Computational Biology** • **Bioinformatics** • **Genomics** • **Data Science** • **Transfer Learning** • **Deep Learning**
+**Agentic AI Systems** • **Retrieval-Augmented Generation** • **LLM Orchestration** • **Genomics** • **Drug Discovery** • **Cheminformatics** • **Transfer Learning** • **MLOps** • **Uncertainty Quantification**
 :::
 
 ---
@@ -144,3 +255,16 @@ Predictive modeling for drug-drug interactions and molecular design.
 [**Explore My Research**](ml-blog.html){.btn .btn-primary .me-2}
 [**View Publications**](https://scholar.google.com/citations?user=7FND004AAAAJ&hl=en&authuser=1){.btn .btn-outline-primary}
 :::
+
+<!-- Floating Action Buttons -->
+<div class="fab-container">
+  <a href="#" class="fab scroll-top" id="scrollTop" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  <a href="mailto:sdodl001@odu.edu" class="fab" title="Contact Me">
+    <i class="bi bi-envelope"></i>
+  </a>
+  <a href="https://github.com/SanjeevaRDodlapati" class="fab" title="GitHub" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+</div>
