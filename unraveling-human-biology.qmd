@@ -12,6 +12,7 @@ description: "Exploring human biology across multiple levels of resolution, from
 # 🧬 Setting the Foundation for Computational Genomics and Beyond
 
 ![Biological Organization Levels](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcf375d6-16e3-49cc-b778-712492a4d97b_600x600.jpeg)
+
 *The hierarchical organization of biological systems from organism to atom*
 
 The human body is an intricate marvel, a complex web of systems, cells, and molecules all working together to sustain life. From the macroscopic level of our bodily systems to the microscopic intricacies of molecules and atoms, biology showcases a remarkable hierarchy of organization.
@@ -32,6 +33,7 @@ This article explores human biology across multiple levels of resolution, from t
 At its most holistic, the human body functions as a single, self-sustaining organism. This integration is achieved through the coordination of organ systems that maintain homeostasis and enable survival. The circulatory system transports oxygen and nutrients, the nervous system processes and responds to stimuli, and the immune system defends against pathogens. All these systems work together to form a highly efficient and adaptable biological machine.
 
 ![Human Body Systems](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa409d040-ad68-453a-b82c-ca58651edeb8_1200x1598.jpeg)
+
 *Human body systems working in coordination. Source: carolina.com*
 
 ::: {.callout-tip}
@@ -54,6 +56,7 @@ Each organ system is a group of organs that collaborate to perform specific func
 Organs are specialized structures uniquely adapted to their roles. The heart, for example, pumps blood through its muscular chambers, while the lungs maximize gas exchange through their alveoli. Each organ's structure is a testament to its function.
 
 ![Human Organs Diagram](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F991d74af-d575-4aa8-b959-bc479ed1f9d2_500x604.png)
+
 *Specialized organ structures adapted to their functions. Source: crestolympiads.com*
 
 At the organ level, genomics and epigenomics reveal how specific genes and regulatory elements drive these specialized roles. For example, the liver's detoxification capabilities rely on enzymes coded by the **CYP450 family of genes**. Studying these mechanisms helps us understand organ-specific diseases and their underlying genetic causes.
@@ -75,6 +78,7 @@ Tissues, the building blocks of organs, are groups of similar cells performing s
 - **Nervous tissue** - transmits signals
 
 ![Types of Human Tissues](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc187b020-9ade-4ff0-b76a-8ec2b8247e2f_891x1153.jpeg)
+
 *The four primary tissue types and their organization*
 
 **Tissue-specific genomic and transcriptomic studies** are pivotal in understanding diseases like cancer, where the tissue of origin plays a crucial role. **Spatial transcriptomics** is a powerful tool for studying tissue heterogeneity, providing insights into how different cells within a tissue function together.
@@ -90,11 +94,13 @@ Cells are the smallest units of life and the foundation of all biological proces
 - **Muscle cells** generate force and movement
 
 ![Different Types of Human Cells](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F75a71b79-cf80-41a8-8c53-c524b436220c_493x353.png)
+
 *Various specialized cell types in the human body*
 
 Within each cell, organelles like the nucleus (storing DNA) and mitochondria (producing energy) drive essential functions. **Single-cell RNA sequencing (scRNA-seq)** has revolutionized our understanding of cellular diversity, enabling researchers to classify cell types and study their roles in health and disease.
 
 ![Cell Organelles Structure](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fc1a450-70a0-44fb-b6b8-6d610a18c95c_500x393.jpeg)
+
 *Cellular organelles and their specialized functions*
 
 ::: {.callout-note}
@@ -113,9 +119,11 @@ At the molecular level, life is powered by biomolecules:
 - **Lipids and carbohydrates** provide energy and structural support
 
 ![DNA and Chromosomes Structure](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5fa1c47-444b-4d2d-950b-ec507c9f8dc3_736x512.jpeg)
+
 *Cell nucleus with chromosomes containing DNA*
 
 ![Biomolecules Overview](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F90a84478-8b41-4b5f-9d52-8b2c8a2e8f97_1280x720.jpeg)
+
 *The four major biomolecules: carbohydrates, lipids, proteins, and nucleic acids*
 
 The **central dogma of molecular biology** (DNA → RNA → Protein) underpins cellular function. Computational genomics tools, such as **AlphaFold** for protein structure prediction and **RNA-seq** for transcriptomics, are transforming how we study molecular interactions and their biological implications.
@@ -130,6 +138,7 @@ At the atomic level, life's complexity arises from simple elements like carbon, 
 - **Carbon-based molecules** form the backbone of DNA, proteins, and lipids
 
 ![Four Biomolecules Structure Comparison](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0fe4704c-3c3d-4f11-85e1-3fac57115750_1263x577.png)
+
 *Comparison of the four major biomolecule structures: carbohydrates vs proteins vs nucleic acids vs lipids*
 
 **Atomic-level studies**, such as molecular dynamics simulations, allow researchers to predict how genetic mutations alter protein structure and function, a key area in precision medicine.
@@ -141,6 +150,7 @@ At the atomic level, life's complexity arises from simple elements like carbon, 
 Biology is inherently hierarchical. Changes at one level can cascade across others. For example, a single mutation in DNA (molecular level) can alter protein function (cellular level), disrupt organ function (organ level), and manifest as a disease (organism level).
 
 ![Digital Twin of Human Body](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b5253b4-b0c7-4335-8b77-ff7f50eab237_626x373.jpeg)
+
 *Digital representation of multi-scale biological modeling*
 
 **In computational genomics, multi-scale modeling** bridges these levels, helping predict how molecular changes translate into phenotypic outcomes. This integration is vital for understanding complex traits and diseases.
@@ -161,6 +171,7 @@ This exploration of biological levels lays the groundwork for understanding the 
 - **Prediction of protein structure and interactions**
 
 ![Computational Genomics Overview](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19d24909-7454-483e-ae7c-d97a03289105_602x366.png)
+
 *Computational approaches to genomics research*
 
 Future articles will delve into each omics field, discussing computational challenges, emerging methods, and their applications in fields like precision medicine and evolutionary biology.
@@ -180,6 +191,7 @@ This post sets the stage for deeper exploration of computational genomics, a fie
 **In the next article, I will discuss various genomic data acquisition methods at each level of the organization.**
 
 ![Comprehensive Biological Organization](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F33b42ff2-acdd-431e-b225-335e68043fdf_1606x1868.png)
+
 *Complete overview of biological organization levels and their interconnections*
 
 ---

@@ -17,7 +17,7 @@ Discover how artificial intelligence is revolutionizing genomic research, from D
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
-### [� Unraveling Human Biology: From Organism to Atom](unraveling-human-biology.html)
+### [Unraveling Human Biology: From Organism to Atom](unraveling-human-biology.html)
 *Setting the Foundation for Digital Biology*
 
 A comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.
@@ -32,7 +32,7 @@ A comprehensive exploration of human biology across multiple organizational leve
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
-### [�🧮 Statistical Methods in Genomics](Top10_bioinfo_stats.html)
+### [ Statistical Methods in Genomics](Top10_bioinfo_stats.html)
 *Essential biostatistics for genomic analysis*
 
 Comprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.
