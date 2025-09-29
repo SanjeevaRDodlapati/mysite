@@ -17,7 +17,22 @@ Discover how artificial intelligence is revolutionizing genomic research, from D
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
-### [🧮 Statistical Methods in Genomics](Top10_bioinfo_stats.html)
+### [� Unraveling Human Biology: From Organism to Atom](unraveling-human-biology.html)
+*Setting the Foundation for Digital Biology*
+
+A comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.
+
+::: {.text-muted}
+🏷️ Digital Biology • Multi-scale Analysis • Computational Genomics
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [�🧮 Statistical Methods in Genomics](Top10_bioinfo_stats.html)
 *Essential biostatistics for genomic analysis*
 
 Comprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.
@@ -28,7 +43,9 @@ Comprehensive overview of the statistical foundations underlying modern genomics
 :::
 :::
 :::
+:::
 
+::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card}
 ::: {.card-body}
@@ -39,6 +56,21 @@ Deep exploration of statistical hypothesis testing specifically applied to genom
 
 ::: {.text-muted}
 🏷️ Statistics • Experimental Design • Genomics
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🔬 Basic Statistical Testing](T-test.html)
+*Foundational statistical concepts*
+
+Introduction to fundamental statistical testing methods used in genomics research, covering t-tests, significance testing, and data interpretation.
+
+::: {.text-muted}
+🏷️ Statistics • Hypothesis Testing • Fundamentals
 :::
 :::
 :::

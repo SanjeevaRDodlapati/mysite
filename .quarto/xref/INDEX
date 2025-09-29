@@ -53,5 +53,14 @@
   },
   "deployment_summary.md": {
     "deployment_summary.html": "f2c4c683"
+  },
+  "publications_update.md": {
+    "publications_update.html": "4c62f3d8"
+  },
+  "hero_stats_update.md": {
+    "hero_stats_update.html": "704318de"
+  },
+  "unraveling-human-biology.qmd": {
+    "unraveling-human-biology.html": "ab1decba"
   }
 }
