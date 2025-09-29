@@ -37,20 +37,16 @@ I'm a **AI/ML Researcher** specializing in designing AI-powered systems that int
 
 <div class="achievement-stats">
 <div class="stat-item">
+  <div class="stat-number">6+</div>
+  <div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-item">
   <div class="stat-number">7</div>
   <div class="stat-label">Publications</div>
 </div>
 <div class="stat-item">
-  <div class="stat-number">50%</div>
-  <div class="stat-label">Coverage Boost</div>
-</div>
-<div class="stat-item">
-  <div class="stat-number">38%</div>
-  <div class="stat-label">F1 Improvement</div>
-</div>
-<div class="stat-item">
-  <div class="stat-number">6+</div>
-  <div class="stat-label">Years Experience</div>
+  <div class="stat-number">40+</div>
+  <div class="stat-label">ML&AI Course Certificates</div>
 </div>
 </div>
 
