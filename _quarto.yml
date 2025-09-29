@@ -45,7 +45,7 @@ website:
         href: https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/
         aria-label: LinkedIn
       - icon: envelope
-        href: mailto:sdodlapa@gamil.com
+        href: mailto:sdodlapa@gmail.com
         aria-label: Email
 
 format:
@@ -76,5 +76,3 @@ format:
             body.loaded { opacity: 1; }
           </style>
     lang: en
-
-      

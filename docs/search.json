@@ -28,6 +28,13 @@
     "text": "🔍 Research Focus\n\nComputational Genomics: Advanced algorithms for sequence analysis\nStatistical Bioinformatics: Robust methods for biological inference\n\nAI-Driven Discovery: Machine learning for biological insight\nTool Development: Creating efficient bioinformatics software\nData Integration: Multi-omics analysis and systems biology\n\n\n\nBridging computational innovation with biological discovery through rigorous methodology and practical applications.\n🤖 Machine Learning 🧬 AI for Genomics"
   },
   {
+    "objectID": "T-test-alt.html",
+    "href": "T-test-alt.html",
+    "title": "Student t-test: Applications",
+    "section": "",
+    "text": "# Define the URL as a Python variable\nurl = \"https://www.reddydodlapati.com/top10_bioinfo_stats\"\n\n# Display the HTML using Python's f-string\nfrom IPython.display import display, HTML\n\nhtml_code = f\"\"\"\n&lt;div class=\"social-share\"&gt;\n  &lt;a href=\"https://twitter.com/intent/tweet?text=Check out this blog post&url={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733579.png\" alt=\"Share on Twitter\" width=\"24px\"&gt;\n  &lt;/a&gt;\n  &lt;a href=\"https://www.linkedin.com/sharing/share-offsite/?url={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733561.png\" alt=\"Share on LinkedIn\" width=\"24px\"&gt;\n  &lt;/a&gt;\n  &lt;a href=\"https://www.facebook.com/sharer/sharer.php?u={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733547.png\" alt=\"Share on Facebook\" width=\"24px\"&gt;\n  &lt;/a&gt;\n&lt;/div&gt;\n\"\"\"\n\ndisplay(HTML(html_code))\n\n\n\n  \n    \n  \n  \n    \n  \n  \n    \n  \n\n\n\n\n\n\nUnderstanding T-Tests: A Comprehensive Guide to Comparing Group Means\nA t-test is a statistical method used to determine whether there is a significant difference between the means of two groups. It’s commonly applied in various fields to compare group averages and assess the impact of interventions or treatments.\nPurpose: The primary goal of a t-test is to evaluate whether the observed differences between group means are statistically significant or if they could have occurred by chance. For example, it can help determine if a new teaching method leads to higher test scores compared to a traditional approach.\nApplications: - Education: Comparing average test scores between two classes to assess different teaching methods.\n\nMedicine: Evaluating the effectiveness of a new drug by comparing patient outcomes between a treatment group and a control group.\nBusiness: Assessing whether a new marketing strategy leads to higher sales compared to the previous strategy.\n\nTypes of T-Tests:\n\nIndependent Samples T-Test: This test compares the means of two separate groups to see if they differ significantly. For instance, comparing the average heights of men and women.\nPaired Samples T-Test: This test compares the means from the same group at two different times or under two different conditions. An example would be measuring the weight of individuals before and after a diet program.\n\nAssumptions: For the results of a t-test to be valid, certain assumptions should be met:\n\nNormality: The data in each group should be approximately normally distributed. This means that when plotted, the data should form a bell-shaped curve.\nEqual Variances: The variability (spread) of scores in the two groups should be similar. This assumption is known as homogeneity of variances.\n\nIf these assumptions are violated, the results of the t-test may not be reliable. In such cases, alternative statistical methods or data transformations might be necessary.\nUnderstanding and correctly applying t-tests enable researchers and analysts to make informed decisions based on data, ensuring that observed differences between groups are meaningful and not due to random chance.\nTo demonstrate the applications of t-tests in Python, we’ll use the scipy.stats module, which provides functions for performing various statistical tests. Below are examples for both Independent Samples T-Test and Paired Samples T-Test, along with sample data.\n\nIndependent Samples T-Test\n\nThis test compares the means of two independent groups to determine if they are significantly different. For instance, comparing the average test scores of two different classes.\nExample:\nSuppose we have test scores from two classes, and we want to determine if there’s a significant difference between their average scores.\n\n\n\nDescription of the image\n\n\n\n\nA t-test is a statistical method used to determine whether there is a significant difference between the means of two groups. It’s commonly applied in various fields to compare group averages and assess the impact of interventions or treatments.\n\nimport numpy as np\nfrom scipy import stats\n\n# Sample data: test scores of two classes\nclass_A_scores = [85, 88, 90, 92, 86, 87, 91, 89, 84, 90]\nclass_B_scores = [78, 82, 80, 79, 81, 77, 83, 80, 78, 82]\n\n# Perform Independent Samples T-Test\nt_stat, p_value = stats.ttest_ind(class_A_scores, class_B_scores)\n\nprint(f\"T-Statistic: {t_stat:.2f}\")\nprint(f\"P-Value: {p_value:.4f}\")\n\n# Interpret the result\nalpha = 0.05\nif p_value &lt; alpha:\n    print(\"Reject the null hypothesis: There is a significant difference between the two classes.\")\nelse:\n    print(\"Fail to reject the null hypothesis: No significant difference between the two classes.\")\n\nT-Statistic: 7.79\nP-Value: 0.0000\nReject the null hypothesis: There is a significant difference between the two classes.\n\n\n\nIn this example, the p-value is less than the significance level (alpha = 0.05), indicating a significant difference between the average scores of the two classes.\nPaired Samples T-Test This test compares the means from the same group at different times or under different conditions. For example, measuring the weights of individuals before and after a diet program.\nExample:\nAssume we have the weights of individuals before and after a diet program, and we want to determine if the program had a significant effect\n\nPaired Samples T-Test\n\nThis test compares the means from the same group at different times or under different conditions. For example, measuring the weights of individuals before and after a diet program.\nExample:\nAssume we have the weights of individuals before and after a diet program, and we want to determine if the program had a significant effect.\n\n\nimport numpy as np\nfrom scipy import stats\n\n# Sample data: weights before and after a diet program\nweights_before = [200, 195, 180, 210, 190, 205, 185, 200, 195, 210]\nweights_after = [190, 188, 175, 200, 185, 198, 180, 195, 190, 205]\n\n# Perform Paired Samples T-Test\nt_stat, p_value = stats.ttest_rel(weights_before, weights_after)\n\nprint(f\"T-Statistic: {t_stat:.2f}\")\nprint(f\"P-Value: {p_value:.4f}\")\n\n# Interpret the result\nalpha = 0.05\nif p_value &lt; alpha:\n    print(\"Reject the null hypothesis: The diet program had a significant effect.\")\nelse:\n    print(\"Fail to reject the null hypothesis: No significant effect of the diet program.\")\n\nT-Statistic: 9.80\nP-Value: 0.0000\nReject the null hypothesis: The diet program had a significant effect.\n\n\n\nHere, the p-value is less than 0.05, suggesting that the diet program led to a significant reduction in weight.\nNote: Before performing t-tests, it’s essential to check the assumptions of normality and equal variances. If these assumptions are violated, consider using non-parametric tests or applying data transformations.\nThese examples illustrate how to perform t-tests in Python using sample data, helping to determine whether observed differences between groups are statistically significant."
+  },
+  {
     "objectID": "hello.html",
     "href": "hello.html",
     "title": "Sanjeeva Reddy Dodlapati",
@@ -266,6 +273,83 @@
     "text": "Each section includes a code block, an explanation, and a practical application, making it ready for documentation or tutorials."
   },
   {
+    "objectID": "stylistic_enhancements.html",
+    "href": "stylistic_enhancements.html",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Applied comprehensive visual and interactive improvements to make your website more attractive, modern, and engaging.\n\n\n\n\n\n\nAnimated Statistics Display - Eye-catching stats with hover effects\nGradient Background Animation - Subtle moving gradient behind hero content\nParticle Effect Canvas - Floating particles for dynamic background\nTyping Animation - Main heading appears with typewriter effect\n\n\n\n\n\n3D Hover Effects - Cards lift and scale on hover\nAnimated Icons - Project icons rotate and scale\nSkill Badges - Interactive technology tags with pulse animation\nProgressive Loading - Cards fade in as you scroll\n\n\n\n\n\nFloating Action Buttons - Contact, GitHub, and scroll-to-top FABs\nProgress Bar - Shows reading progress in navbar\nSmooth Animations - CSS transitions and keyframe animations\nGlass-morphism Effects - Backdrop blur on navbar\n\n\n\n\n\nScroll Animations - Elements fade in as they enter viewport\nNumber Counting - Statistics animate when scrolled into view\nHover Micro-interactions - Subtle feedback on all interactive elements\nLazy Loading - Images load progressively for better performance\n\n\n\n\n\n\n\n// Key additions:\n- Advanced gradient animations\n- 3D transform effects\n- Glassmorphism styling\n- Responsive grid layouts\n- Custom color palette\n- Modern typography stack\n\n\n\n// Interactive functionality:\n- Intersection Observer API for scroll animations\n- Canvas particle system\n- Progress bar tracking\n- Smooth scrolling\n- Tooltip initialization\n\n\n\n\nLazy loading for images\nOptimized animations with transform/opacity\nReduced particle count for mobile\nDebounced scroll handlers\n\n\n\n\n\n\n\n\nPrimary: #3b82f6 (Modern Blue)\nSecondary: #8b5cf6 (Purple)\nAccent: #06b6d4 (Cyan)\nScientific Grays: 50-900 range\n\n\n\n\n\nHeadings: Inter (700-800 weight)\nBody: Inter (400-500 weight)\n\nCode: JetBrains Mono\n\n\n\n\n\nDuration: 0.2s-0.6s for interactions\nEasing: ease, ease-out, ease-in-out\nTransforms: translateY, scale, rotate\n\n\n\n\n\n\n\n\nSmaller particle count for performance\nAdjusted font sizes for readability\nTouch-friendly button sizes\nSimplified animations on smaller screens\n\n\n\n\n\nEnhanced hover effects (desktop only)\nLarger interactive elements\nFull particle system\nComplex gradient animations\n\n\n\n\n\n\n\n\nPage load animation with opacity transition\nStaggered element animations\nOptimized asset loading\nMinimal JavaScript execution\n\n\n\n\n\nSmooth scrolling between sections\nVisual feedback for all interactions\nProgressive enhancement\nAccessibility considerations\n\n\n\n\n\n\n\n✅ Statistics counters with number animation\n✅ Gradient background with moving effects\n✅ Particle system for visual interest\n✅ Typing effect on main heading\n\n\n\n✅ 3D hover transformations\n✅ Skill badge animations\n✅ Progressive reveal on scroll\n✅ Icon animations on hover\n\n\n\n✅ Reading progress indicator\n✅ Floating action buttons\n✅ Smooth scroll-to-top\n✅ Glass-morphism navbar\n\n\n\n\n\ncustom-modern.scss - Enhanced with advanced animations and effects\nindex.qmd - Updated with interactive elements and better structure\ncustom.js - Added comprehensive JavaScript functionality\n_quarto.yml - Updated with dark mode toggle and JavaScript inclusion\n\n\n\n\n\n\n\nModern, professional design\nEngaging animations and interactions\nConsistent color scheme and typography\n\n\n\n\n\nSmooth navigation and scrolling\nClear visual hierarchy\nResponsive design across devices\n\n\n\n\n\nOptimized animations and effects\nProgressive loading strategies\nMobile-friendly optimizations\n\n\n\n\n\nClean, modern aesthetic\nAttention to detail\nIndustry-standard practices\n\n\n\n\n\n\nAdd subtle sound effects for interactions\nImplement theme switcher with custom color schemes\nAdd testimonials slider with smooth transitions\nCreate interactive timeline for career progression\nAdd project demos with embedded previews\n\nYour website now has a modern, interactive, and highly engaging design that will impress visitors and effectively showcase your professional expertise! 🚀"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#overview",
+    "href": "stylistic_enhancements.html#overview",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Applied comprehensive visual and interactive improvements to make your website more attractive, modern, and engaging."
+  },
+  {
+    "objectID": "stylistic_enhancements.html#key-visual-enhancements",
+    "href": "stylistic_enhancements.html#key-visual-enhancements",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Animated Statistics Display - Eye-catching stats with hover effects\nGradient Background Animation - Subtle moving gradient behind hero content\nParticle Effect Canvas - Floating particles for dynamic background\nTyping Animation - Main heading appears with typewriter effect\n\n\n\n\n\n3D Hover Effects - Cards lift and scale on hover\nAnimated Icons - Project icons rotate and scale\nSkill Badges - Interactive technology tags with pulse animation\nProgressive Loading - Cards fade in as you scroll\n\n\n\n\n\nFloating Action Buttons - Contact, GitHub, and scroll-to-top FABs\nProgress Bar - Shows reading progress in navbar\nSmooth Animations - CSS transitions and keyframe animations\nGlass-morphism Effects - Backdrop blur on navbar\n\n\n\n\n\nScroll Animations - Elements fade in as they enter viewport\nNumber Counting - Statistics animate when scrolled into view\nHover Micro-interactions - Subtle feedback on all interactive elements\nLazy Loading - Images load progressively for better performance"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#technical-improvements",
+    "href": "stylistic_enhancements.html#technical-improvements",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "// Key additions:\n- Advanced gradient animations\n- 3D transform effects\n- Glassmorphism styling\n- Responsive grid layouts\n- Custom color palette\n- Modern typography stack\n\n\n\n// Interactive functionality:\n- Intersection Observer API for scroll animations\n- Canvas particle system\n- Progress bar tracking\n- Smooth scrolling\n- Tooltip initialization\n\n\n\n\nLazy loading for images\nOptimized animations with transform/opacity\nReduced particle count for mobile\nDebounced scroll handlers"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#visual-design-system",
+    "href": "stylistic_enhancements.html#visual-design-system",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Primary: #3b82f6 (Modern Blue)\nSecondary: #8b5cf6 (Purple)\nAccent: #06b6d4 (Cyan)\nScientific Grays: 50-900 range\n\n\n\n\n\nHeadings: Inter (700-800 weight)\nBody: Inter (400-500 weight)\n\nCode: JetBrains Mono\n\n\n\n\n\nDuration: 0.2s-0.6s for interactions\nEasing: ease, ease-out, ease-in-out\nTransforms: translateY, scale, rotate"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#responsive-design",
+    "href": "stylistic_enhancements.html#responsive-design",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Smaller particle count for performance\nAdjusted font sizes for readability\nTouch-friendly button sizes\nSimplified animations on smaller screens\n\n\n\n\n\nEnhanced hover effects (desktop only)\nLarger interactive elements\nFull particle system\nComplex gradient animations"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#performance-features",
+    "href": "stylistic_enhancements.html#performance-features",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Page load animation with opacity transition\nStaggered element animations\nOptimized asset loading\nMinimal JavaScript execution\n\n\n\n\n\nSmooth scrolling between sections\nVisual feedback for all interactions\nProgressive enhancement\nAccessibility considerations"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#interactive-elements",
+    "href": "stylistic_enhancements.html#interactive-elements",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "✅ Statistics counters with number animation\n✅ Gradient background with moving effects\n✅ Particle system for visual interest\n✅ Typing effect on main heading\n\n\n\n✅ 3D hover transformations\n✅ Skill badge animations\n✅ Progressive reveal on scroll\n✅ Icon animations on hover\n\n\n\n✅ Reading progress indicator\n✅ Floating action buttons\n✅ Smooth scroll-to-top\n✅ Glass-morphism navbar"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#files-modified",
+    "href": "stylistic_enhancements.html#files-modified",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "custom-modern.scss - Enhanced with advanced animations and effects\nindex.qmd - Updated with interactive elements and better structure\ncustom.js - Added comprehensive JavaScript functionality\n_quarto.yml - Updated with dark mode toggle and JavaScript inclusion"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#impact-assessment",
+    "href": "stylistic_enhancements.html#impact-assessment",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Modern, professional design\nEngaging animations and interactions\nConsistent color scheme and typography\n\n\n\n\n\nSmooth navigation and scrolling\nClear visual hierarchy\nResponsive design across devices\n\n\n\n\n\nOptimized animations and effects\nProgressive loading strategies\nMobile-friendly optimizations\n\n\n\n\n\nClean, modern aesthetic\nAttention to detail\nIndustry-standard practices"
+  },
+  {
+    "objectID": "stylistic_enhancements.html#next-level-suggestions",
+    "href": "stylistic_enhancements.html#next-level-suggestions",
+    "title": "🎨 Stylistic Enhancement Summary",
+    "section": "",
+    "text": "Add subtle sound effects for interactions\nImplement theme switcher with custom color schemes\nAdd testimonials slider with smooth transitions\nCreate interactive timeline for career progression\nAdd project demos with embedded previews\n\nYour website now has a modern, interactive, and highly engaging design that will impress visitors and effectively showcase your professional expertise! 🚀"
+  },
+  {
     "objectID": "genomics-blog.html",
     "href": "genomics-blog.html",
     "title": "AI for Genomics",
@@ -303,57 +387,211 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "",
-    "text": "I’m an AI Research Scientist specializing in the intersection of artificial intelligence, machine learning, and biological systems. With 6+ years of experience developing predictive models and scalable pipelines for genomic, transcriptomic, and imaging data.\nCurrently pursuing my PhD in Computer Science at Old Dominion University, I focus on deep learning, uncertainty modeling, and transfer learning for biomedical applications."
+    "text": "I’m a Software Engineer & AI/ML Researcher specializing in designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG). With 6+ years of experience developing predictive models and scalable ML pipelines for genomics, drug discovery, and healthcare applications.\n\n\n\n4\n\n\nPublications\n\n\n\n\n50%\n\n\nCoverage Boost\n\n\n\n\n38%\n\n\nF1 Improvement\n\n\n\n\n6+\n\n\nYears Experience\n\n\n\n🏆 Recent Recognition: Best Mentor Award from ODU (2023)"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "🎓 Education",
-    "text": "🎓 Education\n\n\nPhD in Computer Science • Old Dominion University, Norfolk, VA\nSpecialization: AI/ML for Computational Biology\nMS in Chemistry • University of New Orleans, LA\nFocus: Chemical Informatics and Drug Discovery"
+    "text": "🎓 Education\n\n\nPhD in Computer Science (GPA: 3.9/4.0) • Old Dominion University, Norfolk, VA (2019-2025)\nSpecialization: AI/ML for Computational Biology\nMS in Computer Science (GPA: 3.5/4.0) • Georgia Institute of Technology, Atlanta, GA (2023-Present)\nFocus: Advanced Machine Learning Systems"
   },
   {
     "objectID": "index.html#professional-experience",
     "href": "index.html#professional-experience",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "💼 Professional Experience",
-    "text": "💼 Professional Experience\n\n\n\n\n🔬 Research\n\n\n\nResearch Intern • BI, CT (Jun 2018 - Aug 2018)\nProject Lead • Indian Institute of Chemical Technology, Hyderabad\nResearch Assistant • Old Dominion University\n\n\n\n\n\n\n\n👨‍🏫 Teaching\n\n\n\nTeaching Assistant • Department of Computer Science, ODU\nGraduate Instructor • Data Structures & Algorithms\nMentor • Undergraduate Research Projects"
+    "text": "💼 Professional Experience\n\n\n\n\n🔬 Research Experience\n\n\n\nGraduate Research Assistant • Old Dominion University (2019-Present)\nResearch Intern • Boehringer Ingelheim, CT (2018)\nResearch Leadership • 5+ independent projects\nCollaborative Research • LSU, UMich partnerships\n\n\n\n\n\n\n\n👨‍🏫 Teaching\n\n\n\nTeaching Assistant • Department of Computer Science, ODU\nGraduate Instructor • Data Structures & Algorithms\nMentor • Undergraduate Research Projects"
+  },
+  {
+    "objectID": "index.html#technical-expertise",
+    "href": "index.html#technical-expertise",
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "💻 Technical Expertise",
+    "text": "💻 Technical Expertise\n\n\n\n\n🤖 AI/ML Technologies\nPyTorch, TensorFlow, LangChain, LlamaIndex, RAG Systems, Vector Databases\n\n\n\n\n\n\n🧬 Bioinformatics\nBioconductor, DESeq2, RDKit, DeepChem, ChemProp, MEME-suite\n\n\n\n\n\n\n☁️ MLOps & Cloud\nDocker, MLflow, AWS, GCP, Kubernetes, CI/CD Pipelines"
   },
   {
     "objectID": "index.html#featured-research-projects",
     "href": "index.html#featured-research-projects",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "🚀 Featured Research Projects",
-    "text": "🚀 Featured Research Projects\n\n\n\n\n🧬 DNA Methylation Imputation\nTransfer learning approaches for single-cell epigenomics data completion and analysis.\n\n\n\n\n\n\n🤖 Deep Learning for Genomics\nSample complexity studies in DNA sequence-based prediction models.\n\n\n\n\n\n\n💊 Drug Discovery AI\nPredictive modeling for drug-drug interactions and molecular design."
+    "text": "🚀 Featured Research Projects\n\n\n\n\n\n🧬\n\nOmicsOracle AI Agent\nIntelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.\n\nPython LangChain RAG\n\n\n\n\n\n\n\n\n🤖\n\nClinicalNormBERT\nPersonalized clinical text normalization model improving healthcare data extraction accuracy.\n\nBERT NLP Healthcare\n\n\n\n\n\n\n\n\n💊\n\nChiral Drug Synthesis\nDeveloped chiral sulfanilamide candidates with &gt;99% enantio-selectivity at Boehringer Ingelheim.\n\nCheminformatics RDKit Drug Discovery"
   },
   {
     "objectID": "index.html#recent-publications",
     "href": "index.html#recent-publications",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
+    "title": "Sanjeeva Reddy Dodlapati",
     "section": "📚 Recent Publications",
     "text": "📚 Recent Publications\n\n\nSanjeeva Dodlapati, ZC Jiang, J Sun. Completing Single-Cell DNA Methylome Profiles via Transfer Learning together with KL-Divergence. Frontiers in Genetics (2022)\nLoss of Acta2 in cardiac fibroblasts does not prevent the myofibroblast differentiation or affect the cardiac repair after myocardial infarction. Journal of Molecular and Cellular Cardiology 171, 117-132 (2022)\nThe landscape of accessible chromatin in quiescent cardiac fibroblasts and cardiac fibroblasts activated after myocardial infarction. Epigenetics (2021)"
   },
   {
     "objectID": "index.html#research-focus-areas",
     "href": "index.html#research-focus-areas",
-    "title": "Dr. Sanjeeva Reddy Dodlapati",
-    "section": "🎯 Research Focus Areas",
-    "text": "🎯 Research Focus Areas\nArtificial Intelligence • Machine Learning • Computational Biology • Bioinformatics • Genomics • Data Science • Transfer Learning • Deep Learning"
+    "title": "Sanjeeva Reddy Dodlapati",
+    "section": "�� Research Focus Areas",
+    "text": "�� Research Focus Areas\nAgentic AI Systems • Retrieval-Augmented Generation • LLM Orchestration • Genomics • Drug Discovery • Cheminformatics • Transfer Learning • MLOps • Uncertainty Quantification"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Research Interests",
+    "title": "About Me",
     "section": "",
-    "text": "Research Interests\nDetails about my research interests go here.\n* Deep Learning\n* Graph Learning\n* Transfer Learning\n* Multi-task Learning\n* Contrastive Learning\n* Drug Designing & Discovery\n* DNA methylation prediction"
+    "text": "I’m a passionate Software Engineer & AI/ML Researcher with over 6 years of experience at the intersection of artificial intelligence and biological sciences. My journey began with chemistry and evolved into developing cutting-edge AI systems that solve real-world problems in genomics, drug discovery, and healthcare.\nCurrently pursuing my PhD in Computer Science at Old Dominion University (GPA: 3.9/4.0) while simultaneously earning an MS in Computer Science from Georgia Tech, I believe in continuous learning and pushing the boundaries of what’s possible with AI.\n\n\n\n\nI’m driven by the belief that AI can accelerate scientific discovery and improve human health. My work focuses on developing intelligent systems that can:\n\n🤖 Automate complex data analysis through agentic AI systems\n🧬 Unlock insights from biological data using deep learning\n💊 Accelerate drug discovery through computational methods\n🔬 Bridge the gap between computer science and life sciences\n\n\n\n\n\n\n\n\n📄 4 peer-reviewed publications in top-tier journals (Frontiers in Genetics, Journal of Molecular and Cellular Cardiology)\n🎤 3 conference presentations sharing research insights\n🏆 Best Mentor Award from ODU for guiding students to competition victory\n🔬 5 major research projects leading to significant scientific contributions\n\n\n\n\n\n📈 Improved DNA methylation prediction by 38% using novel transfer learning approaches\n🎯 Boosted methylome coverage from 1.5% to 50% in sparse single-cell data\n⚡ Reduced computational costs by 65-80% through innovative algorithms\n🤖 Developed OmicsOracle, an AI agent for automated genomic data analysis\n\n\n\n\n\n💼 Research Intern at Boehringer Ingelheim - developed chiral drug candidates with &gt;99% selectivity\n🤝 Cross-institutional collaborations with LSU, University of Michigan\n📚 40+ certifications in AI/ML from leading platforms (Coursera, edX)\n\n\n\n\n\n\n\n\nExpert: Python, PyTorch, TensorFlow\nAdvanced: R, Java, JavaScript, C/C++, SQL\nSpecialized: LangChain, LlamaIndex, DeepChem, RDKit\n\n\n\n\n🧠 Deep Learning: CNNs, RNNs, Transformers, Graph Neural Networks\n🤖 Agentic AI: Multi-agent systems, RAG, LLM orchestration\n🔄 Transfer Learning: Domain adaptation, few-shot learning\n📊 MLOps: CI/CD pipelines, Docker, Kubernetes, MLflow\n\n\n\n\n\n🧬 Genomics & Bioinformatics: Single-cell analysis, epigenomics, variant calling\n💊 Drug Discovery: Cheminformatics, molecular optimization, DDI prediction\n🏥 Healthcare AI: Clinical text processing, medical data analysis\n\n\n\n\n\n\n\n\nMy doctoral research centers on developing uncertainty-aware AI models for genomic applications. Key projects include:\n\nDNA Methylation Prediction - Using transfer learning to complete sparse methylome profiles\nVariant Effect Prediction - Quantifying uncertainty in genomic variant impact assessment\nData-Centric AI - Optimizing training data quality for better model performance\n\n\n\n\nBeyond my formal research, I’ve developed several innovative projects:\n\n🤖 OmicsOracle: AI agent for automated genomic data extraction and analysis\n🩺 ClinicalNormBERT: Personalized clinical text normalization model\n📈 ML4Trading: Algorithmic trading systems using RL and decision trees\n🦠 COVID-19 Analytics: Healthcare applications for pandemic data analysis\n\n\n\n\n\n\n\n\n\n👨‍🏫 Teaching Assistant for CS courses at ODU (2019-2023)\n🎯 Student Mentor - guided team to win 2023 Speed Notes Competition\n📝 Technical Writing - active blogger on AI for Science topics\n\n\n\n\n\n📋 Peer Reviewer for top-tier conferences (NeurIPS, ICML, ICLR, IJCAI)\n🤝 Collaborative Research with industry and academic partners\n📚 Open Source Contributions to the ML research community\n\n\n\n\n\n\nWhen I’m not coding or researching, you can find me:\n\n✍️ Writing technical blog posts on Medium and Substack\n📚 Learning through online courses (40+ certifications and counting!)\n🌱 Exploring the latest developments in AI and biotechnology\n🔬 Experimenting with new ML techniques and frameworks\n\n\n\n\n\nPhD Computer Science | Old Dominion University (2019-2025)\nGPA: 3.9/4.0 • Focus: AI for Computational Biology\nMS Computer Science | Georgia Institute of Technology (2023-Present)\nGPA: 3.5/4.0 • Focus: Advanced Machine Learning Systems\n\n\n\n\nI’m always excited to discuss AI research, collaborative opportunities, or innovative projects that can make a real-world impact. Whether you’re interested in:\n\n🤝 Research collaborations\n💼 Professional opportunities\n🎓 Academic discussions\n💡 Technical consulting\n\nFeel free to reach out through any of the channels below!\n\n“The best way to predict the future is to create it. In my case, that means building AI systems that can accelerate scientific discovery and improve human health.”"
   },
   {
-    "objectID": "T-test-alt.html",
-    "href": "T-test-alt.html",
-    "title": "Student t-test: Applications",
+    "objectID": "about.html#personal-introduction",
+    "href": "about.html#personal-introduction",
+    "title": "About Me",
     "section": "",
-    "text": "# Define the URL as a Python variable\nurl = \"https://www.reddydodlapati.com/top10_bioinfo_stats\"\n\n# Display the HTML using Python's f-string\nfrom IPython.display import display, HTML\n\nhtml_code = f\"\"\"\n&lt;div class=\"social-share\"&gt;\n  &lt;a href=\"https://twitter.com/intent/tweet?text=Check out this blog post&url={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733579.png\" alt=\"Share on Twitter\" width=\"24px\"&gt;\n  &lt;/a&gt;\n  &lt;a href=\"https://www.linkedin.com/sharing/share-offsite/?url={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733561.png\" alt=\"Share on LinkedIn\" width=\"24px\"&gt;\n  &lt;/a&gt;\n  &lt;a href=\"https://www.facebook.com/sharer/sharer.php?u={url}\" target=\"_blank\"&gt;\n    &lt;img src=\"https://cdn-icons-png.flaticon.com/512/733/733547.png\" alt=\"Share on Facebook\" width=\"24px\"&gt;\n  &lt;/a&gt;\n&lt;/div&gt;\n\"\"\"\n\ndisplay(HTML(html_code))\n\n\n\n  \n    \n  \n  \n    \n  \n  \n    \n  \n\n\n\n\n\n\nUnderstanding T-Tests: A Comprehensive Guide to Comparing Group Means\nA t-test is a statistical method used to determine whether there is a significant difference between the means of two groups. It’s commonly applied in various fields to compare group averages and assess the impact of interventions or treatments.\nPurpose: The primary goal of a t-test is to evaluate whether the observed differences between group means are statistically significant or if they could have occurred by chance. For example, it can help determine if a new teaching method leads to higher test scores compared to a traditional approach.\nApplications: - Education: Comparing average test scores between two classes to assess different teaching methods.\n\nMedicine: Evaluating the effectiveness of a new drug by comparing patient outcomes between a treatment group and a control group.\nBusiness: Assessing whether a new marketing strategy leads to higher sales compared to the previous strategy.\n\nTypes of T-Tests:\n\nIndependent Samples T-Test: This test compares the means of two separate groups to see if they differ significantly. For instance, comparing the average heights of men and women.\nPaired Samples T-Test: This test compares the means from the same group at two different times or under two different conditions. An example would be measuring the weight of individuals before and after a diet program.\n\nAssumptions: For the results of a t-test to be valid, certain assumptions should be met:\n\nNormality: The data in each group should be approximately normally distributed. This means that when plotted, the data should form a bell-shaped curve.\nEqual Variances: The variability (spread) of scores in the two groups should be similar. This assumption is known as homogeneity of variances.\n\nIf these assumptions are violated, the results of the t-test may not be reliable. In such cases, alternative statistical methods or data transformations might be necessary.\nUnderstanding and correctly applying t-tests enable researchers and analysts to make informed decisions based on data, ensuring that observed differences between groups are meaningful and not due to random chance.\nTo demonstrate the applications of t-tests in Python, we’ll use the scipy.stats module, which provides functions for performing various statistical tests. Below are examples for both Independent Samples T-Test and Paired Samples T-Test, along with sample data.\n\nIndependent Samples T-Test\n\nThis test compares the means of two independent groups to determine if they are significantly different. For instance, comparing the average test scores of two different classes.\nExample:\nSuppose we have test scores from two classes, and we want to determine if there’s a significant difference between their average scores.\n\n\n\nDescription of the image\n\n\n\n\nA t-test is a statistical method used to determine whether there is a significant difference between the means of two groups. It’s commonly applied in various fields to compare group averages and assess the impact of interventions or treatments.\n\nimport numpy as np\nfrom scipy import stats\n\n# Sample data: test scores of two classes\nclass_A_scores = [85, 88, 90, 92, 86, 87, 91, 89, 84, 90]\nclass_B_scores = [78, 82, 80, 79, 81, 77, 83, 80, 78, 82]\n\n# Perform Independent Samples T-Test\nt_stat, p_value = stats.ttest_ind(class_A_scores, class_B_scores)\n\nprint(f\"T-Statistic: {t_stat:.2f}\")\nprint(f\"P-Value: {p_value:.4f}\")\n\n# Interpret the result\nalpha = 0.05\nif p_value &lt; alpha:\n    print(\"Reject the null hypothesis: There is a significant difference between the two classes.\")\nelse:\n    print(\"Fail to reject the null hypothesis: No significant difference between the two classes.\")\n\nT-Statistic: 7.79\nP-Value: 0.0000\nReject the null hypothesis: There is a significant difference between the two classes.\n\n\n\nIn this example, the p-value is less than the significance level (alpha = 0.05), indicating a significant difference between the average scores of the two classes.\nPaired Samples T-Test This test compares the means from the same group at different times or under different conditions. For example, measuring the weights of individuals before and after a diet program.\nExample:\nAssume we have the weights of individuals before and after a diet program, and we want to determine if the program had a significant effect\n\nPaired Samples T-Test\n\nThis test compares the means from the same group at different times or under different conditions. For example, measuring the weights of individuals before and after a diet program.\nExample:\nAssume we have the weights of individuals before and after a diet program, and we want to determine if the program had a significant effect.\n\n\nimport numpy as np\nfrom scipy import stats\n\n# Sample data: weights before and after a diet program\nweights_before = [200, 195, 180, 210, 190, 205, 185, 200, 195, 210]\nweights_after = [190, 188, 175, 200, 185, 198, 180, 195, 190, 205]\n\n# Perform Paired Samples T-Test\nt_stat, p_value = stats.ttest_rel(weights_before, weights_after)\n\nprint(f\"T-Statistic: {t_stat:.2f}\")\nprint(f\"P-Value: {p_value:.4f}\")\n\n# Interpret the result\nalpha = 0.05\nif p_value &lt; alpha:\n    print(\"Reject the null hypothesis: The diet program had a significant effect.\")\nelse:\n    print(\"Fail to reject the null hypothesis: No significant effect of the diet program.\")\n\nT-Statistic: 9.80\nP-Value: 0.0000\nReject the null hypothesis: The diet program had a significant effect.\n\n\n\nHere, the p-value is less than 0.05, suggesting that the diet program led to a significant reduction in weight.\nNote: Before performing t-tests, it’s essential to check the assumptions of normality and equal variances. If these assumptions are violated, consider using non-parametric tests or applying data transformations.\nThese examples illustrate how to perform t-tests in Python using sample data, helping to determine whether observed differences between groups are statistically significant."
+    "text": "I’m a passionate Software Engineer & AI/ML Researcher with over 6 years of experience at the intersection of artificial intelligence and biological sciences. My journey began with chemistry and evolved into developing cutting-edge AI systems that solve real-world problems in genomics, drug discovery, and healthcare.\nCurrently pursuing my PhD in Computer Science at Old Dominion University (GPA: 3.9/4.0) while simultaneously earning an MS in Computer Science from Georgia Tech, I believe in continuous learning and pushing the boundaries of what’s possible with AI."
+  },
+  {
+    "objectID": "about.html#professional-philosophy",
+    "href": "about.html#professional-philosophy",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m driven by the belief that AI can accelerate scientific discovery and improve human health. My work focuses on developing intelligent systems that can:\n\n🤖 Automate complex data analysis through agentic AI systems\n🧬 Unlock insights from biological data using deep learning\n💊 Accelerate drug discovery through computational methods\n🔬 Bridge the gap between computer science and life sciences"
+  },
+  {
+    "objectID": "about.html#key-achievements-impact",
+    "href": "about.html#key-achievements-impact",
+    "title": "About Me",
+    "section": "",
+    "text": "📄 4 peer-reviewed publications in top-tier journals (Frontiers in Genetics, Journal of Molecular and Cellular Cardiology)\n🎤 3 conference presentations sharing research insights\n🏆 Best Mentor Award from ODU for guiding students to competition victory\n🔬 5 major research projects leading to significant scientific contributions\n\n\n\n\n\n📈 Improved DNA methylation prediction by 38% using novel transfer learning approaches\n🎯 Boosted methylome coverage from 1.5% to 50% in sparse single-cell data\n⚡ Reduced computational costs by 65-80% through innovative algorithms\n🤖 Developed OmicsOracle, an AI agent for automated genomic data analysis\n\n\n\n\n\n💼 Research Intern at Boehringer Ingelheim - developed chiral drug candidates with &gt;99% selectivity\n🤝 Cross-institutional collaborations with LSU, University of Michigan\n📚 40+ certifications in AI/ML from leading platforms (Coursera, edX)"
+  },
+  {
+    "objectID": "about.html#technical-expertise",
+    "href": "about.html#technical-expertise",
+    "title": "About Me",
+    "section": "",
+    "text": "Expert: Python, PyTorch, TensorFlow\nAdvanced: R, Java, JavaScript, C/C++, SQL\nSpecialized: LangChain, LlamaIndex, DeepChem, RDKit\n\n\n\n\n🧠 Deep Learning: CNNs, RNNs, Transformers, Graph Neural Networks\n🤖 Agentic AI: Multi-agent systems, RAG, LLM orchestration\n🔄 Transfer Learning: Domain adaptation, few-shot learning\n📊 MLOps: CI/CD pipelines, Docker, Kubernetes, MLflow\n\n\n\n\n\n🧬 Genomics & Bioinformatics: Single-cell analysis, epigenomics, variant calling\n💊 Drug Discovery: Cheminformatics, molecular optimization, DDI prediction\n🏥 Healthcare AI: Clinical text processing, medical data analysis"
+  },
+  {
+    "objectID": "about.html#my-research-journey",
+    "href": "about.html#my-research-journey",
+    "title": "About Me",
+    "section": "",
+    "text": "My doctoral research centers on developing uncertainty-aware AI models for genomic applications. Key projects include:\n\nDNA Methylation Prediction - Using transfer learning to complete sparse methylome profiles\nVariant Effect Prediction - Quantifying uncertainty in genomic variant impact assessment\nData-Centric AI - Optimizing training data quality for better model performance\n\n\n\n\nBeyond my formal research, I’ve developed several innovative projects:\n\n🤖 OmicsOracle: AI agent for automated genomic data extraction and analysis\n🩺 ClinicalNormBERT: Personalized clinical text normalization model\n📈 ML4Trading: Algorithmic trading systems using RL and decision trees\n🦠 COVID-19 Analytics: Healthcare applications for pandemic data analysis"
+  },
+  {
+    "objectID": "about.html#community-impact",
+    "href": "about.html#community-impact",
+    "title": "About Me",
+    "section": "",
+    "text": "👨‍🏫 Teaching Assistant for CS courses at ODU (2019-2023)\n🎯 Student Mentor - guided team to win 2023 Speed Notes Competition\n📝 Technical Writing - active blogger on AI for Science topics\n\n\n\n\n\n📋 Peer Reviewer for top-tier conferences (NeurIPS, ICML, ICLR, IJCAI)\n🤝 Collaborative Research with industry and academic partners\n📚 Open Source Contributions to the ML research community"
+  },
+  {
+    "objectID": "about.html#personal-interests",
+    "href": "about.html#personal-interests",
+    "title": "About Me",
+    "section": "",
+    "text": "When I’m not coding or researching, you can find me:\n\n✍️ Writing technical blog posts on Medium and Substack\n📚 Learning through online courses (40+ certifications and counting!)\n🌱 Exploring the latest developments in AI and biotechnology\n🔬 Experimenting with new ML techniques and frameworks"
+  },
+  {
+    "objectID": "about.html#educational-background",
+    "href": "about.html#educational-background",
+    "title": "About Me",
+    "section": "",
+    "text": "PhD Computer Science | Old Dominion University (2019-2025)\nGPA: 3.9/4.0 • Focus: AI for Computational Biology\nMS Computer Science | Georgia Institute of Technology (2023-Present)\nGPA: 3.5/4.0 • Focus: Advanced Machine Learning Systems"
+  },
+  {
+    "objectID": "about.html#lets-connect",
+    "href": "about.html#lets-connect",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m always excited to discuss AI research, collaborative opportunities, or innovative projects that can make a real-world impact. Whether you’re interested in:\n\n🤝 Research collaborations\n💼 Professional opportunities\n🎓 Academic discussions\n💡 Technical consulting\n\nFeel free to reach out through any of the channels below!\n\n“The best way to predict the future is to create it. In my case, that means building AI systems that can accelerate scientific discovery and improve human health.”"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html",
+    "href": "MODERNIZATION-COMPLETE.html",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "✅ Complete Visual Overhaul: Modern design system with professional color palette\n✅ Enhanced Typography: Inter + JetBrains Mono font combination\n✅ Improved Navigation: Floating navbar with icons and better organization\n✅ Beautiful Code Blocks: Gradient headers and syntax highlighting\n✅ Modern Cards & Components: Hover effects and professional styling\n✅ Responsive Design: Perfect mobile experience\n✅ Professional Content: Enhanced about page and blog listings\n\n\n\n\n\n\nScientific color palette (blues, purples, teals)\nProfessional typography with gradient text effects\nCard-based layouts with hover animations\nFloating navigation bar with backdrop blur\n\n\n\n\n\nCategorized content areas (ML, Genomics, Bioinformatics)\nBeautiful preview cards for blog posts\nTopic tags and reading indicators\nProfessional layout with clear hierarchy\n\n\n\n\n\nYour existing notebooks render perfectly\nModern code block styling with gradients\nBeautiful tables and data visualizations\nProfessional presentation of research content\n\n\n\n\n\n\n\nEdit custom-modern.scss:\n$primary: #your-color !default;\n$secondary: #your-secondary-color !default;\n\n\n\n\nAdd new .ipynb file to directory\nUpdate relevant blog page (ml-blog.qmd, genomics-blog.qmd, etc.)\nRun quarto render\n\n\n\n\nEdit _quarto.yml navbar section to add/remove links\n\n\n\n\n\nOptimized fonts loading\nEfficient CSS with SCSS compilation\nModern browser features (backdrop-filter, grid)\nMobile-first responsive design\n\n\n\n\n\n✅ Site is production ready\n🔄 Add more blog posts by creating new notebooks\n🎨 Customize colors/fonts if desired\n📱 Test on various devices\n🚀 Deploy to your hosting platform\n\nYour site now looks professional, modern, and showcases your research beautifully!"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html#what-weve-accomplished",
+    "href": "MODERNIZATION-COMPLETE.html#what-weve-accomplished",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "✅ Complete Visual Overhaul: Modern design system with professional color palette\n✅ Enhanced Typography: Inter + JetBrains Mono font combination\n✅ Improved Navigation: Floating navbar with icons and better organization\n✅ Beautiful Code Blocks: Gradient headers and syntax highlighting\n✅ Modern Cards & Components: Hover effects and professional styling\n✅ Responsive Design: Perfect mobile experience\n✅ Professional Content: Enhanced about page and blog listings"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html#key-features-added",
+    "href": "MODERNIZATION-COMPLETE.html#key-features-added",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "Scientific color palette (blues, purples, teals)\nProfessional typography with gradient text effects\nCard-based layouts with hover animations\nFloating navigation bar with backdrop blur\n\n\n\n\n\nCategorized content areas (ML, Genomics, Bioinformatics)\nBeautiful preview cards for blog posts\nTopic tags and reading indicators\nProfessional layout with clear hierarchy\n\n\n\n\n\nYour existing notebooks render perfectly\nModern code block styling with gradients\nBeautiful tables and data visualizations\nProfessional presentation of research content"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html#quick-customizations",
+    "href": "MODERNIZATION-COMPLETE.html#quick-customizations",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "Edit custom-modern.scss:\n$primary: #your-color !default;\n$secondary: #your-secondary-color !default;\n\n\n\n\nAdd new .ipynb file to directory\nUpdate relevant blog page (ml-blog.qmd, genomics-blog.qmd, etc.)\nRun quarto render\n\n\n\n\nEdit _quarto.yml navbar section to add/remove links"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html#performance-features",
+    "href": "MODERNIZATION-COMPLETE.html#performance-features",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "Optimized fonts loading\nEfficient CSS with SCSS compilation\nModern browser features (backdrop-filter, grid)\nMobile-first responsive design"
+  },
+  {
+    "objectID": "MODERNIZATION-COMPLETE.html#next-steps",
+    "href": "MODERNIZATION-COMPLETE.html#next-steps",
+    "title": "🎨 Modern Quarto Site Customization Guide",
+    "section": "",
+    "text": "✅ Site is production ready\n🔄 Add more blog posts by creating new notebooks\n🎨 Customize colors/fonts if desired\n📱 Test on various devices\n🚀 Deploy to your hosting platform\n\nYour site now looks professional, modern, and showcases your research beautifully!"
+  },
+  {
+    "objectID": "website_updates_summary.html",
+    "href": "website_updates_summary.html",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "Updated the personal website to better reflect the comprehensive experience and achievements from the ML-focused resume.\n\n\n\n\n\n\nEnhanced subtitle - Now shows “Software Engineer & AI/ML Researcher • 6+ Years Experience • Genomics & Drug Discovery Expert”\nAdded key achievements with metrics:\n\n📊 4 peer-reviewed publications and 3 conference presentations\n🤖 OmicsOracle AI data agent development\n🧬 Methylome coverage improvement (1.5% → 50%)\n📈 F1 score improvement (38%)\n🏆 Best Mentor Award (2023)\n\nUpdated education section with accurate degrees and GPAs:\n\nPhD in Computer Science (3.9/4.0) - Old Dominion University\nMS in Computer Science (3.5/4.0) - Georgia Institute of Technology\n\nAdded technical expertise section covering:\n\nAI/ML Technologies (PyTorch, TensorFlow, LangChain, etc.)\nBioinformatics tools (Bioconductor, RDKit, DeepChem, etc.)\nMLOps & Cloud (Docker, MLflow, AWS, GCP, etc.)\n\nUpdated research focus areas to include modern AI concepts:\n\nAgentic AI Systems, RAG, LLM Orchestration, etc.\n\n\n\n\n\nCompletely redesigned from minimal content to comprehensive personal story:\n\nPersonal Introduction - Professional background and journey\nProfessional Philosophy - Core beliefs about AI and science\nKey Achievements & Impact - Detailed accomplishments with metrics\nTechnical Expertise - Comprehensive skills breakdown\nResearch Journey - PhD focus and independent projects\nCommunity Impact - Teaching, mentoring, and service\nPersonal Interests - Hobbies and continuous learning\nEducational Background - Detailed academic credentials\nCall to Action - Multiple ways to connect\n\n\n\n\n\n\n\nHome Page Strategy: - Professional portfolio overview - Quick wins and key metrics - Technical capabilities showcase - Call-to-action focused\nAbout Page Strategy: - Personal story and journey - Detailed background and philosophy - Comprehensive achievement narrative - Community impact and service - Personal touch with interests/hobbies\n\n\n\n\n\n\n✅ Experience Details - Added specific roles, companies, durations\n✅ Technical Skills - Comprehensive technology stack\n✅ Achievements with Metrics - Quantified impact and results\n✅ Education Accuracy - Correct degrees, GPAs, timelines\n✅ Industry Experience - Boehringer Ingelheim internship\n✅ Awards & Recognition - Best Mentor Award, certifications\n✅ Research Leadership - Independent project management\n✅ Collaborative Work - Cross-institutional partnerships\n✅ Modern AI Focus - Agentic AI, RAG, LLM technologies\n\n\n\n\n\nAdd a portfolio/projects page with detailed case studies\nCreate a blog section to showcase technical writing\nAdd testimonials from collaborators/mentors\nInclude a CV download link\nAdd project demos or GitHub repository links\nConsider adding a timeline of career progression\n\n\n\n\n\nindex.qmd - Enhanced with resume details\nabout.qmd - Complete redesign with comprehensive content\nresume_content.txt - Resume content extracted for reference"
+  },
+  {
+    "objectID": "website_updates_summary.html#overview",
+    "href": "website_updates_summary.html#overview",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "Updated the personal website to better reflect the comprehensive experience and achievements from the ML-focused resume."
+  },
+  {
+    "objectID": "website_updates_summary.html#key-changes-made",
+    "href": "website_updates_summary.html#key-changes-made",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "Enhanced subtitle - Now shows “Software Engineer & AI/ML Researcher • 6+ Years Experience • Genomics & Drug Discovery Expert”\nAdded key achievements with metrics:\n\n📊 4 peer-reviewed publications and 3 conference presentations\n🤖 OmicsOracle AI data agent development\n🧬 Methylome coverage improvement (1.5% → 50%)\n📈 F1 score improvement (38%)\n🏆 Best Mentor Award (2023)\n\nUpdated education section with accurate degrees and GPAs:\n\nPhD in Computer Science (3.9/4.0) - Old Dominion University\nMS in Computer Science (3.5/4.0) - Georgia Institute of Technology\n\nAdded technical expertise section covering:\n\nAI/ML Technologies (PyTorch, TensorFlow, LangChain, etc.)\nBioinformatics tools (Bioconductor, RDKit, DeepChem, etc.)\nMLOps & Cloud (Docker, MLflow, AWS, GCP, etc.)\n\nUpdated research focus areas to include modern AI concepts:\n\nAgentic AI Systems, RAG, LLM Orchestration, etc.\n\n\n\n\n\nCompletely redesigned from minimal content to comprehensive personal story:\n\nPersonal Introduction - Professional background and journey\nProfessional Philosophy - Core beliefs about AI and science\nKey Achievements & Impact - Detailed accomplishments with metrics\nTechnical Expertise - Comprehensive skills breakdown\nResearch Journey - PhD focus and independent projects\nCommunity Impact - Teaching, mentoring, and service\nPersonal Interests - Hobbies and continuous learning\nEducational Background - Detailed academic credentials\nCall to Action - Multiple ways to connect"
+  },
+  {
+    "objectID": "website_updates_summary.html#strategic-approach",
+    "href": "website_updates_summary.html#strategic-approach",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "Home Page Strategy: - Professional portfolio overview - Quick wins and key metrics - Technical capabilities showcase - Call-to-action focused\nAbout Page Strategy: - Personal story and journey - Detailed background and philosophy - Comprehensive achievement narrative - Community impact and service - Personal touch with interests/hobbies"
+  },
+  {
+    "objectID": "website_updates_summary.html#content-gaps-addressed",
+    "href": "website_updates_summary.html#content-gaps-addressed",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "✅ Experience Details - Added specific roles, companies, durations\n✅ Technical Skills - Comprehensive technology stack\n✅ Achievements with Metrics - Quantified impact and results\n✅ Education Accuracy - Correct degrees, GPAs, timelines\n✅ Industry Experience - Boehringer Ingelheim internship\n✅ Awards & Recognition - Best Mentor Award, certifications\n✅ Research Leadership - Independent project management\n✅ Collaborative Work - Cross-institutional partnerships\n✅ Modern AI Focus - Agentic AI, RAG, LLM technologies"
+  },
+  {
+    "objectID": "website_updates_summary.html#next-steps-recommended",
+    "href": "website_updates_summary.html#next-steps-recommended",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "Add a portfolio/projects page with detailed case studies\nCreate a blog section to showcase technical writing\nAdd testimonials from collaborators/mentors\nInclude a CV download link\nAdd project demos or GitHub repository links\nConsider adding a timeline of career progression"
+  },
+  {
+    "objectID": "website_updates_summary.html#files-modified",
+    "href": "website_updates_summary.html#files-modified",
+    "title": "Website Updates Based on Resume Analysis",
+    "section": "",
+    "text": "index.qmd - Enhanced with resume details\nabout.qmd - Complete redesign with comprehensive content\nresume_content.txt - Resume content extracted for reference"
   }
 ]
