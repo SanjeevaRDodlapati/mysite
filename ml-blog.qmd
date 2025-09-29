@@ -4,8 +4,6 @@ subtitle: "Advanced tutorials and research insights in artificial intelligence"
 ---
 
 ::: {.animate-fade-in}
-# 🤖 Machine Learning & AI Research
-
 Explore cutting-edge machine learning techniques, deep learning applications, and AI research methodologies. From statistical foundations to advanced neural architectures, these posts cover the essential concepts driving modern artificial intelligence.
 :::
 
@@ -125,5 +123,5 @@ Python, R, and practical coding tutorials
 *Stay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.*
 
 [🧬 **Explore Genomics AI**](genomics-blog.html){.btn .btn-primary .me-2}
-[🔬 **View Bioinformatics**](blog.html){.btn .btn-outline-primary}
+[⚗️ **AI for Chemistry**](chemistry-blog.html){.btn .btn-outline-primary}
 :::

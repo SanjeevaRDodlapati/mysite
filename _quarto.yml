@@ -19,9 +19,9 @@ website:
       - href: genomics-blog.html
         text: AI for Genomics
         icon: dna
-      - href: blog.html
-        text: Bioinformatics
-        icon: graph-up
+      - href: chemistry-blog.html
+        text: AI for Chemistry
+        icon: flask
     right:
       - icon: github
         href: https://github.com/SanjeevaRDodlapati

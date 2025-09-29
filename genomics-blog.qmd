@@ -4,11 +4,12 @@ subtitle: "Artificial intelligence applications in genomic research and computat
 ---
 
 ::: {.animate-fade-in}
-
-Discover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems.
+Discover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems at the genomic level.
 :::
 
 ---
+
+## 🔬 Featured Research
 
 ::: {.row}
 ::: {.col-lg-6}
@@ -139,5 +140,5 @@ Machine learning approaches for biomarker discovery
 *Advancing genomic research through the power of artificial intelligence and computational innovation.*
 
 [🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
-[🔬 **Bioinformatics Tools**](blog.html){.btn .btn-outline-primary}
+[⚗️ **AI for Chemistry**](chemistry-blog.html){.btn .btn-outline-primary}
 :::

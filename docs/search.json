@@ -859,5 +859,75 @@
     "title": "AI for Genomics",
     "section": "🔮 Upcoming Topics",
     "text": "🔮 Upcoming Topics\n\nSingle-Cell Genomics: AI approaches to cellular heterogeneity analysis\nPharmacogenomics: Personalized medicine through AI-driven drug discovery\n\nMulti-omics Integration: Computational frameworks for systems biology\nEvolutionary Genomics: Machine learning in phylogenetics and population studies\n\n\n\nAdvancing genomic research through the power of artificial intelligence and computational innovation.\n🤖 Machine Learning 🔬 Bioinformatics Tools"
+  },
+  {
+    "objectID": "chemistry-blog.html",
+    "href": "chemistry-blog.html",
+    "title": "Machine Learning & AI",
+    "section": "",
+    "text": "Explore the revolutionary intersection of artificial intelligence and chemistry, from molecular generation to drug-target prediction. These posts dive deep into computational approaches transforming pharmaceutical research and chemical discovery."
+  },
+  {
+    "objectID": "chemistry-blog.html#featured-research",
+    "href": "chemistry-blog.html#featured-research",
+    "title": "Machine Learning & AI",
+    "section": "🧪 Featured Research",
+    "text": "🧪 Featured Research\n\n\n\n\n🤖 AI Agents in Biomedicine\nThe future of AI in biomedical research\nComprehensive exploration of autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine approaches.\n\n🏷️ AI Agents • Drug Discovery • Biomedical Research\n\n\n\n\n\n\n\n🧬 BioNumPy: Efficient Chemical Computing\nHigh-performance cheminformatics with Python\nDeep dive into BioNumPy’s applications for molecular data analysis and computational chemistry workflows, including molecular descriptors and chemical space exploration.\n\n🏷️ Python • Cheminformatics • Molecular Analysis\n\n\n\n\n\n\n\n\n\n📊 Statistical Methods in Cheminformatics\nEssential statistics for chemical data analysis\nComprehensive overview of statistical methods used in cheminformatics and drug discovery, including QSAR modeling, activity prediction, and molecular property analysis.\n\n🏷️ Cheminformatics • Statistics • QSAR • Drug Discovery\n\n\n\n\n\n\n\n🧪 Coming Soon: Molecular Generation with AI*\nDeep learning approaches to drug design\nExplore cutting-edge generative models for molecular design, including VAEs, GANs, and transformer-based approaches for novel compound generation.\n\n🏷️ Molecular Generation • Deep Learning • Drug Design"
+  },
+  {
+    "objectID": "chemistry-blog.html#research-areas",
+    "href": "chemistry-blog.html#research-areas",
+    "title": "Machine Learning & AI",
+    "section": "🎯 Research Areas",
+    "text": "🎯 Research Areas\n\n\n\n\n🧬 Molecular Generation\nAI-driven design of novel chemical compounds\n\n\n\n\n\n\n🎯 Drug-Target Prediction\nMachine learning for therapeutic target identification\n\n\n\n\n\n\n🔗 Protein-Protein Interactions\nComputational approaches to molecular interactions\n\n\n\n\n\n\n📈 QSAR Modeling\nQuantitative structure-activity relationships"
+  },
+  {
+    "objectID": "chemistry-blog.html#upcoming-topics",
+    "href": "chemistry-blog.html#upcoming-topics",
+    "title": "Machine Learning & AI",
+    "section": "🔬 Upcoming Topics",
+    "text": "🔬 Upcoming Topics\n\nGenerative Models for Drug Discovery: VAEs, GANs, and flow-based models for molecular design\nProtein Folding Prediction: AI approaches to understanding protein structure\nChemical Reaction Prediction: Machine learning for synthetic chemistry\nDrug Repurposing: AI-driven approaches to finding new uses for existing drugs\nMolecular Property Prediction: Deep learning for ADMET properties\nMulti-Modal Drug Discovery: Integrating chemical, biological, and clinical data"
+  },
+  {
+    "objectID": "chemistry-blog.html#technology-stack",
+    "href": "chemistry-blog.html#technology-stack",
+    "title": "Machine Learning & AI",
+    "section": "🛠️ Technology Stack",
+    "text": "🛠️ Technology Stack\n\n\n\n\n🐍 Python Libraries\nRDKit, DeepChem, PyTorch Geometric\n\n\n\n\n\n\n🧠 Deep Learning\nGraph Neural Networks, Transformers, VAEs\n\n\n\n\n\n\n⚗️ Cheminformatics\nMolecular descriptors, fingerprints, similarity\n\n\n\n\n\n\nAccelerating chemical discovery through the power of artificial intelligence and computational innovation.\n🤖 Machine Learning 🧬 AI for Genomics\n\n\n\n\nDiscover how artificial intelligence is revolutionizing genomic research, from DNA methylation analysis to personalized medicine. These posts explore cutting-edge computational approaches to understanding biological systems at the genomic level."
+  },
+  {
+    "objectID": "chemistry-blog.html#featured-research-1",
+    "href": "chemistry-blog.html#featured-research-1",
+    "title": "Machine Learning & AI",
+    "section": "🔬 Featured Research",
+    "text": "🔬 Featured Research\n\n\n\n\nUnraveling Human Biology: From Organism to Atom\nSetting the Foundation for Digital Biology\nA comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.\n\n🏷️ Digital Biology • Multi-scale Analysis • Computational Genomics\n\n\n\n\n\n\n\nStatistical Methods in Genomics\nEssential biostatistics for genomic analysis\nComprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.\n\n🏷️ Genomics • Statistics • Population Genetics\n\n\n\n\n\n\n\n\n\n📊 Advanced Statistical Testing\nHypothesis testing in biological contexts\nDeep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.\n\n🏷️ Statistics • Experimental Design • Genomics\n\n\n\n\n\n\n\n📊 Advanced Statistical Testing\nHypothesis testing in biological contexts\nDeep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.\n\n🏷️ Statistics • Experimental Design • Genomics\n\n\n\n\n\n\n\n\n\n🔬 Basic Statistical Testing\nFoundational statistical concepts\nIntroduction to fundamental statistical testing methods used in genomics research, covering t-tests, significance testing, and data interpretation.\n\n🏷️ Statistics • Hypothesis Testing • Fundamentals"
+  },
+  {
+    "objectID": "chemistry-blog.html#research-areas-1",
+    "href": "chemistry-blog.html#research-areas-1",
+    "title": "Machine Learning & AI",
+    "section": "🎯 Research Areas",
+    "text": "🎯 Research Areas\n\n\n\n\n🔬 DNA Methylation\nEpigenomic analysis and imputation methods using transfer learning\n\n\n\n\n\n\n🧠 Deep Learning\nNeural network architectures for genomic sequence analysis\n\n\n\n\n\n\n📈 Predictive Modeling\nMachine learning approaches for biomarker discovery"
+  },
+  {
+    "objectID": "chemistry-blog.html#upcoming-topics-1",
+    "href": "chemistry-blog.html#upcoming-topics-1",
+    "title": "Machine Learning & AI",
+    "section": "🔮 Upcoming Topics",
+    "text": "🔮 Upcoming Topics\n\nSingle-Cell Genomics: AI approaches to cellular heterogeneity analysis\nPharmacogenomics: Personalized medicine through AI-driven drug discovery\n\nMulti-omics Integration: Computational frameworks for systems biology\nEvolutionary Genomics: Machine learning in phylogenetics and population studies\n\n\n\nAdvancing genomic research through the power of artificial intelligence and computational innovation.\n🤖 Machine Learning ⚗️ AI for Chemistry\n\n\nExplore cutting-edge machine learning techniques, deep learning applications, and AI research methodologies. From statistical foundations to advanced neural architectures, these posts cover the essential concepts driving modern artificial intelligence."
+  },
+  {
+    "objectID": "chemistry-blog.html#featured-posts",
+    "href": "chemistry-blog.html#featured-posts",
+    "title": "Machine Learning & AI",
+    "section": "📊 Featured Posts",
+    "text": "📊 Featured Posts\n\n\n\n\n🤖 Multi-Teacher Knowledge Distillation\nAdvanced AI Techniques for Model Efficiency\nDeep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.\n\n🏷️ AI • Knowledge Distillation • Ensemble Learning • Deep Learning\n\n\n\n\n\n\n\n📈 T-test Applications\nStatistical hypothesis testing fundamentals\nComprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.\n\n🏷️ Statistics • Python • Data Analysis\n\n\n\n\n\n\n\n\n\n🔟 Top 10 Statistical Concepts in Bioinformatics\nEssential statistics for biological data\nDeep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.\n\n🏷️ Bioinformatics • Statistics • Research Methods\n\n\n\n\n\n\n\n🧠 Coming Soon: Neural Architecture Search\nAutomated ML model design\nExplore automated neural architecture search techniques and their applications in optimizing deep learning models for specific tasks.\n\n🏷️ AutoML • Neural Networks • Model Optimization"
+  },
+  {
+    "objectID": "chemistry-blog.html#topics-covered",
+    "href": "chemistry-blog.html#topics-covered",
+    "title": "Machine Learning & AI",
+    "section": "🎯 Topics Covered",
+    "text": "🎯 Topics Covered\n\n\n\n\n🧠 Deep Learning\nNeural networks, architectures, and advanced techniques\n\n\n\n\n\n\n📊 Statistical Methods\nHypothesis testing, regression, and probabilistic models\n\n\n\n\n\n\n🔬 Research Methods\nExperimental design and computational methodologies\n\n\n\n\n\n\n💻 Implementation\nPython, R, and practical coding tutorials\n\n\n\n\n\n\nStay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.\n🧬 Explore Genomics AI ⚗️ AI for Chemistry"
   }
 ]

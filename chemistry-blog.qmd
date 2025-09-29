@@ -1,0 +1,171 @@
+---
+title: "AI for Chemistry & Drug Discovery"
+subtitle: "Machine learning applications in molecular generation, drug design, and cheminformatics"
+---
+
+::: {.animate-fade-in}
+Explore the revolutionary intersection of artificial intelligence and chemistry, from molecular generation to drug-target prediction. These posts dive deep into computational approaches transforming pharmaceutical research and chemical discovery.
+:::
+
+---
+
+## 🧪 Featured Research
+
+::: {.row}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🤖 AI Agents in Biomedicine](AI_agents_BioMed.html)
+*The future of AI in biomedical research*
+
+Comprehensive exploration of autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine approaches.
+
+::: {.text-muted}
+🏷️ AI Agents • Drug Discovery • Biomedical Research
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🧬 BioNumPy: Efficient Chemical Computing](bioNumpy.html)
+*High-performance cheminformatics with Python*
+
+Deep dive into BioNumPy's applications for molecular data analysis and computational chemistry workflows, including molecular descriptors and chemical space exploration.
+
+::: {.text-muted}
+🏷️ Python • Cheminformatics • Molecular Analysis
+:::
+:::
+:::
+:::
+:::
+
+::: {.row .mt-3}
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [📊 Statistical Methods in Cheminformatics](Top10_bioinfo_stats.html)
+*Essential statistics for chemical data analysis*
+
+Comprehensive overview of statistical methods used in cheminformatics and drug discovery, including QSAR modeling, activity prediction, and molecular property analysis.
+
+::: {.text-muted}
+🏷️ Cheminformatics • Statistics • QSAR • Drug Discovery
+:::
+:::
+:::
+:::
+
+::: {.col-lg-6}
+::: {.card}
+::: {.card-body}
+### [🧪 Coming Soon: Molecular Generation with AI]()*
+*Deep learning approaches to drug design*
+
+Explore cutting-edge generative models for molecular design, including VAEs, GANs, and transformer-based approaches for novel compound generation.
+
+::: {.text-muted}
+🏷️ Molecular Generation • Deep Learning • Drug Design
+:::
+:::
+:::
+:::
+:::
+
+---
+
+## 🎯 Research Areas
+
+::: {.row}
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🧬 Molecular Generation**  
+AI-driven design of novel chemical compounds
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🎯 Drug-Target Prediction**  
+Machine learning for therapeutic target identification
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**🔗 Protein-Protein Interactions**  
+Computational approaches to molecular interactions
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.card .text-center}
+::: {.card-body}
+**📈 QSAR Modeling**  
+Quantitative structure-activity relationships
+:::
+:::
+:::
+:::
+
+---
+
+## 🔬 Upcoming Topics
+
+- **Generative Models for Drug Discovery**: VAEs, GANs, and flow-based models for molecular design
+- **Protein Folding Prediction**: AI approaches to understanding protein structure
+- **Chemical Reaction Prediction**: Machine learning for synthetic chemistry
+- **Drug Repurposing**: AI-driven approaches to finding new uses for existing drugs
+- **Molecular Property Prediction**: Deep learning for ADMET properties
+- **Multi-Modal Drug Discovery**: Integrating chemical, biological, and clinical data
+
+---
+
+## 🛠️ Technology Stack
+
+::: {.row}
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**🐍 Python Libraries**  
+RDKit, DeepChem, PyTorch Geometric
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**🧠 Deep Learning**  
+Graph Neural Networks, Transformers, VAEs
+:::
+:::
+:::
+
+::: {.col-md-4}
+::: {.card .text-center}
+::: {.card-body}
+**⚗️ Cheminformatics**  
+Molecular descriptors, fingerprints, similarity
+:::
+:::
+:::
+:::
+
+---
+
+::: {.text-center .mt-4}
+*Accelerating chemical discovery through the power of artificial intelligence and computational innovation.*
+
+[🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
+[🧬 **AI for Genomics**](genomics-blog.html){.btn .btn-outline-primary}
+:::
