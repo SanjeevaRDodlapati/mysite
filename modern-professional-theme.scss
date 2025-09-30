@@ -751,7 +751,7 @@ $space-12: 6rem;    // 96px
   }
 }
 
-// Enhanced section headings
+// Enhanced section headings with icons
 h2 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -761,6 +761,13 @@ h2 {
   padding-bottom: 0.75rem;
   border-bottom: 3px solid #e2e8f0;
   position: relative;
+  
+  i {
+    color: #2563eb;
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    vertical-align: middle;
+  }
   
   &::after {
     content: '';
@@ -783,6 +790,429 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+// Metric Badges (for highlighting key numbers)
+.metric-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  color: #1e40af;
+  padding: 0.15rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95em;
+  border: 1px solid #bfdbfe;
+  white-space: nowrap;
+}
+
+// Metric Highlights (for percentages and improvements)
+.metric-highlight {
+  color: #16a34a;
+  font-weight: 700;
+  background: #f0fdf4;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+// Education Section Styling
+.education-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+  
+  .degree-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    
+    .degree-info {
+      flex: 1;
+      
+      strong {
+        font-size: 1.1rem;
+        color: #1e293b;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+    }
+    
+    .degree-meta {
+      text-align: right;
+      white-space: nowrap;
+      
+      strong {
+        color: #475569;
+        font-size: 0.95rem;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      
+      em {
+        color: #2563eb;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Job Header Styling (Professional Experience)
+.job-header {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  
+  .job-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
+  
+  .job-org {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    
+    .job-date {
+      font-weight: 500;
+      
+      &::before {
+        content: '📅 ';
+        margin-right: 0.25rem;
+      }
+    }
+    
+    .job-location {
+      &::before {
+        content: '📍 ';
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
+// Project Section Styling
+.project-section {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e2e8f0;
+  
+  strong {
+    color: #1e293b;
+    font-size: 1.05rem;
+  }
+  
+  .pub-link {
+    color: #7c3aed;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  ul {
+    margin-top: 0.5rem;
+  }
+}
+
+// Publications Styling
+.publication-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border-radius: 6px;
+  border-left: 3px solid #cbd5e1;
+  position: relative;
+  padding-left: 2.5rem;
+  
+  .pub-number {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1rem;
+  }
+  
+  strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+  
+  em {
+    color: #64748b;
+    font-style: italic;
+  }
+  
+  .pub-status {
+    color: #7c3aed;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+.pub-status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+  
+  &.published {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #166534;
+    border: 1px solid #86efac;
+  }
+  
+  &.in-progress {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    border: 1px solid #fcd34d;
+  }
+}
+
+// Skills Section with Pills
+.skills-section {
+  strong {
+    display: block;
+    color: #1e293b;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+  }
+}
+
+// Grouped Skills with Expertise Tiers
+.skills-grouped {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  padding: 1.25rem 1.5rem;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    i {
+      color: #64748b;
+      font-size: 1.1rem;
+    }
+  }
+  
+  &.primary {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border: 2px solid #93c5fd;
+    
+    h4 {
+      color: #1e40af;
+      
+      i {
+        color: #f59e0b;
+      }
+    }
+  }
+}
+
+.skill-pill {
+  display: inline-block;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  color: #334155;
+  padding: 0.35rem 0.75rem;
+  margin: 0.25rem 0.3rem 0.25rem 0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+  }
+  
+  // Expert level pills (dark blue)
+  &.expert {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-color: #1d4ed8;
+    font-weight: 600;
+    
+    &:hover {
+      background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+    }
+  }
+  
+  // Advanced level pills (medium blue)
+  &.advanced {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    color: white;
+    border-color: #2563eb;
+    font-weight: 600;
+    
+    &:hover {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    }
+  }
+}
+
+// Project Cards Styling
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+    
+    .project-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1;
+      
+      i {
+        color: #3b82f6;
+        font-size: 1.2rem;
+      }
+    }
+    
+    .project-tag {
+      padding: 0.25rem 0.65rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      
+      &.agentic-ai {
+        background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+        color: #7c3aed;
+        border: 1px solid #c4b5fd;
+      }
+      
+      &.healthcare {
+        background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+        color: #16a34a;
+        border: 1px solid #86efac;
+      }
+      
+      &.ml-systems {
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        color: #1e40af;
+        border: 1px solid #93c5fd;
+      }
+      
+      &.bioinformatics {
+        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        color: #92400e;
+        border: 1px solid #fcd34d;
+      }
+      
+      &.web {
+        background: linear-gradient(135deg, #ffe4e6 0%, #fecdd3 100%);
+        color: #be123c;
+        border: 1px solid #fda4af;
+      }
+    }
+  }
+  
+  .project-description {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    
+    .tech-badge {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s;
+      
+      &:hover {
+        background: #dbeafe;
+        color: #1e40af;
+        border-color: #93c5fd;
+      }
+    }
+  }
+}
+
+// Award Icons
+.award-icon {
+  color: #f59e0b;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
 // Publication styling
 .quarto-title-meta {
   margin-bottom: 2rem;
@@ -801,17 +1231,6 @@ ul {
   }
 }
 
-// Skills section enhancement
-.technical-skills {
-  strong {
-    color: #2563eb;
-    font-size: 1.05rem;
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
 .cv-footer {
   background: $gray-100;
   padding: $space-6;
@@ -824,17 +1243,18 @@ ul {
 
 // Print styles for CV
 @media print {
-  .cv-header {
-    background: white;
-    color: black;
-    border: 2px solid $gray-300;
+  .cv-header, .cv-header-minimal {
+    background: white !important;
+    color: black !important;
+    border: 2px solid #cbd5e1 !important;
+    page-break-after: avoid;
     
     h1, strong {
-      color: black;
+      color: black !important;
     }
     
     a {
-      color: $primary;
+      color: #2563eb !important;
     }
     
     .download-cv {
@@ -854,10 +1274,115 @@ ul {
   h2 {
     page-break-after: avoid;
     margin-top: 1em;
+    
+    i {
+      color: #2563eb !important;
+    }
+  }
+  
+  h3 {
+    page-break-after: avoid;
+  }
+  
+  // Ensure metric badges and highlights are visible
+  .metric-badge, .metric-highlight {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    color: black !important;
+  }
+  
+  // Education items
+  .education-item {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid;
+  }
+  
+  // Job headers
+  .job-header {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  
+  // Project sections
+  .project-section {
+    page-break-inside: avoid;
+    border-left: 2px solid #cbd5e1 !important;
+  }
+  
+  // Publications
+  .publication-item {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid;
+  }
+  
+  .pub-status-badge {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    color: black !important;
+  }
+  
+  // Skill pills
+  .skill-pill {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    color: black !important;
+    
+    &.expert, &.advanced {
+      background: white !important;
+      color: black !important;
+      border: 2px solid #1e40af !important;
+    }
+  }
+  
+  // Skill categories
+  .skill-category {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid;
+    
+    &.primary {
+      border: 2px solid #1e40af !important;
+      background: white !important;
+    }
+  }
+  
+  // Project cards
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .project-card {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+    
+    .project-tag {
+      background: white !important;
+      border: 1px solid #cbd5e1 !important;
+      color: black !important;
+    }
+    
+    .tech-badge {
+      background: white !important;
+      border: 1px solid #cbd5e1 !important;
+      color: black !important;
+    }
   }
   
   .cv-footer {
-    background: white;
-    border-top: 2px solid $gray-300;
+    background: white !important;
+    border-top: 2px solid #cbd5e1 !important;
+  }
+  
+  // Avoid breaking lists
+  ul, ol {
+    page-break-inside: avoid;
   }
 }
