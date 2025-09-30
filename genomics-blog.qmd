@@ -13,8 +13,8 @@ Discover how artificial intelligence is revolutionizing genomic research, from D
 ::: {.col-lg-6}
 ::: {.card .card-genomics}
 ::: {.card-body}
-<span class="badge-category badge-genomics">Genomics</span>
 ### [Unraveling Human Biology: From Organism to Atom](unraveling-human-biology.html)
+
 *Setting the Foundation for Digital Biology*
 
 A comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.
@@ -29,8 +29,8 @@ Digital Biology • Multi-scale Analysis • Computational Genomics
 ::: {.col-lg-6}
 ::: {.card .card-genomics}
 ::: {.card-body}
-<span class="badge-category badge-genomics">Genomics</span>
 ### [Decoding DNA: Sequence Encoding Guide](dna-sequence-encoding-guide.html)
+
 *Comprehensive Methods for ML Applications*
 
 Complete guide to DNA sequence encoding techniques for machine learning, covering one-hot encoding, k-mer tokenization, BPE, embeddings, and advanced methods with practical implementations and performance comparisons.
@@ -47,8 +47,8 @@ DNA Encoding • Machine Learning • Bioinformatics • Sequence Analysis
 ::: {.col-lg-6}
 ::: {.card .card-genomics}
 ::: {.card-body}
-<span class="badge-category badge-genomics">Genomics</span>
 ### [Statistical Methods in Genomics](Top10_bioinfo_stats.html)
+
 *Essential biostatistics for genomic analysis*
 
 Comprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.
@@ -63,8 +63,8 @@ Genomics • Statistics • Population Genetics
 ::: {.col-lg-6}
 ::: {.card .card-genomics}
 ::: {.card-body}
-<span class="badge-category badge-genomics">Genomics</span>
 ### [Advanced Statistical Testing](T-test-alt.html)
+
 *Hypothesis testing in biological contexts*
 
 Deep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.
@@ -81,8 +81,8 @@ Statistics • Experimental Design • Genomics
 ::: {.col-lg-6}
 ::: {.card .card-genomics}
 ::: {.card-body}
-<span class="badge-category badge-genomics">Genomics</span>
 ### [Basic Statistical Testing](T-test.html)
+
 *Foundational statistical concepts*
 
 Introduction to fundamental statistical testing methods used in genomics research, covering t-tests, significance testing, and data interpretation.
@@ -145,3 +145,21 @@ Machine learning approaches for biomarker discovery
 [Machine Learning](ml-blog.html){.btn .btn-primary .me-2}
 [AI for Chemistry](chemistry-blog.html){.btn .btn-outline-primary}
 :::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card-ml, .card-genomics, .card-chemistry');
+    cards.forEach(card => {
+        const link = card.querySelector('h3 a');
+        if (link) {
+            card.addEventListener('click', function(e) {
+                if (!window.getSelection().toString()) {
+                    window.location.href = link.href;
+                }
+            });
+        }
+    });
+});
+</script>
+```

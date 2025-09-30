@@ -13,8 +13,8 @@ Explore cutting-edge machine learning techniques, deep learning applications, an
 ::: {.col-lg-6}
 ::: {.card .card-ml}
 ::: {.card-body}
-<span class="badge-category badge-ml">Machine Learning</span>
 ### [Multi-Teacher Knowledge Distillation](multi-teacher-knowledge-distillation.html)
+
 *Advanced AI Techniques for Model Efficiency*
 
 Deep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.
@@ -29,8 +29,8 @@ AI • Knowledge Distillation • Ensemble Learning • Deep Learning
 ::: {.col-lg-6}
 ::: {.card .card-ml}
 ::: {.card-body}
-<span class="badge-category badge-ml">Machine Learning</span>
 ### [T-test Applications](T-test-alt.html)
+
 *Statistical hypothesis testing fundamentals*
 
 Comprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.
@@ -47,8 +47,8 @@ Statistics • Python • Data Analysis
 ::: {.col-lg-6}
 ::: {.card .card-ml}
 ::: {.card-body}
-<span class="badge-category badge-ml">Machine Learning</span>
 ### [Top 10 Statistical Concepts in Bioinformatics](Top10_bioinfo_stats.html)
+
 *Essential statistics for biological data*
 
 Deep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.
@@ -63,8 +63,8 @@ Bioinformatics • Statistics • Research Methods
 ::: {.col-lg-6}
 ::: {.card .card-ml}
 ::: {.card-body}
-<span class="badge-category badge-ml">Machine Learning</span>
 ### [Coming Soon: Neural Architecture Search]()
+
 *Automated ML model design*
 
 Explore automated neural architecture search techniques and their applications in optimizing deep learning models for specific tasks.
@@ -127,3 +127,21 @@ Python, R, and practical coding tutorials
 [Explore Genomics AI](genomics-blog.html){.btn .btn-primary .me-2}
 [AI for Chemistry](chemistry-blog.html){.btn .btn-outline-primary}
 :::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card-ml, .card-genomics, .card-chemistry');
+    cards.forEach(card => {
+        const link = card.querySelector('h3 a');
+        if (link) {
+            card.addEventListener('click', function(e) {
+                if (!window.getSelection().toString()) {
+                    window.location.href = link.href;
+                }
+            });
+        }
+    });
+});
+</script>
+```

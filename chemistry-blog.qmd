@@ -13,8 +13,8 @@ Explore the revolutionary intersection of artificial intelligence and chemistry,
 ::: {.col-lg-6}
 ::: {.card .card-chemistry}
 ::: {.card-body}
-<span class="badge-category badge-chemistry">Chemistry</span>
 ### [AI Agents in Biomedicine](AI_agents_BioMed.html)
+
 *The future of AI in biomedical research*
 
 Comprehensive exploration of autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine approaches.
@@ -29,8 +29,8 @@ AI Agents • Drug Discovery • Biomedical Research
 ::: {.col-lg-6}
 ::: {.card .card-chemistry}
 ::: {.card-body}
-<span class="badge-category badge-chemistry">Chemistry</span>
 ### [BioNumPy: Efficient Chemical Computing](bioNumpy.html)
+
 *High-performance cheminformatics with Python*
 
 Deep dive into BioNumPy's applications for molecular data analysis and computational chemistry workflows, including molecular descriptors and chemical space exploration.
@@ -47,8 +47,8 @@ Python • Cheminformatics • Molecular Analysis
 ::: {.col-lg-6}
 ::: {.card .card-chemistry}
 ::: {.card-body}
-<span class="badge-category badge-chemistry">Chemistry</span>
 ### [Statistical Methods in Cheminformatics](Top10_bioinfo_stats.html)
+
 *Essential statistics for chemical data analysis*
 
 Comprehensive overview of statistical methods used in cheminformatics and drug discovery, including QSAR modeling, activity prediction, and molecular property analysis.
@@ -63,8 +63,8 @@ Cheminformatics • Statistics • QSAR • Drug Discovery
 ::: {.col-lg-6}
 ::: {.card .card-chemistry}
 ::: {.card-body}
-<span class="badge-category badge-chemistry">Chemistry</span>
-### [Coming Soon: Molecular Generation with AI]()*
+### [Coming Soon: Molecular Generation with AI]()
+
 *Deep learning approaches to drug design*
 
 Explore cutting-edge generative models for molecular design, including VAEs, GANs, and transformer-based approaches for novel compound generation.
@@ -171,3 +171,21 @@ Molecular descriptors, fingerprints, similarity
 [Machine Learning](ml-blog.html){.btn .btn-primary .me-2}
 [AI for Genomics](genomics-blog.html){.btn .btn-outline-primary}
 :::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card-ml, .card-genomics, .card-chemistry');
+    cards.forEach(card => {
+        const link = card.querySelector('h3 a');
+        if (link) {
+            card.addEventListener('click', function(e) {
+                if (!window.getSelection().toString()) {
+                    window.location.href = link.href;
+                }
+            });
+        }
+    });
+});
+</script>
+```

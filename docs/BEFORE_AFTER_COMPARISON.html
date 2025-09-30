@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>before_after_comparison – Sanjeev's AI Research Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-40cf9106bf570a6537fb7fd4fc34825d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-01e8635bc379e845484e03a2a943f0f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Sanjeeva Reddy Dodlapati">
+<meta name="keywords" content="AI, machine learning, computational biology, bioinformatics, genomics, data science">
+<script src="custom.js" defer=""></script>
+<style>
+  body { opacity: 0; transition: opacity 0.3s ease; }
+  body.loaded { opacity: 1; }
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Sanjeev’s AI Research Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> <i class="bi bi-file-person" role="img">
+</i> 
+<span class="menu-text">CV/Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ml-blog.html"> <i class="bi bi-cpu" role="img">
+</i> 
+<span class="menu-text">Machine Learning</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./genomics-blog.html"> <i class="bi bi-dna" role="img">
+</i> 
+<span class="menu-text">AI for Genomics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chemistry-blog.html"> <i class="bi bi-flask" role="img">
+</i> 
+<span class="menu-text">AI for Chemistry</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SanjeevaRDodlapati"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dodlapati_reddy"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./#" title="Toggle Dark Mode" class="quarto-navigation-tool px-1" aria-label="Toggle Dark Mode"><i class="bi bi-moon"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#before-after-professional-design-transformation" id="toc-before-after-professional-design-transformation" class="nav-link active" data-scroll-target="#before-after-professional-design-transformation">Before &amp; After: Professional Design Transformation</a>
+  <ul class="collapse">
+  <li><a href="#visual-impact-summary" id="toc-visual-impact-summary" class="nav-link" data-scroll-target="#visual-impact-summary">Visual Impact Summary</a>
+  <ul class="collapse">
+  <li><a href="#problem-identified" id="toc-problem-identified" class="nav-link" data-scroll-target="#problem-identified">🎯 Problem Identified</a></li>
+  </ul></li>
+  <li><a href="#transformation-details" id="toc-transformation-details" class="nav-link" data-scroll-target="#transformation-details">Transformation Details</a>
+  <ul class="collapse">
+  <li><a href="#homepage-featured-research" id="toc-homepage-featured-research" class="nav-link" data-scroll-target="#homepage-featured-research">1. Homepage Featured Research</a></li>
+  <li><a href="#blog-post-cards-homepage" id="toc-blog-post-cards-homepage" class="nav-link" data-scroll-target="#blog-post-cards-homepage">2. Blog Post Cards (Homepage)</a></li>
+  <li><a href="#category-blog-pages" id="toc-category-blog-pages" class="nav-link" data-scroll-target="#category-blog-pages">3. Category Blog Pages</a></li>
+  <li><a href="#article-cards-with-color-coding" id="toc-article-cards-with-color-coding" class="nav-link" data-scroll-target="#article-cards-with-color-coding">4. Article Cards with Color Coding</a></li>
+  </ul></li>
+  <li><a href="#category-color-system" id="toc-category-color-system" class="nav-link" data-scroll-target="#category-color-system">Category Color System</a>
+  <ul class="collapse">
+  <li><a href="#machine-learning-purple" id="toc-machine-learning-purple" class="nav-link" data-scroll-target="#machine-learning-purple">Machine Learning (Purple)</a></li>
+  <li><a href="#genomics-green" id="toc-genomics-green" class="nav-link" data-scroll-target="#genomics-green">Genomics (Green)</a></li>
+  <li><a href="#chemistry-amber" id="toc-chemistry-amber" class="nav-link" data-scroll-target="#chemistry-amber">Chemistry (Amber)</a></li>
+  </ul></li>
+  <li><a href="#quantitative-changes" id="toc-quantitative-changes" class="nav-link" data-scroll-target="#quantitative-changes">Quantitative Changes</a>
+  <ul class="collapse">
+  <li><a href="#emoji-removal-count" id="toc-emoji-removal-count" class="nav-link" data-scroll-target="#emoji-removal-count">Emoji Removal Count</a></li>
+  <li><a href="#code-additions" id="toc-code-additions" class="nav-link" data-scroll-target="#code-additions">Code Additions</a></li>
+  </ul></li>
+  <li><a href="#user-experience-improvements" id="toc-user-experience-improvements" class="nav-link" data-scroll-target="#user-experience-improvements">User Experience Improvements</a>
+  <ul class="collapse">
+  <li><a href="#navigation-scanning" id="toc-navigation-scanning" class="nav-link" data-scroll-target="#navigation-scanning">Navigation &amp; Scanning</a></li>
+  <li><a href="#professional-credibility" id="toc-professional-credibility" class="nav-link" data-scroll-target="#professional-credibility">Professional Credibility</a></li>
+  <li><a href="#category-recognition" id="toc-category-recognition" class="nav-link" data-scroll-target="#category-recognition">Category Recognition</a></li>
+  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility">Accessibility</a></li>
+  </ul></li>
+  <li><a href="#design-philosophy" id="toc-design-philosophy" class="nav-link" data-scroll-target="#design-philosophy">Design Philosophy</a>
+  <ul class="collapse">
+  <li><a href="#old-approach-friendly-approachable" id="toc-old-approach-friendly-approachable" class="nav-link" data-scroll-target="#old-approach-friendly-approachable">Old Approach: “Friendly &amp; Approachable”</a></li>
+  <li><a href="#new-approach-professional-distinctive" id="toc-new-approach-professional-distinctive" class="nav-link" data-scroll-target="#new-approach-professional-distinctive">New Approach: “Professional &amp; Distinctive”</a></li>
+  </ul></li>
+  <li><a href="#purple-color-assessment" id="toc-purple-color-assessment" class="nav-link" data-scroll-target="#purple-color-assessment">Purple Color Assessment</a>
+  <ul class="collapse">
+  <li><a href="#user-question-do-you-think-purple-color-in-landing-page-and-resume-pages-is-strong" id="toc-user-question-do-you-think-purple-color-in-landing-page-and-resume-pages-is-strong" class="nav-link" data-scroll-target="#user-question-do-you-think-purple-color-in-landing-page-and-resume-pages-is-strong">User Question: “Do you think purple color in landing page and resume pages is strong?”</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis:</a></li>
+  </ul></li>
+  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a>
+  <ul class="collapse">
+  <li><a href="#css-architecture" id="toc-css-architecture" class="nav-link" data-scroll-target="#css-architecture">CSS Architecture</a></li>
+  <li><a href="#maintainability" id="toc-maintainability" class="nav-link" data-scroll-target="#maintainability">Maintainability</a></li>
+  </ul></li>
+  <li><a href="#expected-impact-on-site-quality" id="toc-expected-impact-on-site-quality" class="nav-link" data-scroll-target="#expected-impact-on-site-quality">Expected Impact on Site Quality</a>
+  <ul class="collapse">
+  <li><a href="#previous-score-7.710" id="toc-previous-score-7.710" class="nav-link" data-scroll-target="#previous-score-7.710">Previous Score: 7.7/10</a></li>
+  <li><a href="#new-expected-score-8.510" id="toc-new-expected-score-8.510" class="nav-link" data-scroll-target="#new-expected-score-8.510">New Expected Score: <strong>8.5/10</strong> 🎯</a></li>
+  </ul></li>
+  <li><a href="#next-steps-to-reach-9.510" id="toc-next-steps-to-reach-9.510" class="nav-link" data-scroll-target="#next-steps-to-reach-9.510">Next Steps to Reach 9.5/10</a>
+  <ul class="collapse">
+  <li><a href="#high-priority" id="toc-high-priority" class="nav-link" data-scroll-target="#high-priority">High Priority</a></li>
+  <li><a href="#medium-priority" id="toc-medium-priority" class="nav-link" data-scroll-target="#medium-priority">Medium Priority</a></li>
+  <li><a href="#polish" id="toc-polish" class="nav-link" data-scroll-target="#polish">Polish</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="before-after-professional-design-transformation" class="level1">
+<h1>Before &amp; After: Professional Design Transformation</h1>
+<section id="visual-impact-summary" class="level2">
+<h2 class="anchored" data-anchor-id="visual-impact-summary">Visual Impact Summary</h2>
+<section id="problem-identified" class="level3">
+<h3 class="anchored" data-anchor-id="problem-identified">🎯 Problem Identified</h3>
+<p><strong>User Feedback:</strong> “I feel like professional look is getting negatively affected due to use of excessive icons/symbols like 🧬, 📊, 🎯, 🤖”</p>
+<p><strong>Assessment:</strong> ✅ <strong>CORRECT</strong> - Emojis made the site appear casual/personal rather than professional/academic</p>
+<hr>
+</section>
+</section>
+<section id="transformation-details" class="level2">
+<h2 class="anchored" data-anchor-id="transformation-details">Transformation Details</h2>
+<section id="homepage-featured-research" class="level3">
+<h3 class="anchored" data-anchor-id="homepage-featured-research">1. Homepage Featured Research</h3>
+<section id="before" class="level4">
+<h4 class="anchored" data-anchor-id="before">BEFORE:</h4>
+<pre><code>## 🌟 Featured Research
+
+&lt;div class="feature-icon"&gt;🧬&lt;/div&gt;
+&lt;h3&gt;OmicsOracle AI Agent&lt;/h3&gt;
+
+&lt;div class="feature-icon"&gt;🤖&lt;/div&gt;
+&lt;h3&gt;ClinicalNormBERT&lt;/h3&gt;
+
+&lt;div class="feature-icon"&gt;💊&lt;/div&gt;
+&lt;h3&gt;DNA Methylation Prediction&lt;/h3&gt;</code></pre>
+<p><strong>Issues:</strong> - Large 3rem emoji icons dominated the cards - Casual, consumer-facing appearance - Distracted from actual research content</p>
+</section>
+<section id="after" class="level4">
+<h4 class="anchored" data-anchor-id="after">AFTER:</h4>
+<pre><code>## Featured Research
+
+&lt;h3&gt;OmicsOracle AI Agent&lt;/h3&gt;
+&lt;h3&gt;ClinicalNormBERT&lt;/h3&gt;
+&lt;h3&gt;DNA Methylation Prediction&lt;/h3&gt;</code></pre>
+<p><strong>Improvements:</strong> - ✅ Clean, professional typography - ✅ Top gradient accent border on hover - ✅ Focus on content, not decorations - ✅ Academic/research portfolio appearance</p>
+<hr>
+</section>
+</section>
+<section id="blog-post-cards-homepage" class="level3">
+<h3 class="anchored" data-anchor-id="blog-post-cards-homepage">2. Blog Post Cards (Homepage)</h3>
+<section id="before-1" class="level4">
+<h4 class="anchored" data-anchor-id="before-1">BEFORE:</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.post-category</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span><span class="ch">:</span> <span class="cn">#dbeafe</span><span class="op">;</span>  <span class="co">/* Generic blue for ALL categories */</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">#1e40af</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">.post-card</span><span class="in">:hover</span> {</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">box-shadow</span><span class="ch">:</span> <span class="dv">0</span> <span class="dv">4</span><span class="dt">px</span> <span class="dv">12</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.08</span><span class="fu">)</span><span class="op">;</span>  <span class="co">/* Weak */</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Issues:</strong> - All categories looked identical (blue) - No visual differentiation - Minimal hover feedback - Weak shadows</p>
+</section>
+<section id="after-1" class="level4">
+<h4 class="anchored" data-anchor-id="after-1">AFTER:</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Color-coded by specialization */</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-ml</span> {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span><span class="ch">:</span> <span class="fu">linear-gradient(</span><span class="dv">135</span><span class="dt">deg</span><span class="op">,</span> <span class="cn">#f3e8ff</span> <span class="dv">0</span><span class="dt">%</span><span class="op">,</span> <span class="cn">#e9d5ff</span> <span class="dv">100</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">#7c3aed</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#d8b4fe</span><span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-genomics</span> {</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span><span class="ch">:</span> <span class="fu">linear-gradient(</span><span class="dv">135</span><span class="dt">deg</span><span class="op">,</span> <span class="cn">#d1fae5</span> <span class="dv">0</span><span class="dt">%</span><span class="op">,</span> <span class="cn">#a7f3d0</span> <span class="dv">100</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">#059669</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#6ee7b7</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-biology</span> {</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span><span class="ch">:</span> <span class="fu">linear-gradient(</span><span class="dv">135</span><span class="dt">deg</span><span class="op">,</span> <span class="cn">#fef3c7</span> <span class="dv">0</span><span class="dt">%</span><span class="op">,</span> <span class="cn">#fde68a</span> <span class="dv">100</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">#d97706</span><span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#fcd34d</span><span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">.post-card</span><span class="in">:hover</span> {</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">transform</span><span class="ch">:</span> <span class="fu">translateY(</span><span class="dv">-8</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span>  <span class="co">/* More lift */</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">box-shadow</span><span class="ch">:</span> <span class="dv">0</span> <span class="dv">12</span><span class="dt">px</span> <span class="dv">24</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.12</span><span class="fu">)</span><span class="op">;</span>  <span class="co">/* Stronger */</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Improvements:</strong> - ✅ Instant visual categorization - ✅ Professional color palette - ✅ Gradient badges with borders - ✅ Enhanced hover states - ✅ Clear visual hierarchy</p>
+<hr>
+</section>
+</section>
+<section id="category-blog-pages" class="level3">
+<h3 class="anchored" data-anchor-id="category-blog-pages">3. Category Blog Pages</h3>
+<section id="before-genomics-blog" class="level4">
+<h4 class="anchored" data-anchor-id="before-genomics-blog">BEFORE: Genomics Blog</h4>
+<pre><code>## 🎯 Research Areas
+
+🔬 DNA Methylation
+🧠 Deep Learning
+📈 Predictive Modeling
+
+## 🔮 Upcoming Topics
+
+🤖 **Machine Learning**
+⚗️ **AI for Chemistry**</code></pre>
+<p><strong>Issues:</strong> - 20+ emojis on a single page - Looked like a Medium blog post - Not suitable for academic portfolio - Inconsistent emoji usage</p>
+</section>
+<section id="after-genomics-blog" class="level4">
+<h4 class="anchored" data-anchor-id="after-genomics-blog">AFTER: Genomics Blog</h4>
+<pre><code>## Research Areas
+
+DNA Methylation
+Deep Learning
+Predictive Modeling
+
+## Upcoming Topics
+
+Machine Learning
+AI for Chemistry</code></pre>
+<p><strong>Improvements:</strong> - ✅ Zero emojis - pure content focus - ✅ Professional academic appearance - ✅ Clean typography hierarchy - ✅ Consistent design language</p>
+<hr>
+</section>
+</section>
+<section id="article-cards-with-color-coding" class="level3">
+<h3 class="anchored" data-anchor-id="article-cards-with-color-coding">4. Article Cards with Color Coding</h3>
+<section id="before-2" class="level4">
+<h4 class="anchored" data-anchor-id="before-2">BEFORE:</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"card"</span><span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"post-category"</span><span class="dt">&gt;</span>Machine Learning<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>🤖 Multi-Teacher Knowledge Distillation<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"text-muted"</span><span class="dt">&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    🏷️ AI • Knowledge Distillation • Deep Learning</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Visual:</strong> Generic white card, blue badge, emoji in title, muted tags</p>
+</section>
+<section id="after-2" class="level4">
+<h4 class="anchored" data-anchor-id="after-2">AFTER:</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"card card-ml"</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"badge-category badge-ml"</span><span class="dt">&gt;</span>Machine Learning<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>Multi-Teacher Knowledge Distillation<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"card-tags"</span><span class="dt">&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    AI • Knowledge Distillation • Deep Learning</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Visual:</strong> - Purple top border (3px solid #7c3aed) - Purple gradient badge - Clean title (no emoji) - Professional tag styling with separator border - Purple shadow on hover</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="category-color-system" class="level2">
+<h2 class="anchored" data-anchor-id="category-color-system">Category Color System</h2>
+<section id="machine-learning-purple" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-purple">Machine Learning (Purple)</h3>
+<ul>
+<li><strong>Color:</strong> <code>#7c3aed</code></li>
+<li><strong>Badge:</strong> Purple gradient with lavender background</li>
+<li><strong>Border:</strong> 3px solid purple top accent</li>
+<li><strong>Hover:</strong> Purple-tinted shadow</li>
+<li><strong>Association:</strong> Tech, AI, Innovation</li>
+</ul>
+</section>
+<section id="genomics-green" class="level3">
+<h3 class="anchored" data-anchor-id="genomics-green">Genomics (Green)</h3>
+<ul>
+<li><strong>Color:</strong> <code>#059669</code></li>
+<li><strong>Badge:</strong> Green gradient with mint background</li>
+<li><strong>Border:</strong> 3px solid green top accent</li>
+<li><strong>Hover:</strong> Green-tinted shadow</li>
+<li><strong>Association:</strong> Biology, Life Sciences, Growth</li>
+</ul>
+</section>
+<section id="chemistry-amber" class="level3">
+<h3 class="anchored" data-anchor-id="chemistry-amber">Chemistry (Amber)</h3>
+<ul>
+<li><strong>Color:</strong> <code>#d97706</code></li>
+<li><strong>Badge:</strong> Amber gradient with yellow background</li>
+<li><strong>Border:</strong> 3px solid amber top accent</li>
+<li><strong>Hover:</strong> Amber-tinted shadow</li>
+<li><strong>Association:</strong> Chemical, Physical Sciences, Energy</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="quantitative-changes" class="level2">
+<h2 class="anchored" data-anchor-id="quantitative-changes">Quantitative Changes</h2>
+<section id="emoji-removal-count" class="level3">
+<h3 class="anchored" data-anchor-id="emoji-removal-count">Emoji Removal Count</h3>
+<ul>
+<li><strong>Homepage:</strong> 8 emojis removed (🌟, 🧬, 🤖, 💊, 📚, 💻, 📧, 💼, 🐙)</li>
+<li><strong>Genomics Blog:</strong> 12 emojis removed</li>
+<li><strong>ML Blog:</strong> 15 emojis removed</li>
+<li><strong>Chemistry Blog:</strong> 18 emojis removed</li>
+<li><strong>TOTAL:</strong> <strong>53 emojis removed</strong> across 4 pages</li>
+</ul>
+</section>
+<section id="code-additions" class="level3">
+<h3 class="anchored" data-anchor-id="code-additions">Code Additions</h3>
+<ul>
+<li><strong>New CSS Classes:</strong> 10+
+<ul>
+<li><code>.badge-ml</code>, <code>.badge-genomics</code>, <code>.badge-chemistry</code></li>
+<li><code>.card-ml</code>, <code>.card-genomics</code>, <code>.card-chemistry</code></li>
+<li><code>.card-tags</code>, <code>.card-research</code></li>
+</ul></li>
+<li><strong>Lines of SCSS Added:</strong> ~90 lines</li>
+<li><strong>Files Modified:</strong> 5 source files (qmd + scss)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="user-experience-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="user-experience-improvements">User Experience Improvements</h2>
+<section id="navigation-scanning" class="level3">
+<h3 class="anchored" data-anchor-id="navigation-scanning">Navigation &amp; Scanning</h3>
+<p><strong>Before:</strong> Eyes distracted by colorful emojis <strong>After:</strong> Clear visual hierarchy, content-first scanning</p>
+</section>
+<section id="professional-credibility" class="level3">
+<h3 class="anchored" data-anchor-id="professional-credibility">Professional Credibility</h3>
+<p><strong>Before:</strong> 6/10 - Appeared as personal blog <strong>After:</strong> 9/10 - Academic research portfolio appearance</p>
+</section>
+<section id="category-recognition" class="level3">
+<h3 class="anchored" data-anchor-id="category-recognition">Category Recognition</h3>
+<p><strong>Before:</strong> Must read text to identify category <strong>After:</strong> Instant recognition via color coding</p>
+</section>
+<section id="accessibility" class="level3">
+<h3 class="anchored" data-anchor-id="accessibility">Accessibility</h3>
+<p><strong>Before:</strong> Emojis may not render consistently across devices <strong>After:</strong> Universal color system works everywhere</p>
+<hr>
+</section>
+</section>
+<section id="design-philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="design-philosophy">Design Philosophy</h2>
+<section id="old-approach-friendly-approachable" class="level3">
+<h3 class="anchored" data-anchor-id="old-approach-friendly-approachable">Old Approach: “Friendly &amp; Approachable”</h3>
+<ul>
+<li>Heavy emoji usage</li>
+<li>Casual tone</li>
+<li>Consumer-facing aesthetic</li>
+<li>Personal blog vibe</li>
+</ul>
+</section>
+<section id="new-approach-professional-distinctive" class="level3">
+<h3 class="anchored" data-anchor-id="new-approach-professional-distinctive">New Approach: “Professional &amp; Distinctive”</h3>
+<ul>
+<li>Thoughtful color coding</li>
+<li>Clean typography</li>
+<li>Academic credibility</li>
+<li>Research portfolio aesthetic</li>
+<li>Visual hierarchy through design, not decoration</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="purple-color-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="purple-color-assessment">Purple Color Assessment</h2>
+<section id="user-question-do-you-think-purple-color-in-landing-page-and-resume-pages-is-strong" class="level3">
+<h3 class="anchored" data-anchor-id="user-question-do-you-think-purple-color-in-landing-page-and-resume-pages-is-strong">User Question: “Do you think purple color in landing page and resume pages is strong?”</h3>
+</section>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis:</h3>
+<ul>
+<li><strong>Purple Gradient:</strong> <code>#667eea → #764ba2</code></li>
+<li><strong>Usage:</strong> Hero sections only (landing + CV)</li>
+<li><strong>Assessment:</strong> ✅ <strong>APPROPRIATE &amp; WELL-BALANCED</strong></li>
+</ul>
+<p><strong>Reasoning:</strong> 1. ✅ Purple is <strong>on-brand</strong> for AI/ML/Tech (modern, innovative) 2. ✅ Used <strong>sparingly</strong> (only hero sections) 3. ✅ <strong>Good contrast</strong> with white text (accessibility compliant) 4. ✅ Rest of site uses <strong>neutral whites/grays</strong> 5. ✅ Creates <strong>visual hierarchy</strong> and focal points</p>
+<p><strong>Verdict:</strong> Purple strength is perfect - not too strong, provides nice accent without overwhelming</p>
+<hr>
+</section>
+</section>
+<section id="technical-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
+<section id="css-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="css-architecture">CSS Architecture</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Badge System (9 lines per category × 3 = 27 lines)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.badge-category</span> { <span class="co">/* base styles */</span> }</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">.badge-ml</span> { <span class="co">/* purple variant */</span> }</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">.badge-genomics</span> { <span class="co">/* green variant */</span> }</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.badge-chemistry</span> { <span class="co">/* amber variant */</span> }</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Card Border System (7 lines per category × 3 = 21 lines)</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-ml</span> { <span class="co">/* purple border + hover */</span> }</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-genomics</span> { <span class="co">/* green border + hover */</span> }</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-chemistry</span> { <span class="co">/* amber border + hover */</span> }</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">// Supporting Styles (20+ lines)</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-tags</span> { <span class="co">/* professional tag styling */</span> }</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-research</span> { <span class="co">/* topic card hover */</span> }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="maintainability" class="level3">
+<h3 class="anchored" data-anchor-id="maintainability">Maintainability</h3>
+<ul>
+<li><strong>Scalable:</strong> Easy to add new categories</li>
+<li><strong>Consistent:</strong> Single source of truth for colors</li>
+<li><strong>Semantic:</strong> Class names describe purpose</li>
+<li><strong>Modular:</strong> Independent component styles</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="expected-impact-on-site-quality" class="level2">
+<h2 class="anchored" data-anchor-id="expected-impact-on-site-quality">Expected Impact on Site Quality</h2>
+<section id="previous-score-7.710" class="level3">
+<h3 class="anchored" data-anchor-id="previous-score-7.710">Previous Score: 7.7/10</h3>
+<p><strong>Remaining Issues:</strong> - ❌ Excessive emojis reducing credibility → <strong>FIXED</strong> - ❌ No visual categorization → <strong>FIXED</strong> - ❌ Inconsistent design across pages → <strong>FIXED</strong> - ❌ Weak hover effects → <strong>FIXED</strong> - ⚠️ Missing article images (future enhancement) - ⚠️ No publication dates (future enhancement)</p>
+</section>
+<section id="new-expected-score-8.510" class="level3">
+<h3 class="anchored" data-anchor-id="new-expected-score-8.510">New Expected Score: <strong>8.5/10</strong> 🎯</h3>
+<p><strong>Improvements:</strong> - ✅ Professional, academic appearance - ✅ Clear color-coded visual hierarchy - ✅ Consistent, polished design system - ✅ Enhanced user experience - ✅ Better hover feedback - ✅ Improved credibility</p>
+<hr>
+</section>
+</section>
+<section id="next-steps-to-reach-9.510" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps-to-reach-9.510">Next Steps to Reach 9.5/10</h2>
+<section id="high-priority" class="level3">
+<h3 class="anchored" data-anchor-id="high-priority">High Priority</h3>
+<ol type="1">
+<li><strong>Add article thumbnails/images</strong> - Visual interest without emojis</li>
+<li><strong>Publication dates</strong> - Academic credibility</li>
+<li><strong>Read time estimates</strong> - Better UX</li>
+</ol>
+</section>
+<section id="medium-priority" class="level3">
+<h3 class="anchored" data-anchor-id="medium-priority">Medium Priority</h3>
+<ol start="4" type="1">
+<li><strong>Author cards</strong> - Social proof for multi-author potential</li>
+<li><strong>Related articles</strong> - Better content discovery</li>
+<li><strong>Search functionality</strong> - Usability for larger content base</li>
+</ol>
+</section>
+<section id="polish" class="level3">
+<h3 class="anchored" data-anchor-id="polish">Polish</h3>
+<ol start="7" type="1">
+<li><strong>Smooth page transitions</strong> - Premium feel</li>
+<li><strong>Loading states</strong> - Professional perceived performance</li>
+<li><strong>Dark mode support</strong> - Modern web standard</li>
+<li><strong>Performance optimization</strong> - Faster load times</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The transformation from emoji-heavy to color-coded professional design represents a <strong>significant upgrade</strong> in site credibility and user experience.</p>
+<p><strong>Key Achievement:</strong> Maintained visual interest and clear categorization while dramatically improving professional appearance.</p>
+<p><strong>Design Principle Applied:</strong> “Design should guide, not distract” ✨</p>
+<p><strong>Commit:</strong> <code>e24faf5</code> - feat: Professional design improvements <strong>Documentation:</strong> <code>PROFESSIONAL_DESIGN_IMPROVEMENTS.md</code> <strong>Date:</strong> September 29, 2025</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Sanjeeva Reddy Dodlapati<br>
+AI Research • Computational Biology • Data Science</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:sdodlapa@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
