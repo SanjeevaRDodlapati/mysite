@@ -20,10 +20,13 @@ page-layout: full
 Developing intelligent systems that help scientists discover new medicines faster, predict disease outcomes more accurately, and unlock insights hidden in biological data.
 </p>
 
-<div class="hero-actions">
-[View Research](about.html){.btn .btn-primary .btn-lg .me-2}
-[Read Blog](ml-blog.html){.btn .btn-outline-primary .btn-lg .me-2}
-[Contact Me](mailto:sdodl001@odu.edu){.btn .btn-outline-secondary .btn-lg}
+<div class="hero-blog-section">
+<p class="blog-section-label">Explore My Blog:</p>
+<div class="blog-category-buttons">
+[<i class="bi bi-robot"></i> ML/AI](ml-blog.html){.btn .btn-blog-category}
+[<i class="bi bi-dna"></i> Genomics](genomics-blog.html){.btn .btn-blog-category}
+[<i class="bi bi-cpu"></i> Chemistry](chemistry-blog.html){.btn .btn-blog-category}
+</div>
 </div>
 
 <div class="hero-stats">
@@ -39,6 +42,17 @@ Developing intelligent systems that help scientists discover new medicines faste
   <div class="stat-value">40+</div>
   <div class="stat-label">Professional Certifications</div>
 </div>
+</div>
+
+<div class="hero-social-links">
+<span class="social-label">Connect:</span>
+[<i class="bi bi-github"></i> GitHub](https://github.com/SanjeevaRDodlapati){.social-link}
+<span class="social-separator">·</span>
+[<i class="bi bi-mortarboard"></i> Scholar](https://scholar.google.com){.social-link}
+<span class="social-separator">·</span>
+[<i class="bi bi-linkedin"></i> LinkedIn](https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/){.social-link}
+<span class="social-separator">·</span>
+[<i class="bi bi-envelope"></i> Email](mailto:sdodl001@odu.edu){.social-link}
 </div>
 
 </div>

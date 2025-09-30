@@ -121,11 +121,87 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section .lead {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.7;
     position: relative;
 }
 
+/* Primary Action Button */
+.hero-actions-primary {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.hero-actions-primary .btn {
+    font-weight: 600;
+    padding: 0.85rem 3rem;
+    font-size: 1.15rem;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+    color: #1e40af;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-actions-primary .btn:hover {
+    background: #f0f9ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Blog Category Section */
+.hero-blog-section {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.blog-section-label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.blog-category-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-blog-category {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex: 1;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.btn-blog-category:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-blog-category i {
+    font-size: 1rem;
+}
+
+/* Legacy hero-actions class (deprecated) */
 .hero-actions {
     margin-bottom: 3rem;
     position: relative;
@@ -195,6 +271,52 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 600;
+}
+
+/* Social Links in Hero */
+.hero-social-links {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.social-label {
+    font-weight: 500;
+    margin-right: 0.25rem;
+    letter-spacing: 0.02em;
+}
+
+.social-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.social-link:hover {
+    color: white;
+    border-bottom-color: white;
+    transform: translateY(-1px);
+}
+
+.social-link i {
+    font-size: 1.05rem;
+}
+
+.social-separator {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0.25rem;
 }
 
 /* Legacy hero-image class (deprecated) */
@@ -465,11 +587,51 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-section .lead {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     
+    /* Primary action */
+    .hero-actions-primary {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-actions-primary .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Blog category buttons */
+    .hero-blog-section {
+        margin-bottom: 2rem;
+    }
+    
+  .blog-category-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn-blog-category {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.5rem;
+  }    /* Stats */
     .hero-stats {
         flex-direction: column;
         gap: 1rem;
+    }
+    
+    /* Social links */
+    .hero-social-links {
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .social-label {
+        display: block;
+        margin-bottom: 0.5rem;
     }
     
     /* Move profile badge to top center on mobile */
@@ -498,6 +660,16 @@ h1, h2, h3, h4, h5, h6 {
     .hero-profile-badge .profile-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .blog-category-buttons {
+        gap: 0.75rem;
+    }
+    
+    .btn-blog-category {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.95rem;
+        min-width: 160px;
     }
 }
 
