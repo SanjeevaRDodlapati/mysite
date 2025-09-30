@@ -1,6 +1,6 @@
 ---
-title: "Curriculum Vitae"
-subtitle: "Sanjeeva Reddy Dodlapati - AI/ML Researcher & Software Engineer"
+title: "Sanjeeva Reddy Dodlapati"
+subtitle: "Research Scientist - AI/ML for Genomics & Drug Discovery"
 format:
   html:
     toc: true
@@ -9,23 +9,18 @@ format:
     page-layout: article
 ---
 
-::: {.cv-header}
-# Sanjeeva Reddy Dodlapati
+::: {.cv-header-minimal}
+<div class="cv-contact">
+📍 Norfolk, VA • 📧 [sdodl001@odu.edu](mailto:sdodl001@odu.edu) • [sdodlapa@gmail.com](mailto:sdodlapa@gmail.com) • 📱 +1-757-364-1561
+</div>
 
-**Research Scientist - AI/ML, Deep Learning, Genomics & Drug Discovery**  
-📧 [sdodl001@odu.edu](mailto:sdodl001@odu.edu) | [sdodlapa@gmail.com](mailto:sdodlapa@gmail.com) | 📱 +1-757-364-1561  
-🔗 [GitHub](https://github.com/SanjeevaRDodlapati) | [LinkedIn](https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/) | [Google Scholar](https://scholar.google.com)  
-🐦 [X/Twitter](https://x.com) | 📝 [Substack](https://substack.com) | [Medium](https://medium.com)  
-📍 Norfolk, VA | 🌐 [sanjeevareddydodlapati.com](https://sanjeevareddydodlapati.com)
-
-::: {.download-cv}
-[📥 Download PDF Resume](Sanjeeva_Reddy_Dodlapati_ML.pdf){.btn .btn-primary .btn-sm}
-:::
+<div class="cv-links">
+<i class="bi bi-github"></i> [GitHub](https://github.com/SanjeevaRDodlapati) • <i class="bi bi-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/) • <i class="bi bi-mortarboard"></i> [Google Scholar](https://scholar.google.com) • <i class="bi bi-globe"></i> [Website](https://sanjeevareddydodlapati.com) • <i class="bi bi-file-earmark-pdf"></i> [Download PDF](Sanjeeva_Reddy_Dodlapati_ML.pdf)
+</div>
 :::
 
----
 
-## 👤 Professional Summary
+## Professional Summary
 
 **Research Scientist** with 6+ years of experience in deep learning, NLP, genomics, and drug discovery. Proven track record in leading multi-disciplinary research projects, publishing in peer-reviewed journals, and contributing to open-source ML frameworks. Specialized in uncertainty modeling, transfer learning, and scalable ML pipelines. Passionate about advancing fundamental research and translating innovations into real-world impact.
 
@@ -35,7 +30,7 @@ Collaborated with multiple research teams resulting in **4 peer-reviewed publica
 
 ---
 
-## 🎓 Education
+## Education
 
 **Doctor of Philosophy (PhD) in Computer Science** | Aug 2019 - July 2025  
 Old Dominion University, Norfolk, VA  
@@ -47,7 +42,7 @@ Georgia Institute of Technology, Atlanta, GA
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### Graduate Research Assistant | Old Dominion University
 **Aug 2019 - Present** | Norfolk, VA
@@ -105,7 +100,7 @@ Georgia Institute of Technology, Atlanta, GA
 
 ---
 
-## 📚 Publications
+## Publications
 
 **Published (4 papers)**
 
@@ -127,7 +122,7 @@ Georgia Institute of Technology, Atlanta, GA
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 **Programming Languages**  
 Python (Expert), R (Advanced), Java (Intermediate), JavaScript, C, C++, Bash, SQL, Matlab
@@ -158,7 +153,7 @@ Linux, HPC Cluster, macOS, Cloud (AWS, Azure, GCP)
 
 ---
 
-## 🏆 Honors & Awards
+## Honors & Awards
 
 - **Best Mentor Award**, Old Dominion University (April 2023)
 - **CSIR-INDIA Junior Research Fellow** (March 2008 - December 2008)
@@ -167,14 +162,14 @@ Linux, HPC Cluster, macOS, Cloud (AWS, Azure, GCP)
 
 ---
 
-## 🤝 Professional Service
+## Professional Service
 
 **Peer Reviewer**  
 NeurIPS, ICML, ICLR, IJCAI (2021-2024)
 
 ---
 
-## 🎓 Certifications & Continuous Learning
+## Certifications & Continuous Learning
 
 **40+ Professional Certifications** from leading platforms:
 
@@ -195,7 +190,7 @@ NeurIPS, ICML, ICLR, IJCAI (2021-2024)
 
 ---
 
-## 🔬 Research Interests
+## Research Interests
 
 - Artificial Intelligence for Drug Discovery and Healthcare
 - Uncertainty Quantification in Deep Learning Models

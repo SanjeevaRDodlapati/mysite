@@ -570,56 +570,245 @@ $space-12: 6rem;    // 96px
 // CV PAGE SPECIFIC STYLES
 // ============================================
 
+// Minimal Clean Header (Professional CV Style)
+.cv-header-minimal {
+  margin-top: -2.5rem; // Pull up drastically to reduce gap before and after title/subtitle
+  padding: 0 0 0.5rem 0;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 1rem; // Tight space before Professional Summary
+  
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.15rem;
+    letter-spacing: -0.01em;
+  }
+  
+  strong {
+    display: block;
+    font-size: 1.05rem;
+    color: #475569;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.01em;
+  }
+  
+  .cv-contact {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+    
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .cv-links {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+    
+    i {
+      color: #64748b;
+      margin-right: 0.25rem;
+      font-size: 1rem;
+    }
+    
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      
+      &:hover {
+        color: #1e40af;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Reduce space after CV header before first section
+#professional-summary {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+// Reduce space before page title
+.quarto-title-block {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+// Target the title and subtitle specifically in CV page
+#title-block-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  
+  .title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .subtitle {
+    margin-top: 0.25rem !important;
+  }
+}
+
+// Old gradient header - keeping for backward compatibility but deprecating
 .cv-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   color: white;
-  padding: $space-8 $space-6;
-  border-radius: 12px;
-  margin-bottom: $space-8;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+  position: relative;
+  overflow: hidden;
+  
+  // Subtle pattern overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
   
   h1 {
     color: white;
-    margin-bottom: $space-3;
-    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    position: relative;
   }
   
   strong {
     display: block;
     font-size: 1.25rem;
-    margin-bottom: $space-4;
+    margin-bottom: 1.5rem;
     opacity: 0.95;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    position: relative;
   }
   
-  a {
-    color: white;
-    text-decoration: underline;
-    opacity: 0.9;
-    transition: opacity 0.2s;
+  // Contact info styling
+  p {
+    position: relative;
+    line-height: 1.8;
+    font-size: 0.95rem;
     
-    &:hover {
-      opacity: 1;
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      transition: all 0.2s;
+      padding-bottom: 1px;
+      
+      &:hover {
+        border-bottom-color: white;
+        padding-bottom: 2px;
+      }
     }
   }
   
   .download-cv {
-    margin-top: $space-4;
+    margin-top: 1.5rem;
+    position: relative;
     
     .btn {
       background: white;
-      color: #667eea;
+      color: #2563eb;
       font-weight: 600;
-      padding: 0.5rem 1.5rem;
-      border-radius: 6px;
+      padding: 0.65rem 1.75rem;
+      border-radius: 8px;
       text-decoration: none;
       display: inline-block;
-      transition: all 0.2s;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 0.95rem;
       
       &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background: #f0f9ff;
       }
     }
+  }
+}
+
+// Enhanced section headings
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #e2e8f0;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    border-radius: 2px;
+  }
+}
+
+// Professional experience cards
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Publication styling
+.quarto-title-meta {
+  margin-bottom: 2rem;
+}
+
+// Better list styling
+ul {
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    
+    strong {
+      color: #2563eb;
+      font-weight: 600;
+    }
+  }
+}
+
+// Skills section enhancement
+.technical-skills {
+  strong {
+    color: #2563eb;
+    font-size: 1.05rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
