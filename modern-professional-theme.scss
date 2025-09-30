@@ -440,3 +440,110 @@ $space-12: 6rem;    // 96px
         color: black;
     }
 }
+
+// ============================================
+// CV PAGE SPECIFIC STYLES
+// ============================================
+
+.cv-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: $space-8 $space-6;
+  border-radius: 12px;
+  margin-bottom: $space-8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  h1 {
+    color: white;
+    margin-bottom: $space-3;
+    font-size: 2.5rem;
+  }
+  
+  strong {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: $space-4;
+    opacity: 0.95;
+  }
+  
+  a {
+    color: white;
+    text-decoration: underline;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  .download-cv {
+    margin-top: $space-4;
+    
+    .btn {
+      background: white;
+      color: #667eea;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.cv-footer {
+  background: $gray-100;
+  padding: $space-6;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: $space-10;
+  font-style: italic;
+  color: $gray-700;
+}
+
+// Print styles for CV
+@media print {
+  .cv-header {
+    background: white;
+    color: black;
+    border: 2px solid $gray-300;
+    
+    h1, strong {
+      color: black;
+    }
+    
+    a {
+      color: $primary;
+    }
+    
+    .download-cv {
+      display: none;
+    }
+  }
+  
+  .navbar, .quarto-title-banner, footer {
+    display: none;
+  }
+  
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  
+  h2 {
+    page-break-after: avoid;
+    margin-top: 1em;
+  }
+  
+  .cv-footer {
+    background: white;
+    border-top: 2px solid $gray-300;
+  }
+}

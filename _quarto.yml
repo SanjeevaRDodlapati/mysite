@@ -13,9 +13,9 @@ website:
     background: light
     style: floating
     left:
-      - href: index.html
-        text: Home
-        icon: house-fill
+      - href: about.html
+        text: CV/Resume
+        icon: file-person
       - href: ml-blog.html
         text: Machine Learning
         icon: cpu
