@@ -71,21 +71,6 @@ Deep exploration of statistical hypothesis testing specifically applied to genom
 :::
 :::
 :::
-
-::: {.col-lg-6}
-::: {.card}
-::: {.card-body}
-### [📊 Advanced Statistical Testing](T-test-alt.html)
-*Hypothesis testing in biological contexts*
-
-Deep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.
-
-::: {.text-muted}
-🏷️ Statistics • Experimental Design • Genomics
-:::
-:::
-:::
-:::
 :::
 
 ::: {.row .mt-3}

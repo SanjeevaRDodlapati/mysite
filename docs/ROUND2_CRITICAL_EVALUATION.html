@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>round2_critical_evaluation – Sanjeev's AI Research Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-40cf9106bf570a6537fb7fd4fc34825d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4b932ee41e00984f1fcf5c6404af0fda.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Sanjeeva Reddy Dodlapati">
+<meta name="keywords" content="AI, machine learning, computational biology, bioinformatics, genomics, data science">
+<script src="custom.js" defer=""></script>
+<style>
+  body { opacity: 0; transition: opacity 0.3s ease; }
+  body.loaded { opacity: 1; }
+</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Sanjeev’s AI Research Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-fill" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ml-blog.html"> <i class="bi bi-cpu" role="img">
+</i> 
+<span class="menu-text">Machine Learning</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./genomics-blog.html"> <i class="bi bi-dna" role="img">
+</i> 
+<span class="menu-text">AI for Genomics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./chemistry-blog.html"> <i class="bi bi-flask" role="img">
+</i> 
+<span class="menu-text">AI for Chemistry</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/SanjeevaRDodlapati"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dodlapati_reddy"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./#" title="Toggle Dark Mode" class="quarto-navigation-tool px-1" aria-label="Toggle Dark Mode"><i class="bi bi-moon"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#round-2-comprehensive-critical-evaluation" id="toc-round-2-comprehensive-critical-evaluation" class="nav-link active" data-scroll-target="#round-2-comprehensive-critical-evaluation">🔍 ROUND 2: COMPREHENSIVE CRITICAL EVALUATION</a>
+  <ul class="collapse">
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link" data-scroll-target="#executive-summary">📊 Executive Summary</a>
+  <ul class="collapse">
+  <li><a href="#what-improved" id="toc-what-improved" class="nav-link" data-scroll-target="#what-improved">What Improved:</a></li>
+  <li><a href="#what-still-needs-work" id="toc-what-still-needs-work" class="nav-link" data-scroll-target="#what-still-needs-work">What Still Needs Work:</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-1-design-lacks-visual-polish" id="toc-critical-issue-1-design-lacks-visual-polish" class="nav-link" data-scroll-target="#critical-issue-1-design-lacks-visual-polish">🎨 CRITICAL ISSUE #1: Design Lacks Visual Polish</a>
+  <ul class="collapse">
+  <li><a href="#problem-generic-bootstrap-look" id="toc-problem-generic-bootstrap-look" class="nav-link" data-scroll-target="#problem-generic-bootstrap-look">Problem: Generic Bootstrap Look</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-2-content-organization-problems" id="toc-critical-issue-2-content-organization-problems" class="nav-link" data-scroll-target="#critical-issue-2-content-organization-problems">🎯 CRITICAL ISSUE #2: Content Organization Problems</a>
+  <ul class="collapse">
+  <li><a href="#problem-a-blog-index-pages-are-repetitive" id="toc-problem-a-blog-index-pages-are-repetitive" class="nav-link" data-scroll-target="#problem-a-blog-index-pages-are-repetitive">Problem A: Blog Index Pages Are Repetitive</a></li>
+  <li><a href="#problem-b-individual-blog-posts-lack-metadata" id="toc-problem-b-individual-blog-posts-lack-metadata" class="nav-link" data-scroll-target="#problem-b-individual-blog-posts-lack-metadata">Problem B: Individual Blog Posts Lack Metadata</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-3-inconsistent-design-system" id="toc-critical-issue-3-inconsistent-design-system" class="nav-link" data-scroll-target="#critical-issue-3-inconsistent-design-system">🏗️ CRITICAL ISSUE #3: Inconsistent Design System</a>
+  <ul class="collapse">
+  <li><a href="#problem-mixed-design-patterns" id="toc-problem-mixed-design-patterns" class="nav-link" data-scroll-target="#problem-mixed-design-patterns">Problem: Mixed Design Patterns</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-4-homepage-still-has-problems" id="toc-critical-issue-4-homepage-still-has-problems" class="nav-link" data-scroll-target="#critical-issue-4-homepage-still-has-problems">💎 CRITICAL ISSUE #4: Homepage Still Has Problems</a>
+  <ul class="collapse">
+  <li><a href="#problem-information-architecture-issues" id="toc-problem-information-architecture-issues" class="nav-link" data-scroll-target="#problem-information-architecture-issues">Problem: Information Architecture Issues</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-5-mobile-experience-not-optimized" id="toc-critical-issue-5-mobile-experience-not-optimized" class="nav-link" data-scroll-target="#critical-issue-5-mobile-experience-not-optimized">📱 CRITICAL ISSUE #5: Mobile Experience Not Optimized</a>
+  <ul class="collapse">
+  <li><a href="#problem-desktop-first-thinking" id="toc-problem-desktop-first-thinking" class="nav-link" data-scroll-target="#problem-desktop-first-thinking">Problem: Desktop-First Thinking</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-6-color-visual-design" id="toc-critical-issue-6-color-visual-design" class="nav-link" data-scroll-target="#critical-issue-6-color-visual-design">🎨 CRITICAL ISSUE #6: Color &amp; Visual Design</a>
+  <ul class="collapse">
+  <li><a href="#problem-limited-color-palette" id="toc-problem-limited-color-palette" class="nav-link" data-scroll-target="#problem-limited-color-palette">Problem: Limited Color Palette</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-7-spacing-rhythm-problems" id="toc-critical-issue-7-spacing-rhythm-problems" class="nav-link" data-scroll-target="#critical-issue-7-spacing-rhythm-problems">📐 CRITICAL ISSUE #7: Spacing &amp; Rhythm Problems</a>
+  <ul class="collapse">
+  <li><a href="#problem-inconsistent-spacing" id="toc-problem-inconsistent-spacing" class="nav-link" data-scroll-target="#problem-inconsistent-spacing">Problem: Inconsistent Spacing</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-8-content-quality-vs.-presentation" id="toc-critical-issue-8-content-quality-vs.-presentation" class="nav-link" data-scroll-target="#critical-issue-8-content-quality-vs.-presentation">🔍 CRITICAL ISSUE #8: Content Quality vs.&nbsp;Presentation</a>
+  <ul class="collapse">
+  <li><a href="#problem-great-content-basic-presentation" id="toc-problem-great-content-basic-presentation" class="nav-link" data-scroll-target="#problem-great-content-basic-presentation">Problem: Great Content, Basic Presentation</a></li>
+  </ul></li>
+  <li><a href="#critical-issue-9-homepage-cta-confusion" id="toc-critical-issue-9-homepage-cta-confusion" class="nav-link" data-scroll-target="#critical-issue-9-homepage-cta-confusion">🎯 CRITICAL ISSUE #9: Homepage CTA Confusion</a>
+  <ul class="collapse">
+  <li><a href="#problem-too-many-calls-to-action" id="toc-problem-too-many-calls-to-action" class="nav-link" data-scroll-target="#problem-too-many-calls-to-action">Problem: Too Many Calls-to-Action</a></li>
+  </ul></li>
+  <li><a href="#scoring-breakdown-detailed" id="toc-scoring-breakdown-detailed" class="nav-link" data-scroll-target="#scoring-breakdown-detailed">📊 SCORING BREAKDOWN (Detailed)</a></li>
+  <li><a href="#prioritized-action-plan" id="toc-prioritized-action-plan" class="nav-link" data-scroll-target="#prioritized-action-plan">🎯 PRIORITIZED ACTION PLAN</a>
+  <ul class="collapse">
+  <li><a href="#critical-must-fix" id="toc-critical-must-fix" class="nav-link" data-scroll-target="#critical-must-fix">🔴 CRITICAL (Must Fix):</a></li>
+  <li><a href="#high-priority-should-fix" id="toc-high-priority-should-fix" class="nav-link" data-scroll-target="#high-priority-should-fix">🟡 HIGH PRIORITY (Should Fix):</a></li>
+  <li><a href="#medium-priority-nice-to-have" id="toc-medium-priority-nice-to-have" class="nav-link" data-scroll-target="#medium-priority-nice-to-have">🟢 MEDIUM PRIORITY (Nice to Have):</a></li>
+  </ul></li>
+  <li><a href="#quick-wins-do-first" id="toc-quick-wins-do-first" class="nav-link" data-scroll-target="#quick-wins-do-first">🎨 QUICK WINS (Do First)</a>
+  <ul class="collapse">
+  <li><a href="#these-can-be-done-in-1-hour-each" id="toc-these-can-be-done-in-1-hour-each" class="nav-link" data-scroll-target="#these-can-be-done-in-1-hour-each">These can be done in &lt;1 hour each:</a></li>
+  </ul></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">🏆 FINAL THOUGHTS</a>
+  <ul class="collapse">
+  <li><a href="#what-we-achieved-steps-1-3" id="toc-what-we-achieved-steps-1-3" class="nav-link" data-scroll-target="#what-we-achieved-steps-1-3">What We Achieved (Steps 1-3):</a></li>
+  <li><a href="#what-we-still-need-steps-4-6" id="toc-what-we-still-need-steps-4-6" class="nav-link" data-scroll-target="#what-we-still-need-steps-4-6">What We Still Need (Steps 4-6):</a></li>
+  <li><a href="#the-gap" id="toc-the-gap" class="nav-link" data-scroll-target="#the-gap">The Gap:</a></li>
+  </ul></li>
+  <li><a href="#expected-improvement" id="toc-expected-improvement" class="nav-link" data-scroll-target="#expected-improvement">📈 EXPECTED IMPROVEMENT</a></li>
+  <li><a href="#recommendation" id="toc-recommendation" class="nav-link" data-scroll-target="#recommendation">💡 RECOMMENDATION</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="round-2-comprehensive-critical-evaluation" class="level1">
+<h1>🔍 ROUND 2: COMPREHENSIVE CRITICAL EVALUATION</h1>
+<p><strong>Date:</strong> September 29, 2025<br>
+<strong>Current Score:</strong> 7.5/10 (Improved from 6.5/10)<br>
+<strong>Status:</strong> Significant Progress, But Critical Issues Remain</p>
+<hr>
+<section id="executive-summary" class="level2">
+<h2 class="anchored" data-anchor-id="executive-summary">📊 Executive Summary</h2>
+<section id="what-improved" class="level3">
+<h3 class="anchored" data-anchor-id="what-improved">What Improved:</h3>
+<p>✅ <strong>Typography</strong> - Professional Inter font (MAJOR WIN) ✅ <strong>Homepage Hero</strong> - Eye-catching gradient section<br>
+✅ <strong>Search</strong> - Working search functionality<br>
+✅ <strong>Navigation</strong> - Clearer labels</p>
+</section>
+<section id="what-still-needs-work" class="level3">
+<h3 class="anchored" data-anchor-id="what-still-needs-work">What Still Needs Work:</h3>
+<p>❌ <strong>Visual Polish</strong> - Design feels basic/amateur in places<br>
+❌ <strong>Content Density</strong> - Some pages overwhelm, others underwhelm<br>
+❌ <strong>Consistency</strong> - Mixed design patterns across pages<br>
+❌ <strong>Color Scheme</strong> - Lacks cohesive design system<br>
+❌ <strong>Spacing</strong> - Inconsistent rhythm and breathing room<br>
+❌ <strong>Mobile UX</strong> - Not optimized enough</p>
+<p><strong>Bottom Line:</strong> We fixed the fundamentals, but the site still doesn’t feel <em>premium</em> or <em>polished</em>. It’s functional but not impressive.</p>
+<hr>
+</section>
+</section>
+<section id="critical-issue-1-design-lacks-visual-polish" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-1-design-lacks-visual-polish">🎨 CRITICAL ISSUE #1: Design Lacks Visual Polish</h2>
+<section id="problem-generic-bootstrap-look" class="level3">
+<h3 class="anchored" data-anchor-id="problem-generic-bootstrap-look">Problem: Generic Bootstrap Look</h3>
+<p><strong>Current State:</strong></p>
+<pre><code>Blog pages = Standard Bootstrap cards
+Feature cards = Basic borders and shadows
+Color usage = Limited to blue/purple
+Overall feel = "Made with Bootstrap template"</code></pre>
+<p><strong>What’s Wrong:</strong> - ❌ Cards look flat and boring - ❌ No visual interest or personality - ❌ Feels like a 2018 website, not 2025 - ❌ Lack of sophisticated design elements - ❌ No micro-interactions or delight moments</p>
+<p><strong>Examples:</strong> 1. <strong>Blog Index Pages</strong> (<code>ml-blog.qmd</code>, <code>genomics-blog.qmd</code>) - Plain white cards with gray borders - No imagery, no color distinction - Title + description + tags (predictable) - No visual hierarchy within cards</p>
+<ol start="2" type="1">
+<li><strong>Feature Cards on Homepage</strong>
+<ul>
+<li>Basic hover effect (transform: translateY)</li>
+<li>Simple emoji icons (not professional)</li>
+<li>Generic tag styling</li>
+<li>No depth or sophistication</li>
+</ul></li>
+<li><strong>Color Palette</strong>
+<ul>
+<li>Purple gradient hero (GOOD)</li>
+<li>But then… everything else is gray/white/blue</li>
+<li>No accent colors for visual interest</li>
+<li>No warm tones to balance cool blues</li>
+</ul></li>
+</ol>
+<p><strong>What Modern Sites Do:</strong> - Gradient overlays on cards - Glassmorphism effects - Custom illustrations or patterns - Strategic use of color - Sophisticated shadows and depth - Smooth animations and transitions</p>
+<p><strong>Score:</strong> 6/10 (Functional but uninspired)</p>
+<hr>
+</section>
+</section>
+<section id="critical-issue-2-content-organization-problems" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-2-content-organization-problems">🎯 CRITICAL ISSUE #2: Content Organization Problems</h2>
+<section id="problem-a-blog-index-pages-are-repetitive" class="level3">
+<h3 class="anchored" data-anchor-id="problem-a-blog-index-pages-are-repetitive">Problem A: Blog Index Pages Are Repetitive</h3>
+<p><strong>Current Pattern (EVERY blog category page):</strong></p>
+<pre><code>Intro paragraph
+↓
+[Card] [Card]
+[Card] [Card]
+[Card] [Card]
+↓
+"Topics Covered" section (4 boxes)
+↓
+"Upcoming Topics" (bullet list)
+↓
+CTA buttons to other sections</code></pre>
+<p><strong>Issues:</strong> 1. ❌ <strong>Too formulaic</strong> - All three blog pages look identical 2. ❌ <strong>Duplicate content</strong> - Same article appears on multiple pages 3. ❌ <strong>No filtering</strong> - Can’t filter by topic or date 4. ❌ <strong>No search within category</strong> - Must use global search 5. ❌ <strong>“Coming Soon” cards</strong> - Empty promises, looks unfinished</p>
+<p><strong>Example:</strong> <code>genomics-blog.qmd</code> - Has 6 article cards - ONE duplicate (T-test appears TWICE) - “Upcoming Topics” section adds no value - “Topics Covered” cards are vague summaries</p>
+<p><strong>Better Approach:</strong> - <strong>Grid layout</strong> with filters (All, Deep Learning, Statistics, etc.) - <strong>Timeline view</strong> option (sort by date) - <strong>Featured post</strong> at top (hero treatment) - <strong>Tags cloud</strong> for easy navigation - <strong>“X articles in this category”</strong> counter - <strong>Load more</strong> or pagination for many posts</p>
+<p><strong>Score:</strong> 6.5/10 (Organized but boring)</p>
+<hr>
+</section>
+<section id="problem-b-individual-blog-posts-lack-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="problem-b-individual-blog-posts-lack-metadata">Problem B: Individual Blog Posts Lack Metadata</h3>
+<p><strong>Current State:</strong> Most blog posts (<code>multi-teacher-knowledge-distillation.qmd</code>, etc.) show:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Post Title"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="at">Content</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Missing:</strong> - ❌ Publication date - ❌ Reading time estimate - ❌ Author info (even though it’s your site!) - ❌ Related posts - ❌ Table of contents sidebar - ❌ Share buttons - ❌ Tags/categories visible on page</p>
+<p><strong>Impact:</strong> - Posts feel disconnected from each other - No social sharing = less traffic - Hard to gauge freshness of content - No cross-linking between related topics</p>
+<p><strong>Better Approach:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Multi-Teacher Knowledge Distillation"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Sanjeeva Reddy Dodlapati"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2025-01-15"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">Machine Learning</span><span class="kw">,</span><span class="at"> Deep Learning</span><span class="kw">,</span><span class="at"> AI</span><span class="kw">]</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Advanced techniques for model efficiency"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"featured-image.jpg"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">reading-time</span><span class="kw">:</span><span class="at"> </span><span class="dv">12</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With rendered metadata box:</p>
+<pre><code>┌─────────────────────────────────────┐
+│ 📅 Jan 15, 2025 | ⏱️ 12 min read   │
+│ 🏷️ ML • Deep Learning • AI         │
+│ 👤 Sanjeeva Reddy Dodlapati         │
+│ 🔗 Share: [Twitter] [LinkedIn]     │
+└─────────────────────────────────────┘</code></pre>
+<p><strong>Score:</strong> 5/10 (Content is good, presentation is basic)</p>
+<hr>
+</section>
+</section>
+<section id="critical-issue-3-inconsistent-design-system" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-3-inconsistent-design-system">🏗️ CRITICAL ISSUE #3: Inconsistent Design System</h2>
+<section id="problem-mixed-design-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="problem-mixed-design-patterns">Problem: Mixed Design Patterns</h3>
+<p><strong>What I’m Seeing:</strong> 1. <strong>Homepage</strong> - Custom gradient hero, styled cards, embedded CSS 2. <strong>Blog index pages</strong> - Basic Bootstrap cards, minimal styling 3. <strong>About page</strong> - Emoji headers, simple lists 4. <strong>Individual posts</strong> - Default Quarto styling, no custom elements</p>
+<p><strong>The Issue:</strong> Each page feels like it was designed by a different person. There’s no <strong>cohesive design language</strong> tying everything together.</p>
+<p><strong>Examples of Inconsistency:</strong></p>
+<section id="color-usage" class="level4">
+<h4 class="anchored" data-anchor-id="color-usage">Color Usage:</h4>
+<ul>
+<li>Homepage hero: Purple/blue gradient ✅</li>
+<li>Feature cards: Blue links, purple tags</li>
+<li>Blog cards: Blue category badges</li>
+<li>About page: No accent colors at all</li>
+<li>Code blocks: Dark theme</li>
+<li><strong>Result:</strong> No clear color strategy</li>
+</ul>
+</section>
+<section id="typography-hierarchy" class="level4">
+<h4 class="anchored" data-anchor-id="typography-hierarchy">Typography Hierarchy:</h4>
+<ul>
+<li>Homepage h1: 3rem, weight 800</li>
+<li>Section h2: 2rem, underline</li>
+<li>Blog page h3: 1.125rem in cards</li>
+<li>About page h2: Uses emoji prefixes</li>
+<li><strong>Result:</strong> Confusing hierarchy</li>
+</ul>
+</section>
+<section id="card-styles" class="level4">
+<h4 class="anchored" data-anchor-id="card-styles">Card Styles:</h4>
+<ul>
+<li>Homepage feature cards: 2rem padding, hover shadow</li>
+<li>Blog cards: 1.5rem padding, lighter hover</li>
+<li>Expertise cards: Different border style</li>
+<li>Topics cards: Center-aligned, different padding</li>
+<li><strong>Result:</strong> Nothing looks related</li>
+</ul>
+</section>
+<section id="spacing" class="level4">
+<h4 class="anchored" data-anchor-id="spacing">Spacing:</h4>
+<ul>
+<li>Homepage sections: 3rem padding</li>
+<li>Blog pages: Inconsistent gaps</li>
+<li>About page: No systematic spacing</li>
+<li><strong>Result:</strong> Visual chaos</li>
+</ul>
+<p><strong>What’s Missing:</strong> A proper <strong>design system</strong> with: - Defined color palette (primary, secondary, accent, neutrals) - Typography scale (consistent sizes and weights) - Spacing scale (8px, 16px, 24px, 32px, etc.) - Component library (card styles, buttons, badges) - Grid system usage</p>
+<p><strong>Score:</strong> 6/10 (Some patterns, but not systematic)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-4-homepage-still-has-problems" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-4-homepage-still-has-problems">💎 CRITICAL ISSUE #4: Homepage Still Has Problems</h2>
+<section id="problem-information-architecture-issues" class="level3">
+<h3 class="anchored" data-anchor-id="problem-information-architecture-issues">Problem: Information Architecture Issues</h3>
+<p><strong>Current Hero Section:</strong></p>
+<pre><code>✅ Gradient background (GOOD)
+✅ Large profile photo (GOOD)
+✅ Clear headline (GOOD)
+✅ 3 CTA buttons (GOOD)
+✅ Statistics bar (GOOD)
+
+❌ Tagline is too long and technical
+❌ Lead paragraph too wordy
+❌ Statistics lack context
+❌ CTAs compete with each other</code></pre>
+<p><strong>Specific Issues:</strong></p>
+<section id="tagline-problem" class="level4">
+<h4 class="anchored" data-anchor-id="tagline-problem">1. Tagline Problem:</h4>
+<p><strong>Current:</strong> “AI/ML Researcher Advancing Computational Biology &amp; Drug Discovery” - Too long (10 words) - Too technical for non-experts - Not emotionally engaging</p>
+<p><strong>Better:</strong> - “Building AI to Decode Biology” (5 words, clear) - “Where Artificial Intelligence Meets Life Science” (6 words) - “Accelerating Drug Discovery with AI” (5 words, specific impact)</p>
+</section>
+<section id="lead-paragraph-problem" class="level4">
+<h4 class="anchored" data-anchor-id="lead-paragraph-problem">2. Lead Paragraph Problem:</h4>
+<p><strong>Current:</strong> “Designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG) for genomics and healthcare applications.”</p>
+<ul>
+<li>Buzzword soup (generative AI, agentic AI, RAG)</li>
+<li>No clear benefit stated</li>
+<li>Too technical for broad audience</li>
+</ul>
+<p><strong>Better:</strong> “Developing intelligent systems that help scientists discover new medicines faster, predict disease outcomes more accurately, and unlock insights hidden in biological data.”</p>
+</section>
+<section id="statistics-lack-impact" class="level4">
+<h4 class="anchored" data-anchor-id="statistics-lack-impact">3. Statistics Lack Impact:</h4>
+<p><strong>Current:</strong></p>
+<pre><code>6+ Years Experience
+7 Publications
+40+ Certifications</code></pre>
+<p><strong>Better with context:</strong></p>
+<pre><code>6+ Years
+Pioneering AI Research
+
+7 Publications
+Top-Tier Journals
+
+40+ Certifications
+Continuous Learning</code></pre>
+<p>Or even better - <strong>meaningful metrics:</strong></p>
+<pre><code>38% Improvement
+In DNA Methylation Prediction
+
+50% Coverage
+From 1.5% in Sparse Data
+
+80% Cost Reduction
+Through Novel Algorithms</code></pre>
+</section>
+<section id="featured-research-section-issues" class="level4">
+<h4 class="anchored" data-anchor-id="featured-research-section-issues">4. Featured Research Section Issues:</h4>
+<ul>
+<li>Emoji icons (🧬 🤖 💊) feel unprofessional</li>
+<li>“Learn More →” links go nowhere (#)</li>
+<li>No project images or visualizations</li>
+<li>Tags are inconsistent with blog tags</li>
+</ul>
+<p><strong>Score:</strong> 7/10 (Good foundation, needs refinement)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-5-mobile-experience-not-optimized" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-5-mobile-experience-not-optimized">📱 CRITICAL ISSUE #5: Mobile Experience Not Optimized</h2>
+<section id="problem-desktop-first-thinking" class="level3">
+<h3 class="anchored" data-anchor-id="problem-desktop-first-thinking">Problem: Desktop-First Thinking</h3>
+<p><strong>Current Approach:</strong> - Responsive grid (col-lg-4, col-md-3) - Some media queries in hero section - Bootstrap’s responsive utilities</p>
+<p><strong>What’s Missing:</strong></p>
+<section id="mobile-navigation" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-navigation">1. Mobile Navigation:</h4>
+<ul>
+<li>Navbar collapses to hamburger (standard)</li>
+<li>But no optimization for thumb zones</li>
+<li>Search on mobile could be better</li>
+<li>No bottom navigation bar (common in 2025)</li>
+</ul>
+</section>
+<section id="mobile-hero" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-hero">2. Mobile Hero:</h4>
+<div class="sourceCode" id="cb10"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">768</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">.hero-section</span> h1 {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="kw">font-size</span><span class="ch">:</span> <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span>  <span class="er">// Still large</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">.hero-stats</span> {</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        <span class="kw">flex-direction</span><span class="ch">:</span> <span class="dv">column</span><span class="op">;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">gap</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Issues:</strong> - Profile photo could be smaller on mobile - CTA buttons stack (good) but take full width (could be better) - Statistics section feels cramped - Lead paragraph too long for mobile</p>
+</section>
+<section id="mobile-cards" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-cards">3. Mobile Cards:</h4>
+<ul>
+<li>Feature cards stack (good)</li>
+<li>But lose visual interest when full-width</li>
+<li>No swipe gestures</li>
+<li>No mobile-specific interactions</li>
+</ul>
+</section>
+<section id="mobile-typography" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-typography">4. Mobile Typography:</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> (<span class="kw">max-width</span>: <span class="dv">768</span><span class="dt">px</span>) {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    html {</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>        <span class="kw">font-size</span>: <span class="dv">15</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Reduces from 16px to 15px</li>
+<li>But body text is 1.125rem = 16.875px</li>
+<li>Still large on small screens</li>
+</ul>
+<p><strong>Modern Mobile Best Practices Not Used:</strong> - Touch-friendly targets (44px minimum) - Swipeable carousels for featured content - Bottom sheet navigation - Progressive disclosure (show more/less) - Optimized images for mobile bandwidth - Touch gestures (swipe, pinch)</p>
+<p><strong>Score:</strong> 6.5/10 (Responsive but not optimized)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-6-color-visual-design" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-6-color-visual-design">🎨 CRITICAL ISSUE #6: Color &amp; Visual Design</h2>
+<section id="problem-limited-color-palette" class="level3">
+<h3 class="anchored" data-anchor-id="problem-limited-color-palette">Problem: Limited Color Palette</h3>
+<p><strong>Current Colors in Use:</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Hero gradient<span class="in">:</span> <span class="pp">#667eea</span> → <span class="pp">#764ba2</span> <span class="in">(</span>purple/blue<span class="in">)</span> ✅</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Primary links<span class="in">:</span> <span class="pp">#2563eb</span> <span class="in">(</span>blue<span class="in">)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Tags<span class="in">:</span> <span class="pp">#e0e7ff</span> bg<span class="op">,</span> <span class="pp">#4338ca</span> text <span class="in">(</span>light blue<span class="in">)</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>Category badges<span class="in">:</span> <span class="pp">#dbeafe</span> bg<span class="op">,</span> <span class="pp">#1e40af</span> text <span class="in">(</span>blue<span class="in">)</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>Backgrounds<span class="in">:</span> White<span class="op">,</span> <span class="pp">#f8fafc</span> <span class="in">(</span>very light gray<span class="in">)</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>Borders<span class="in">:</span> <span class="pp">#e2e8f0</span> <span class="in">(</span>light gray<span class="in">)</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>Text<span class="in">:</span> <span class="pp">#334155</span> <span class="in">(</span>dark gray<span class="in">)</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>Code<span class="in">:</span> <span class="pp">#1e293b</span> bg <span class="in">(</span>dark slate<span class="in">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Issues:</strong></p>
+<section id="too-monochromatic" class="level4">
+<h4 class="anchored" data-anchor-id="too-monochromatic">1. Too Monochromatic:</h4>
+<ul>
+<li>Everything is blue/purple/gray</li>
+<li>No warm colors (orange, yellow, red)</li>
+<li>No accent colors for important elements</li>
+<li>Lacks visual interest</li>
+</ul>
+</section>
+<section id="no-semantic-colors" class="level4">
+<h4 class="anchored" data-anchor-id="no-semantic-colors">2. No Semantic Colors:</h4>
+<p><strong>Machine Learning</strong> category → Blue badge <strong>Genomics</strong> category → Blue badge <strong>Biology</strong> category → Blue badge</p>
+<p><strong>Should be:</strong> - Machine Learning → Purple (#7c3aed) - Genomics → Green (#10b981) - Biology → Teal (#06b6d4) - Chemistry → Orange (#f59e0b)</p>
+</section>
+<section id="poor-contrast-in-places" class="level4">
+<h4 class="anchored" data-anchor-id="poor-contrast-in-places">3. Poor Contrast in Places:</h4>
+<ul>
+<li>Gray text (#64748b) on white is only 4.2:1</li>
+<li>Some links hard to see</li>
+<li>Code blocks have good contrast ✅</li>
+</ul>
+</section>
+<section id="no-dark-mode-optimization" class="level4">
+<h4 class="anchored" data-anchor-id="no-dark-mode-optimization">4. No Dark Mode Optimization:</h4>
+<ul>
+<li>Toggle exists in navbar</li>
+<li>But custom styles don’t account for dark mode</li>
+<li>Hero gradient would look bad in dark mode</li>
+<li>Cards need dark mode variants</li>
+</ul>
+<p><strong>Better Color Strategy:</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="er">// Brand Colors</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Primary<span class="in">:</span> <span class="pp">#667eea</span> <span class="in">(</span>Blue<span class="in">)</span> - Professional<span class="op">,</span> trustworthy</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>Secondary<span class="in">:</span> <span class="pp">#764ba2</span> <span class="in">(</span>Purple<span class="in">)</span> - Creative<span class="op">,</span> AI/tech</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>Accent<span class="in">:</span> <span class="pp">#10b981</span> <span class="in">(</span>Green<span class="in">)</span> - Success<span class="op">,</span> growth<span class="op">,</span> biology</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="er">// Category Colors</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>ML<span class="in">:</span> <span class="pp">#7c3aed</span> <span class="in">(</span>Purple<span class="in">)</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>Genomics<span class="in">:</span> <span class="pp">#059669</span> <span class="in">(</span>Dark green<span class="in">)</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>Chemistry<span class="in">:</span> <span class="pp">#f59e0b</span> <span class="in">(</span>Amber<span class="in">)</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>Biology<span class="in">:</span> <span class="pp">#06b6d4</span> <span class="in">(</span>Cyan<span class="in">)</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>Research<span class="in">:</span> <span class="pp">#ef4444</span> <span class="in">(</span>Red<span class="in">)</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="er">// Semantic Colors</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>Success<span class="in">:</span> <span class="pp">#10b981</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>Warning<span class="in">:</span> <span class="pp">#f59e0b</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>Error<span class="in">:</span> <span class="pp">#ef4444</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>Info<span class="in">:</span> <span class="pp">#3b82f6</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="er">// Neutrals</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>Gray 50<span class="in">:</span> <span class="pp">#f9fafb</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>Gray 100<span class="in">:</span> <span class="pp">#f3f4f6</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>Gray 200<span class="in">:</span> <span class="pp">#e5e7eb</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>Gray 300<span class="in">:</span> <span class="pp">#d1d5db</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>Gray 400<span class="in">:</span> <span class="pp">#9ca3af</span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>Gray 500<span class="in">:</span> <span class="pp">#6b7280</span></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>Gray 600<span class="in">:</span> <span class="pp">#4b5563</span></span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>Gray 700<span class="in">:</span> <span class="pp">#374151</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>Gray 800<span class="in">:</span> <span class="pp">#1f2937</span></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>Gray 900<span class="in">:</span> <span class="pp">#111827</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Score:</strong> 6/10 (Safe but boring)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-7-spacing-rhythm-problems" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-7-spacing-rhythm-problems">📐 CRITICAL ISSUE #7: Spacing &amp; Rhythm Problems</h2>
+<section id="problem-inconsistent-spacing" class="level3">
+<h3 class="anchored" data-anchor-id="problem-inconsistent-spacing">Problem: Inconsistent Spacing</h3>
+<p><strong>Examples of Poor Spacing:</strong></p>
+<section id="homepage" class="level4">
+<h4 class="anchored" data-anchor-id="homepage">Homepage:</h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.hero-section</span> { <span class="kw">padding</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">rem</span> <span class="dv">0</span> <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span> }  <span class="er">// 64px top, 48px bottom</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.section-featured</span> { <span class="kw">padding</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span> }    <span class="er">// 48px both</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">.section-posts</span> { <span class="kw">padding</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span> }       <span class="er">// 48px both</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">.section-expertise</span> { <span class="kw">padding</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span> }   <span class="er">// 48px both</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.section-cta</span> { <span class="kw">padding</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span> }         <span class="er">// 64px both</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>No consistent pattern</li>
+<li>No clear section hierarchy</li>
+</ul>
+</section>
+<section id="blog-pages" class="level4">
+<h4 class="anchored" data-anchor-id="blog-pages">Blog Pages:</h4>
+<ul>
+<li>Some use <code>.mt-3</code>, <code>.mt-4</code> (Bootstrap utilities)</li>
+<li>Some use custom <code>margin: 1.5rem 0</code></li>
+<li>No systematic spacing scale</li>
+</ul>
+</section>
+<section id="typography" class="level4">
+<h4 class="anchored" data-anchor-id="typography">Typography:</h4>
+<div class="sourceCode" id="cb15"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>h1 { <span class="kw">margin-top</span>: <span class="dv">0</span><span class="op">;</span> <span class="kw">margin-bottom</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span> }</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>h2 { <span class="kw">margin-top</span>: <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span> <span class="kw">margin-bottom</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span> }</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>h3 { <span class="kw">margin-top</span>: <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span> <span class="kw">margin-bottom</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span> }</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>p { <span class="kw">margin-bottom</span>: <span class="dv">1.25</span><span class="dt">rem</span><span class="op">;</span> }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>h2 has 3rem top margin (large gap)</li>
+<li>But p only has 1.25rem bottom</li>
+<li>Creates uneven rhythm</li>
+</ul>
+<p><strong>What’s Missing: Spacing Scale</strong></p>
+<p>Modern design systems use a spacing scale:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="va">$space-1</span>: <span class="dv">0.25</span><span class="dt">rem</span><span class="op">;</span>  <span class="co">// 4px</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="va">$space-2</span>: <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span>   <span class="co">// 8px</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="va">$space-3</span>: <span class="dv">0.75</span><span class="dt">rem</span><span class="op">;</span>  <span class="co">// 12px</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="va">$space-4</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span>     <span class="co">// 16px</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="va">$space-5</span>: <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span>   <span class="co">// 24px</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="va">$space-6</span>: <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span>     <span class="co">// 32px</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="va">$space-8</span>: <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span>     <span class="co">// 48px</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="va">$space-10</span>: <span class="dv">4</span><span class="dt">rem</span><span class="op">;</span>    <span class="co">// 64px</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="va">$space-12</span>: <span class="dv">6</span><span class="dt">rem</span><span class="op">;</span>    <span class="co">// 96px</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="va">$space-16</span>: <span class="dv">8</span><span class="dt">rem</span><span class="op">;</span>    <span class="co">// 128px</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then use consistently:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.section</span> { <span class="kw">padding</span>: <span class="va">$space-12</span> <span class="dv">0</span><span class="op">;</span> }  <span class="co">// Always 96px</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span> { <span class="kw">padding</span>: <span class="va">$space-6</span><span class="op">;</span> }        <span class="co">// Always 32px</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">.card-gap</span> { <span class="kw">gap</span>: <span class="va">$space-5</span><span class="op">;</span> }        <span class="co">// Always 24px</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Score:</strong> 6/10 (Some spacing, but not systematic)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-8-content-quality-vs.-presentation" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-8-content-quality-vs.-presentation">🔍 CRITICAL ISSUE #8: Content Quality vs.&nbsp;Presentation</h2>
+<section id="problem-great-content-basic-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="problem-great-content-basic-presentation">Problem: Great Content, Basic Presentation</h3>
+<p><strong>What’s Good About Content:</strong> - ✅ Deep technical articles (Multi-Teacher KD is excellent) - ✅ Comprehensive guides (DNA Encoding is thorough) - ✅ Real research (Publications are legitimate) - ✅ Expertise is clear</p>
+<p><strong>What’s Bad About Presentation:</strong></p>
+<section id="no-visual-content" class="level4">
+<h4 class="anchored" data-anchor-id="no-visual-content">1. No Visual Content:</h4>
+<ul>
+<li><strong>Zero images</strong> in blog posts (besides code)</li>
+<li>No diagrams or flowcharts</li>
+<li>No screenshots of results</li>
+<li>No architectural diagrams</li>
+<li>No data visualizations</li>
+</ul>
+<p><strong>Example:</strong> “Multi-Teacher Knowledge Distillation” - Complex topic - Multiple algorithms discussed - <strong>NO DIAGRAMS</strong> showing how they work - Relies only on text explanation</p>
+<p><strong>Impact:</strong> Hard to understand, looks boring, no social media sharing</p>
+</section>
+<section id="code-blocks-without-context" class="level4">
+<h4 class="anchored" data-anchor-id="code-blocks-without-context">2. Code Blocks Without Context:</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code appears suddenly</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> some_function():</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Missing:</strong> - “Here’s how to implement this:” - Code explanations before/after - Expected output - Common errors - Performance notes</p>
+</section>
+<section id="no-progressive-disclosure" class="level4">
+<h4 class="anchored" data-anchor-id="no-progressive-disclosure">3. No Progressive Disclosure:</h4>
+<ul>
+<li>Long articles just scroll endlessly</li>
+<li>No expandable sections</li>
+<li>No “Read More” patterns</li>
+<li>No sidebar TOC with scroll spy</li>
+<li>No “Back to Top” button</li>
+</ul>
+</section>
+<section id="no-engagement-elements" class="level4">
+<h4 class="anchored" data-anchor-id="no-engagement-elements">4. No Engagement Elements:</h4>
+<ul>
+<li>No comments section</li>
+<li>No “Was this helpful?” buttons</li>
+<li>No share buttons</li>
+<li>No related posts</li>
+<li>No author bio at end</li>
+<li>No newsletter signup</li>
+</ul>
+<p><strong>Score:</strong> 7/10 (Content A+, Presentation C+)</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="critical-issue-9-homepage-cta-confusion" class="level2">
+<h2 class="anchored" data-anchor-id="critical-issue-9-homepage-cta-confusion">🎯 CRITICAL ISSUE #9: Homepage CTA Confusion</h2>
+<section id="problem-too-many-calls-to-action" class="level3">
+<h3 class="anchored" data-anchor-id="problem-too-many-calls-to-action">Problem: Too Many Calls-to-Action</h3>
+<p><strong>Current Hero Section:</strong></p>
+<pre><code>[View Research] [Read Blog] [Contact Me]</code></pre>
+<p><strong>Below:</strong></p>
+<pre><code>Featured Research cards with "Learn More →"
+Latest Blog Posts with "Read Article →"
+[View All Posts] button
+Expertise section (no CTA)
+CTA section: [Email] [LinkedIn] [GitHub]</code></pre>
+<p><strong>The Problem:</strong> - <strong>7-8 different CTAs</strong> competing for attention - No clear primary action - User paralysis: “What should I do?” - No conversion funnel</p>
+<p><strong>Best Practice: One Primary CTA</strong></p>
+<p><strong>Better Hierarchy:</strong></p>
+<pre><code>PRIMARY: [Read My Latest Research] ← ONE clear action
+secondary: [View Blog] [Contact]</code></pre>
+<p><strong>Then below:</strong> - Featured content (browse, don’t click) - Expertise (informational) - Footer CTA for contact</p>
+<p><strong>Currently:</strong> - “View Research” → goes to research.html (doesn’t exist!) - “Read Blog” → goes to blog.html - “Contact Me” → opens email - Feature cards → half go to #, half to external sites - Blog posts → go to articles - “View All Posts” → goes to blog.html (duplicate) - Email/LinkedIn/GitHub → three more choices</p>
+<p><strong>Result:</strong> Confusing, no clear journey</p>
+<p><strong>Score:</strong> 6/10 (Options are good, but too many)</p>
+<hr>
+</section>
+</section>
+<section id="scoring-breakdown-detailed" class="level2">
+<h2 class="anchored" data-anchor-id="scoring-breakdown-detailed">📊 SCORING BREAKDOWN (Detailed)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Score</th>
+<th>Weight</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Typography</strong></td>
+<td>8.5/10</td>
+<td>15%</td>
+<td>Inter font excellent, hierarchy good</td>
+</tr>
+<tr class="even">
+<td><strong>Layout</strong></td>
+<td>7/10</td>
+<td>10%</td>
+<td>Responsive but basic</td>
+</tr>
+<tr class="odd">
+<td><strong>Visual Design</strong></td>
+<td>6/10</td>
+<td>20%</td>
+<td>Generic Bootstrap feel</td>
+</tr>
+<tr class="even">
+<td><strong>Color</strong></td>
+<td>6/10</td>
+<td>10%</td>
+<td>Limited palette, no accents</td>
+</tr>
+<tr class="odd">
+<td><strong>Content Org</strong></td>
+<td>6.5/10</td>
+<td>15%</td>
+<td>Organized but repetitive</td>
+</tr>
+<tr class="even">
+<td><strong>Navigation</strong></td>
+<td>7.5/10</td>
+<td>10%</td>
+<td>Clear labels, working search</td>
+</tr>
+<tr class="odd">
+<td><strong>Mobile UX</strong></td>
+<td>6.5/10</td>
+<td>10%</td>
+<td>Responsive not optimized</td>
+</tr>
+<tr class="even">
+<td><strong>Engagement</strong></td>
+<td>5/10</td>
+<td>10%</td>
+<td>No images, no interactions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Weighted Average:</strong> <strong>6.7/10</strong> <strong>With Potential:</strong> <strong>9.5/10</strong></p>
+<hr>
+</section>
+<section id="prioritized-action-plan" class="level2">
+<h2 class="anchored" data-anchor-id="prioritized-action-plan">🎯 PRIORITIZED ACTION PLAN</h2>
+<section id="critical-must-fix" class="level3">
+<h3 class="anchored" data-anchor-id="critical-must-fix">🔴 CRITICAL (Must Fix):</h3>
+<section id="visual-design-system-urgent" class="level4">
+<h4 class="anchored" data-anchor-id="visual-design-system-urgent">1. Visual Design System [URGENT]</h4>
+<p><strong>Impact:</strong> HIGH | <strong>Effort:</strong> MEDIUM - Create cohesive color palette with category colors - Define spacing scale and apply consistently - Upgrade card designs (shadows, gradients, depth) - Add visual elements (patterns, shapes, gradients)</p>
+</section>
+<section id="homepage-refinement-urgent" class="level4">
+<h4 class="anchored" data-anchor-id="homepage-refinement-urgent">2. Homepage Refinement [URGENT]</h4>
+<p><strong>Impact:</strong> HIGH | <strong>Effort:</strong> LOW - Simplify tagline (5-6 words max) - Shorten lead paragraph (focus on benefit) - Add context to statistics - Fix broken “View Research” link - Reduce CTA confusion (1 primary action)</p>
+</section>
+<section id="add-visual-content-urgent" class="level4">
+<h4 class="anchored" data-anchor-id="add-visual-content-urgent">3. Add Visual Content [URGENT]</h4>
+<p><strong>Impact:</strong> VERY HIGH | <strong>Effort:</strong> HIGH - Create featured images for blog posts - Add diagrams for technical concepts - Include code output examples - Add project screenshots/demos - Create infographics for complex topics</p>
+</section>
+</section>
+<section id="high-priority-should-fix" class="level3">
+<h3 class="anchored" data-anchor-id="high-priority-should-fix">🟡 HIGH PRIORITY (Should Fix):</h3>
+<section id="blog-index-pages-redesign-high" class="level4">
+<h4 class="anchored" data-anchor-id="blog-index-pages-redesign-high">4. Blog Index Pages Redesign [HIGH]</h4>
+<p><strong>Impact:</strong> MEDIUM | <strong>Effort:</strong> MEDIUM - Create grid layout with filters - Remove duplicate content - Add featured post section - Include post metadata (date, reading time) - Remove “Coming Soon” empty promises</p>
+</section>
+<section id="individual-post-templates-high" class="level4">
+<h4 class="anchored" data-anchor-id="individual-post-templates-high">5. Individual Post Templates [HIGH]</h4>
+<p><strong>Impact:</strong> MEDIUM | <strong>Effort:</strong> LOW - Add metadata header (date, author, tags, reading time) - Include share buttons - Add related posts section - Implement sidebar TOC with scroll spy - Add “Was this helpful?” feedback</p>
+</section>
+<section id="mobile-optimization-high" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-optimization-high">6. Mobile Optimization [HIGH]</h4>
+<p><strong>Impact:</strong> MEDIUM | <strong>Effort:</strong> MEDIUM - Optimize hero for mobile viewing - Add swipeable carousels for featured content - Improve touch targets (44px minimum) - Reduce mobile font sizes strategically - Add bottom navigation (optional)</p>
+</section>
+</section>
+<section id="medium-priority-nice-to-have" class="level3">
+<h3 class="anchored" data-anchor-id="medium-priority-nice-to-have">🟢 MEDIUM PRIORITY (Nice to Have):</h3>
+<section id="engagement-features-medium" class="level4">
+<h4 class="anchored" data-anchor-id="engagement-features-medium">7. Engagement Features [MEDIUM]</h4>
+<p><strong>Impact:</strong> LOW-MEDIUM | <strong>Effort:</strong> LOW - Add newsletter signup - Include comment system (optional) - Add social share buttons - Implement view counters - Add reading progress bar</p>
+</section>
+<section id="dark-mode-completion-medium" class="level4">
+<h4 class="anchored" data-anchor-id="dark-mode-completion-medium">8. Dark Mode Completion [MEDIUM]</h4>
+<p><strong>Impact:</strong> LOW | <strong>Effort:</strong> LOW - Update custom styles for dark mode - Test hero gradient in dark mode - Adjust card shadows for dark mode - Check all color contrasts</p>
+</section>
+<section id="about-page-enhancement-medium" class="level4">
+<h4 class="anchored" data-anchor-id="about-page-enhancement-medium">9. About Page Enhancement [MEDIUM]</h4>
+<p><strong>Impact:</strong> LOW | <strong>Effort:</strong> LOW - Add professional headshot - Create timeline visualization - Add skills progress bars - Include testimonials/recommendations - Add CV download option</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="quick-wins-do-first" class="level2">
+<h2 class="anchored" data-anchor-id="quick-wins-do-first">🎨 QUICK WINS (Do First)</h2>
+<section id="these-can-be-done-in-1-hour-each" class="level3">
+<h3 class="anchored" data-anchor-id="these-can-be-done-in-1-hour-each">These can be done in &lt;1 hour each:</h3>
+<ol type="1">
+<li><p>✅ <strong>Fix Homepage Tagline</strong></p>
+<ul>
+<li>Current: 10 words</li>
+<li>New: 5-6 words</li>
+<li>Impact: Immediate clarity</li>
+</ul></li>
+<li><p>✅ <strong>Add Category Colors</strong></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-ml</span> { <span class="kw">background</span>: <span class="cn">#f3e8ff</span><span class="op">;</span> <span class="kw">color</span>: <span class="cn">#7c3aed</span><span class="op">;</span> }</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-genomics</span> { <span class="kw">background</span>: <span class="cn">#d1fae5</span><span class="op">;</span> <span class="kw">color</span>: <span class="cn">#059669</span><span class="op">;</span> }</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">.category-chemistry</span> { <span class="kw">background</span>: <span class="cn">#fef3c7</span><span class="op">;</span> <span class="kw">color</span>: <span class="cn">#d97706</span><span class="op">;</span> }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Impact: Visual distinction</li>
+</ul></li>
+<li><p>✅ <strong>Add Post Metadata</strong></p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2025-01-15"</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">reading-time</span><span class="kw">:</span><span class="at"> </span><span class="dv">12</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Impact: Context and professionalism</li>
+</ul></li>
+<li><p>✅ <strong>Remove Duplicate Content</strong></p>
+<ul>
+<li>T-test appears twice in genomics-blog</li>
+<li>Impact: Clean organization</li>
+</ul></li>
+<li><p>✅ <strong>Fix Broken Links</strong></p>
+<ul>
+<li>“View Research” → create research.html</li>
+<li>Feature card “Learn More” → real URLs</li>
+<li>Impact: No dead ends</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">🏆 FINAL THOUGHTS</h2>
+<section id="what-we-achieved-steps-1-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-we-achieved-steps-1-3">What We Achieved (Steps 1-3):</h3>
+<p>✅ Professional typography ✅ Hero-focused homepage ✅ Working search ✅ Clear navigation</p>
+</section>
+<section id="what-we-still-need-steps-4-6" class="level3">
+<h3 class="anchored" data-anchor-id="what-we-still-need-steps-4-6">What We Still Need (Steps 4-6):</h3>
+<p>❌ Polish and sophistication ❌ Visual interest and personality<br>
+❌ Content presentation enhancement ❌ Engagement and interactivity</p>
+</section>
+<section id="the-gap" class="level3">
+<h3 class="anchored" data-anchor-id="the-gap">The Gap:</h3>
+<p><strong>Current State:</strong> Functional, organized, professional foundation<br>
+<strong>Desired State:</strong> Polished, engaging, memorable, premium</p>
+<p><strong>The Difference:</strong> Design craft, visual storytelling, attention to detail</p>
+<hr>
+</section>
+</section>
+<section id="expected-improvement" class="level2">
+<h2 class="anchored" data-anchor-id="expected-improvement">📈 EXPECTED IMPROVEMENT</h2>
+<p>If we execute the critical fixes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Current</th>
+<th>After Fixes</th>
+<th>Delta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Overall Score</strong></td>
+<td>6.7/10</td>
+<td>9.5/10</td>
+<td>+42%</td>
+</tr>
+<tr class="even">
+<td><strong>Visual Appeal</strong></td>
+<td>6/10</td>
+<td>9.5/10</td>
+<td>+58%</td>
+</tr>
+<tr class="odd">
+<td><strong>Content Engagement</strong></td>
+<td>5/10</td>
+<td>9/10</td>
+<td>+80%</td>
+</tr>
+<tr class="even">
+<td><strong>Professional Impression</strong></td>
+<td>7/10</td>
+<td>10/10</td>
+<td>+43%</td>
+</tr>
+<tr class="odd">
+<td><strong>User Retention</strong></td>
+<td>6/10</td>
+<td>9/10</td>
+<td>+50%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="recommendation" class="level2">
+<h2 class="anchored" data-anchor-id="recommendation">💡 RECOMMENDATION</h2>
+<p><strong>Focus on these THREE things first:</strong></p>
+<ol type="1">
+<li><strong>Visual Design System</strong> - Colors, spacing, depth</li>
+<li><strong>Homepage Polish</strong> - Tagline, CTAs, visuals</li>
+<li><strong>Visual Content</strong> - Images, diagrams, screenshots</li>
+</ol>
+<p>These three changes will have <strong>80% of the impact</strong> with <strong>40% of the effort</strong>.</p>
+<hr>
+<p><strong>Ready to make the site TRULY impressive? Let’s tackle these issues one by one.</strong></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Sanjeeva Reddy Dodlapati<br>
+AI Research • Computational Biology • Data Science</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:sdodlapa@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
