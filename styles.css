@@ -503,6 +503,134 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(3px);
 }
 
+/* Projects Page Styles */
+.projects-hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    margin: -2rem -2rem 3rem -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.projects-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.projects-hero p {
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.project-filters {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #e2e8f0;
+    background: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    background: #f0f9ff;
+}
+
+.filter-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    z-index: 10;
+}
+
+.featured-badge i {
+    font-size: 0.65rem;
+}
+
+.featured-project .feature-card {
+    border: 2px solid #fbbf24;
+}
+
+.section-all-projects {
+    padding: 2rem 0;
+}
+
+.project-item {
+    cursor: default;
+    margin-bottom: 2rem;
+}
+
+.project-item .feature-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover .feature-card {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-ml {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    color: #7c3aed;
+    border: 1px solid #d8b4fe;
+}
+
+.category-web {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #d97706;
+    border: 1px solid #fcd34d;
+}
+
+/* Responsive filters */
+@media (max-width: 768px) {
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .project-filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
 /* Post Cards */
 .section-posts {
     background: #f8fafc;

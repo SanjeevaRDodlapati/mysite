@@ -1,0 +1,211 @@
+---
+title: "Projects & Research"
+page-layout: full
+---
+
+::: {.projects-hero}
+# Projects & Research Portfolio
+
+Explore my work in AI/ML, Bioinformatics, and Healthcare — from autonomous AI agents to deep learning models advancing scientific research.
+
+<div class="project-filters">
+<button class="filter-btn active" data-filter="all">All Projects</button>
+<button class="filter-btn" data-filter="agentic-ai">Agentic AI</button>
+<button class="filter-btn" data-filter="healthcare">Healthcare AI</button>
+<button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
+<button class="filter-btn" data-filter="ml-systems">ML Systems</button>
+<button class="filter-btn" data-filter="web">Web Development</button>
+</div>
+:::
+
+---
+
+::: {.section-featured}
+## Featured Projects
+
+<div class="row">
+<div class="col-lg-4">
+<a href="https://github.com/sdodlapa/OmicsOracle" class="feature-card-link featured-project" target="_blank" rel="noopener" data-category="agentic-ai">
+<div class="feature-card">
+<div class="featured-badge"><i class="bi bi-star-fill"></i> Featured</div>
+<div class="feature-header">
+<div class="feature-category category-ai"><i class="bi bi-robot"></i> Agentic AI</div>
+<div class="feature-tech-inline">Python · LangChain · RAG</div>
+</div>
+<h3>OmicsOracle AI Agent</h3>
+<p>Autonomous AI agent that automates genomic data analysis from NCBI GEO. Built with LangChain and RAG architecture, it extracts datasets, performs statistical analysis, and generates publication-ready visualizations—reducing manual analysis time from hours to minutes.</p>
+<div class="feature-action">
+<i class="bi bi-github"></i> View on GitHub <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-lg-4">
+<a href="https://github.com/SanjeevaRDodlapati/Clinical-Text-Norm-BERT" class="feature-card-link featured-project" target="_blank" rel="noopener" data-category="healthcare">
+<div class="feature-card">
+<div class="featured-badge"><i class="bi bi-star-fill"></i> Featured</div>
+<div class="feature-header">
+<div class="feature-category category-healthcare"><i class="bi bi-heart-pulse"></i> Healthcare AI</div>
+<div class="feature-tech-inline">BERT · NLP · Healthcare</div>
+</div>
+<h3>ClinicalNormBERT</h3>
+<p>BERT-based model for normalizing clinical text in electronic health records. Personalizes text standardization to improve downstream NLP tasks like entity recognition and relation extraction, addressing inconsistent medical terminology across healthcare systems.</p>
+<div class="feature-action">
+<i class="bi bi-github"></i> View on GitHub <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-lg-4">
+<a href="https://github.com/SanjeevaRDodlapati/Dev-MetTL" class="feature-card-link featured-project" target="_blank" rel="noopener" data-category="bioinformatics">
+<div class="feature-card">
+<div class="featured-badge"><i class="bi bi-star-fill"></i> Featured</div>
+<div class="feature-header">
+<div class="feature-category category-genomics"><i class="bi bi-dna"></i> Genomics ML</div>
+<div class="feature-tech-inline">Deep Learning · Genomics · Transfer Learning</div>
+</div>
+<h3>DNA Methylation Prediction</h3>
+<p>Deep transfer learning model that predicts DNA methylation patterns in single-cell data. Overcomes sparse data limitations by transferring knowledge from bulk methylation datasets, expanding coverage from 1.5% to 50%—enabling comprehensive epigenetic analysis.</p>
+<div class="feature-action">
+<i class="bi bi-github"></i> View on GitHub <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</a>
+</div>
+</div>
+:::
+
+---
+
+::: {.section-all-projects}
+## All Projects
+
+<div class="row">
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="healthcare">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-healthcare"><i class="bi bi-capsule"></i> Healthcare AI</div>
+<div class="feature-tech-inline">Graph-NN · PyTorch · RDKit</div>
+</div>
+<h3>Drug-Drug Interaction Prediction</h3>
+<p>Graph neural networks for predicting adverse drug interactions and improving medication safety. Leverages molecular structure and interaction patterns to identify potential drug conflicts before they occur in clinical settings.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> Learn More <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="ml-systems">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-ml"><i class="bi bi-graph-up"></i> ML Systems</div>
+<div class="feature-tech-inline">Reinforcement Learning · Decision Trees</div>
+</div>
+<h3>ML4Trading</h3>
+<p>Algorithmic trading system using reinforcement learning and decision trees for financial market predictions. Implements advanced strategies for portfolio optimization and risk management using machine learning techniques.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> Learn More <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="healthcare">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-healthcare"><i class="bi bi-hospital"></i> Healthcare AI</div>
+<div class="feature-tech-inline">Scikit-learn · Statistical Modeling</div>
+</div>
+<h3>COVID-19 Healthcare Analytics</h3>
+<p>Analytics platform for pandemic data analysis and visualization supporting healthcare decision-making. Provides real-time insights into infection rates, hospital capacity, and resource allocation to inform public health policy.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> Learn More <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="ml-systems">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-ml"><i class="bi bi-shield-lock"></i> ML Systems</div>
+<div class="feature-tech-inline">Deep Learning · Security · Python</div>
+</div>
+<h3>APT Prediction System</h3>
+<p>Advanced persistent threat detection system using deep learning for cybersecurity applications. Identifies and predicts sophisticated cyber attacks through pattern recognition in network traffic and system logs.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> Learn More <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="bioinformatics">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-genomics"><i class="bi bi-diagram-3"></i> Bioinformatics</div>
+<div class="feature-tech-inline">U-Net · CNNs · Bioinformatics</div>
+</div>
+<h3>Protein Structure Prediction</h3>
+<p>U-Net architecture for protein secondary structure prediction from sequence data. Enables accurate structural predictions to accelerate drug discovery and understanding of protein function in biological systems.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> Learn More <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card-link project-item" data-category="web">
+<div class="feature-card">
+<div class="feature-header">
+<div class="feature-category category-web"><i class="bi bi-globe"></i> Web Development</div>
+<div class="feature-tech-inline">Quarto · HTML/CSS · JavaScript</div>
+</div>
+<h3>Portfolio Website</h3>
+<p>Personal website showcasing research, projects, and blog posts on AI for Science. Built with modern web technologies and optimized for performance, accessibility, and user experience across all devices.</p>
+<div class="feature-action">
+<i class="bi bi-link-45deg"></i> View Site <i class="bi bi-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+:::
+
+<script>
+// Simple filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item, .featured-project');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            
+            // Filter projects
+            projectItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                    item.parentElement.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                    item.parentElement.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
