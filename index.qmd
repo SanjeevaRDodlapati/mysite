@@ -67,7 +67,9 @@ Developing intelligent systems that help scientists discover new medicines faste
 
 <div class="row">
 <div class="col-lg-4">
+<a href="https://github.com/sdodlapa/OmicsOracle" class="feature-card-link" target="_blank" rel="noopener">
 <div class="feature-card">
+<div class="feature-category category-ai"><i class="bi bi-robot"></i> Agentic AI</div>
 <h3>OmicsOracle AI Agent</h3>
 <p>Intelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.</p>
 <div class="feature-tags">
@@ -75,12 +77,14 @@ Developing intelligent systems that help scientists discover new medicines faste
 <span class="tag">LangChain</span>
 <span class="tag">RAG</span>
 </div>
-<a href="#" class="feature-link">Learn More →</a>
 </div>
+</a>
 </div>
 
 <div class="col-lg-4">
+<a href="https://github.com/SanjeevaRDodlapati/Clinical-Text-Norm-BERT" class="feature-card-link" target="_blank" rel="noopener">
 <div class="feature-card">
+<div class="feature-category category-healthcare"><i class="bi bi-heart-pulse"></i> Healthcare AI</div>
 <h3>ClinicalNormBERT</h3>
 <p>Personalized clinical text normalization model improving healthcare data extraction accuracy.</p>
 <div class="feature-tags">
@@ -88,12 +92,14 @@ Developing intelligent systems that help scientists discover new medicines faste
 <span class="tag">NLP</span>
 <span class="tag">Healthcare</span>
 </div>
-<a href="#" class="feature-link">Learn More →</a>
 </div>
+</a>
 </div>
 
 <div class="col-lg-4">
+<a href="https://github.com/SanjeevaRDodlapati/Dev-MetTL" class="feature-card-link" target="_blank" rel="noopener">
 <div class="feature-card">
+<div class="feature-category category-genomics"><i class="bi bi-dna"></i> Genomics ML</div>
 <h3>DNA Methylation Prediction</h3>
 <p>Transfer learning approach improving methylome coverage from 1.5% to 50% in single-cell data.</p>
 <div class="feature-tags">
@@ -101,8 +107,8 @@ Developing intelligent systems that help scientists discover new medicines faste
 <span class="tag">Genomics</span>
 <span class="tag">Transfer Learning</span>
 </div>
-<a href="https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full" class="feature-link">Read Paper →</a>
 </div>
+</a>
 </div>
 </div>
 :::

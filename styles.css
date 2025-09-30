@@ -340,15 +340,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #0f172a;
 }
 
+/* Feature Cards - Unified with Blog Cards */
+.feature-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .feature-card {
     background: white;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
-    padding: 2.5rem;
+    padding: 2rem;
     height: 100%;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .feature-card::before {
@@ -357,19 +365,19 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(90deg, #2563eb, #7c3aed, #ec4899);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-card-link:hover .feature-card {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
     transform: translateY(-8px);
     border-color: #cbd5e1;
 }
 
-.feature-card:hover::before {
+.feature-card-link:hover .feature-card::before {
     opacity: 1;
 }
 
@@ -378,6 +386,37 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: #0f172a;
+    line-height: 1.3;
+}
+
+/* Feature Category Badges */
+.feature-category {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.category-ai {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    color: #7c3aed;
+    border: 1px solid #d8b4fe;
+}
+
+.category-healthcare {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #16a34a;
+    border: 1px solid #86efac;
+}
+
+.category-genomics {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #2563eb;
+    border: 1px solid #93c5fd;
 }
 
 .feature-card p {
@@ -401,27 +440,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.02em;
-}
-
-.feature-link {
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.2s ease;
-    margin-top: 0.5rem;
-}
-
-.feature-link:hover {
-    color: #1e40af;
-    gap: 0.75rem;
-}
-
-.feature-link:hover {
-    color: #1d4ed8;
-    gap: 0.75rem;
 }
 
 /* Post Cards */

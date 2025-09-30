@@ -452,7 +452,7 @@
     "href": "index.html#featured-research",
     "title": "Sanjeeva Reddy Dodlapati",
     "section": "Featured Research",
-    "text": "Featured Research\n\n\n\n\nOmicsOracle AI Agent\n\n\nIntelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.\n\n\nPython LangChain RAG\n\nLearn More →\n\n\n\n\n\nClinicalNormBERT\n\n\nPersonalized clinical text normalization model improving healthcare data extraction accuracy.\n\n\nBERT NLP Healthcare\n\nLearn More →\n\n\n\n\n\nDNA Methylation Prediction\n\n\nTransfer learning approach improving methylome coverage from 1.5% to 50% in single-cell data.\n\n\nDeep Learning Genomics Transfer Learning\n\nRead Paper →"
+    "text": "Featured Research\n\n\n\n\n\n Agentic AI\n\n\nOmicsOracle AI Agent\n\n\nIntelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.\n\n\nPython LangChain RAG\n\n\n\n\n\n\n\n\n Healthcare AI\n\n\nClinicalNormBERT\n\n\nPersonalized clinical text normalization model improving healthcare data extraction accuracy.\n\n\nBERT NLP Healthcare\n\n\n\n\n\n\n\n\n Genomics ML\n\n\nDNA Methylation Prediction\n\n\nTransfer learning approach improving methylome coverage from 1.5% to 50% in single-cell data.\n\n\nDeep Learning Genomics Transfer Learning"
   },
   {
     "objectID": "index.html#latest-from-the-blog",
