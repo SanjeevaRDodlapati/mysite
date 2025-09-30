@@ -20,15 +20,6 @@ page-layout: full
 Developing intelligent systems that help scientists discover new medicines faster, predict disease outcomes more accurately, and unlock insights hidden in biological data.
 </p>
 
-<div class="hero-blog-section">
-<p class="blog-section-label">Explore My Blog:</p>
-<div class="blog-category-buttons">
-[<i class="bi bi-robot"></i> ML/AI](ml-blog.html){.btn .btn-blog-category}
-[<i class="bi bi-dna"></i> Genomics](genomics-blog.html){.btn .btn-blog-category}
-[<i class="bi bi-cpu"></i> Chemistry](chemistry-blog.html){.btn .btn-blog-category}
-</div>
-</div>
-
 <div class="hero-stats">
 <div class="stat">
   <div class="stat-value">6+</div>
@@ -41,6 +32,15 @@ Developing intelligent systems that help scientists discover new medicines faste
 <div class="stat">
   <div class="stat-value">40+</div>
   <div class="stat-label">Professional Certifications</div>
+</div>
+</div>
+
+<div class="hero-blog-section">
+<p class="blog-section-label">Explore My Blog:</p>
+<div class="blog-category-buttons">
+[<i class="bi bi-robot"></i> ML/AI](ml-blog.html){.btn .btn-blog-category}
+[<i class="bi bi-dna"></i> Genomics](genomics-blog.html){.btn .btn-blog-category}
+[<i class="bi bi-cpu"></i> Chemistry](chemistry-blog.html){.btn .btn-blog-category}
 </div>
 </div>
 
