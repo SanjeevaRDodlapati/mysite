@@ -442,6 +442,94 @@ $space-12: 6rem;    // 96px
 }
 
 // ============================================
+// BLOG CATEGORY PAGE CARDS
+// ============================================
+
+// Category Badge System
+.badge-category {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.badge-ml {
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+    color: #7c3aed;
+    border: 1px solid #d8b4fe;
+}
+
+.badge-genomics {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    color: #059669;
+    border: 1px solid #6ee7b7;
+}
+
+.badge-chemistry {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #d97706;
+    border: 1px solid #fcd34d;
+}
+
+// Color-coded Card Borders
+.card-ml {
+    border-top: 3px solid #7c3aed;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(124, 58, 237, 0.15);
+        border-top-color: #6d28d9;
+    }
+}
+
+.card-genomics {
+    border-top: 3px solid #059669;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(5, 150, 105, 0.15);
+        border-top-color: #047857;
+    }
+}
+
+.card-chemistry {
+    border-top: 3px solid #d97706;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(217, 119, 6, 0.15);
+        border-top-color: #b45309;
+    }
+}
+
+// Card Tags Styling
+.card-tags {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+// Research/Topics Cards
+.card-research {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+}
+
+
+// ============================================
 // CV PAGE SPECIFIC STYLES
 // ============================================
 

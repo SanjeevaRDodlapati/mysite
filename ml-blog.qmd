@@ -11,30 +11,32 @@ Explore cutting-edge machine learning techniques, deep learning applications, an
 
 ::: {.row}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-ml}
 ::: {.card-body}
-### [🤖 Multi-Teacher Knowledge Distillation](multi-teacher-knowledge-distillation.html)
+<span class="badge-category badge-ml">Machine Learning</span>
+### [Multi-Teacher Knowledge Distillation](multi-teacher-knowledge-distillation.html)
 *Advanced AI Techniques for Model Efficiency*
 
 Deep dive into state-of-the-art multi-teacher knowledge distillation methods including UEKD, ATMKD, and meta-learning approaches. Learn how to combine the wisdom of multiple AI models into one efficient student model.
 
-::: {.text-muted}
-🏷️ AI • Knowledge Distillation • Ensemble Learning • Deep Learning
+::: {.card-tags}
+AI • Knowledge Distillation • Ensemble Learning • Deep Learning
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-ml}
 ::: {.card-body}
-### [📈 T-test Applications](T-test-alt.html)
+<span class="badge-category badge-ml">Machine Learning</span>
+### [T-test Applications](T-test-alt.html)
 *Statistical hypothesis testing fundamentals*
 
 Comprehensive guide to T-test applications in data science, covering one-sample, two-sample, and paired T-tests with practical Python implementations.
 
-::: {.text-muted}
-🏷️ Statistics • Python • Data Analysis
+::: {.card-tags}
+Statistics • Python • Data Analysis
 :::
 :::
 :::
@@ -43,30 +45,32 @@ Comprehensive guide to T-test applications in data science, covering one-sample,
 
 ::: {.row .mt-3}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-ml}
 ::: {.card-body}
-### [🔟 Top 10 Statistical Concepts in Bioinformatics](Top10_bioinfo_stats.html)
+<span class="badge-category badge-ml">Machine Learning</span>
+### [Top 10 Statistical Concepts in Bioinformatics](Top10_bioinfo_stats.html)
 *Essential statistics for biological data*
 
 Deep dive into the most important statistical methods used in bioinformatics research, with real-world examples and computational implementations.
 
-::: {.text-muted}
-🏷️ Bioinformatics • Statistics • Research Methods
+::: {.card-tags}
+Bioinformatics • Statistics • Research Methods
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-ml}
 ::: {.card-body}
-### [🧠 Coming Soon: Neural Architecture Search]()
+<span class="badge-category badge-ml">Machine Learning</span>
+### [Coming Soon: Neural Architecture Search]()
 *Automated ML model design*
 
 Explore automated neural architecture search techniques and their applications in optimizing deep learning models for specific tasks.
 
-::: {.text-muted}
-🏷️ AutoML • Neural Networks • Model Optimization
+::: {.card-tags}
+AutoML • Neural Networks • Model Optimization
 :::
 :::
 :::
@@ -75,40 +79,40 @@ Explore automated neural architecture search techniques and their applications i
 
 ---
 
-## 🎯 Topics Covered
+## Topics Covered
 
 ::: {.row}
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🧠 Deep Learning**  
+**Deep Learning**  
 Neural networks, architectures, and advanced techniques
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**📊 Statistical Methods**  
+**Statistical Methods**  
 Hypothesis testing, regression, and probabilistic models
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🔬 Research Methods**  
+**Research Methods**  
 Experimental design and computational methodologies
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**💻 Implementation**  
+**Implementation**  
 Python, R, and practical coding tutorials
 :::
 :::
@@ -120,6 +124,6 @@ Python, R, and practical coding tutorials
 ::: {.text-center .mt-4}
 *Stay tuned for more advanced tutorials and research insights in machine learning and artificial intelligence.*
 
-[🧬 **Explore Genomics AI**](genomics-blog.html){.btn .btn-primary .me-2}
-[⚗️ **AI for Chemistry**](chemistry-blog.html){.btn .btn-outline-primary}
+[Explore Genomics AI](genomics-blog.html){.btn .btn-primary .me-2}
+[AI for Chemistry](chemistry-blog.html){.btn .btn-outline-primary}
 :::

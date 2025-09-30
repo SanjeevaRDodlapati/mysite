@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>website_updates_summary – Sanjeev's AI Research Blog</title>
+<title>cv_corrections_lessons_learned – Sanjeev's AI Research Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -145,24 +179,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#website-updates-based-on-resume-analysis" id="toc-website-updates-based-on-resume-analysis" class="nav-link active" data-scroll-target="#website-updates-based-on-resume-analysis">Website Updates Based on Resume Analysis</a>
+  <li><a href="#cv-corrections-analysis-lessons-learned" id="toc-cv-corrections-analysis-lessons-learned" class="nav-link active" data-scroll-target="#cv-corrections-analysis-lessons-learned">CV Corrections: Analysis &amp; Lessons Learned</a>
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#key-changes-made" id="toc-key-changes-made" class="nav-link" data-scroll-target="#key-changes-made">Key Changes Made</a>
+  <li><a href="#problem-analysis" id="toc-problem-analysis" class="nav-link" data-scroll-target="#problem-analysis">Problem Analysis</a>
   <ul class="collapse">
-  <li><a href="#home-page-index.qmd" id="toc-home-page-index.qmd" class="nav-link" data-scroll-target="#home-page-index.qmd">Home Page (index.qmd)</a></li>
-  <li><a href="#about-page-about.qmd" id="toc-about-page-about.qmd" class="nav-link" data-scroll-target="#about-page-about.qmd">About Page (about.qmd)</a></li>
+  <li><a href="#root-cause-of-file-corruption" id="toc-root-cause-of-file-corruption" class="nav-link" data-scroll-target="#root-cause-of-file-corruption">Root Cause of File Corruption</a></li>
+  <li><a href="#what-went-wrong" id="toc-what-went-wrong" class="nav-link" data-scroll-target="#what-went-wrong">What Went Wrong</a></li>
   </ul></li>
-  <li><a href="#strategic-approach" id="toc-strategic-approach" class="nav-link" data-scroll-target="#strategic-approach">Strategic Approach</a>
+  <li><a href="#the-solution-safe-editing-strategy" id="toc-the-solution-safe-editing-strategy" class="nav-link" data-scroll-target="#the-solution-safe-editing-strategy">The Solution: Safe Editing Strategy</a>
   <ul class="collapse">
-  <li><a href="#home-vs-about-page-differentiation" id="toc-home-vs-about-page-differentiation" class="nav-link" data-scroll-target="#home-vs-about-page-differentiation">Home vs About Page Differentiation</a></li>
+  <li><a href="#key-principles-learned" id="toc-key-principles-learned" class="nav-link" data-scroll-target="#key-principles-learned">Key Principles Learned</a></li>
+  <li><a href="#successful-execution-order" id="toc-successful-execution-order" class="nav-link" data-scroll-target="#successful-execution-order">Successful Execution Order</a></li>
   </ul></li>
-  <li><a href="#content-gaps-addressed" id="toc-content-gaps-addressed" class="nav-link" data-scroll-target="#content-gaps-addressed">Content Gaps Addressed</a>
+  <li><a href="#technical-insights" id="toc-technical-insights" class="nav-link" data-scroll-target="#technical-insights">Technical Insights</a>
   <ul class="collapse">
-  <li><a href="#from-resume-to-website" id="toc-from-resume-to-website" class="nav-link" data-scroll-target="#from-resume-to-website">From Resume to Website:</a></li>
+  <li><a href="#why-yaml-is-fragile" id="toc-why-yaml-is-fragile" class="nav-link" data-scroll-target="#why-yaml-is-fragile">Why YAML is Fragile</a></li>
+  <li><a href="#tool-behavior" id="toc-tool-behavior" class="nav-link" data-scroll-target="#tool-behavior">Tool Behavior</a></li>
   </ul></li>
-  <li><a href="#next-steps-recommended" id="toc-next-steps-recommended" class="nav-link" data-scroll-target="#next-steps-recommended">Next Steps Recommended</a></li>
-  <li><a href="#files-modified" id="toc-files-modified" class="nav-link" data-scroll-target="#files-modified">Files Modified</a></li>
+  <li><a href="#corrections-completed" id="toc-corrections-completed" class="nav-link" data-scroll-target="#corrections-completed">Corrections Completed</a>
+  <ul class="collapse">
+  <li><a href="#all-sections-updated-with-resume-accuracy" id="toc-all-sections-updated-with-resume-accuracy" class="nav-link" data-scroll-target="#all-sections-updated-with-resume-accuracy">All Sections Updated with Resume Accuracy</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway">Key Takeaway</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -173,100 +212,130 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="website-updates-based-on-resume-analysis" class="level1">
-<h1>Website Updates Based on Resume Analysis</h1>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Updated the personal website to better reflect the comprehensive experience and achievements from the ML-focused resume.</p>
+<section id="cv-corrections-analysis-lessons-learned" class="level1">
+<h1>CV Corrections: Analysis &amp; Lessons Learned</h1>
+<section id="problem-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="problem-analysis">Problem Analysis</h2>
+<section id="root-cause-of-file-corruption" class="level3">
+<h3 class="anchored" data-anchor-id="root-cause-of-file-corruption">Root Cause of File Corruption</h3>
+<p>After multiple failed attempts, I identified the exact issue:</p>
+<p><strong>The YAML Front Matter Danger Zone (Lines 1-10)</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Curriculum Vitae"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Sanjeeva Reddy Dodlapati - AI/ML Researcher &amp; Software Engineer"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc-location</span><span class="kw">:</span><span class="at"> right</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc-title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quick Navigation"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> article</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="key-changes-made" class="level2">
-<h2 class="anchored" data-anchor-id="key-changes-made">Key Changes Made</h2>
-<section id="home-page-index.qmd" class="level3">
-<h3 class="anchored" data-anchor-id="home-page-index.qmd">Home Page (index.qmd)</h3>
+<section id="what-went-wrong" class="level3">
+<h3 class="anchored" data-anchor-id="what-went-wrong">What Went Wrong</h3>
 <ol type="1">
-<li><strong>Enhanced subtitle</strong> - Now shows “Software Engineer &amp; AI/ML Researcher • 6+ Years Experience • Genomics &amp; Drug Discovery Expert”</li>
-<li><strong>Added key achievements</strong> with metrics:
+<li><strong>Initial Multi-Replace Attempt</strong>: Used <code>multi_replace_string_in_file</code> with 7 simultaneous operations
 <ul>
-<li>📊 4 peer-reviewed publications and 3 conference presentations</li>
-<li>🤖 OmicsOracle AI data agent development</li>
-<li>🧬 Methylome coverage improvement (1.5% → 50%)</li>
-<li>📈 F1 score improvement (38%)</li>
-<li>🏆 Best Mentor Award (2023)</li>
+<li>One replacement was too close to YAML boundary (header section at lines 12-18)</li>
+<li>Tool captured content that included YAML delimiters or line breaks</li>
+<li>Result: YAML became malformed, mixing body content into YAML keys</li>
+<li>Example corruption: <code>title: "# Sanjeeva Reddy Dodlapati\n\n**Research Scientist...</code></li>
 </ul></li>
-<li><strong>Updated education section</strong> with accurate degrees and GPAs:
+<li><strong>Cascade Failure</strong>: Once YAML was corrupted:
 <ul>
-<li>PhD in Computer Science (3.9/4.0) - Old Dominion University</li>
-<li>MS in Computer Science (3.5/4.0) - Georgia Institute of Technology</li>
+<li>Quarto render failed with <code>YAMLException: can not read a block mapping entry</code></li>
+<li>File became completely unusable</li>
+<li>Had to use <code>git checkout HEAD -- about.qmd</code> to restore</li>
 </ul></li>
-<li><strong>Added technical expertise section</strong> covering:
+<li><strong>File Recreation Attempt</strong>: Tried deleting and recreating
 <ul>
-<li>AI/ML Technologies (PyTorch, TensorFlow, LangChain, etc.)</li>
-<li>Bioinformatics tools (Bioconductor, RDKit, DeepChem, etc.)</li>
-<li>MLOps &amp; Cloud (Docker, MLflow, AWS, GCP, etc.)</li>
-</ul></li>
-<li><strong>Updated research focus areas</strong> to include modern AI concepts:
-<ul>
-<li>Agentic AI Systems, RAG, LLM Orchestration, etc.</li>
+<li>File duplication occurred (lines appeared twice)</li>
+<li>Likely caused by write buffering or tool issues with complete file replacement</li>
 </ul></li>
 </ol>
 </section>
-<section id="about-page-about.qmd" class="level3">
-<h3 class="anchored" data-anchor-id="about-page-about.qmd">About Page (about.qmd)</h3>
-<p><strong>Completely redesigned</strong> from minimal content to comprehensive personal story:</p>
+</section>
+<section id="the-solution-safe-editing-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-safe-editing-strategy">The Solution: Safe Editing Strategy</h2>
+<section id="key-principles-learned" class="level3">
+<h3 class="anchored" data-anchor-id="key-principles-learned">Key Principles Learned</h3>
 <ol type="1">
-<li><strong>Personal Introduction</strong> - Professional background and journey</li>
-<li><strong>Professional Philosophy</strong> - Core beliefs about AI and science</li>
-<li><strong>Key Achievements &amp; Impact</strong> - Detailed accomplishments with metrics</li>
-<li><strong>Technical Expertise</strong> - Comprehensive skills breakdown</li>
-<li><strong>Research Journey</strong> - PhD focus and independent projects</li>
-<li><strong>Community Impact</strong> - Teaching, mentoring, and service</li>
-<li><strong>Personal Interests</strong> - Hobbies and continuous learning</li>
-<li><strong>Educational Background</strong> - Detailed academic credentials</li>
-<li><strong>Call to Action</strong> - Multiple ways to connect</li>
-</ol>
-</section>
-</section>
-<section id="strategic-approach" class="level2">
-<h2 class="anchored" data-anchor-id="strategic-approach">Strategic Approach</h2>
-<section id="home-vs-about-page-differentiation" class="level3">
-<h3 class="anchored" data-anchor-id="home-vs-about-page-differentiation">Home vs About Page Differentiation</h3>
-<p><strong>Home Page Strategy:</strong> - Professional portfolio overview - Quick wins and key metrics - Technical capabilities showcase - Call-to-action focused</p>
-<p><strong>About Page Strategy:</strong> - Personal story and journey - Detailed background and philosophy - Comprehensive achievement narrative - Community impact and service - Personal touch with interests/hobbies</p>
-</section>
-</section>
-<section id="content-gaps-addressed" class="level2">
-<h2 class="anchored" data-anchor-id="content-gaps-addressed">Content Gaps Addressed</h2>
-<section id="from-resume-to-website" class="level3">
-<h3 class="anchored" data-anchor-id="from-resume-to-website">From Resume to Website:</h3>
-<p>✅ <strong>Experience Details</strong> - Added specific roles, companies, durations<br>
-✅ <strong>Technical Skills</strong> - Comprehensive technology stack<br>
-✅ <strong>Achievements with Metrics</strong> - Quantified impact and results<br>
-✅ <strong>Education Accuracy</strong> - Correct degrees, GPAs, timelines<br>
-✅ <strong>Industry Experience</strong> - Boehringer Ingelheim internship<br>
-✅ <strong>Awards &amp; Recognition</strong> - Best Mentor Award, certifications<br>
-✅ <strong>Research Leadership</strong> - Independent project management<br>
-✅ <strong>Collaborative Work</strong> - Cross-institutional partnerships<br>
-✅ <strong>Modern AI Focus</strong> - Agentic AI, RAG, LLM technologies</p>
-</section>
-</section>
-<section id="next-steps-recommended" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps-recommended">Next Steps Recommended</h2>
-<ol type="1">
-<li><strong>Add a portfolio/projects page</strong> with detailed case studies</li>
-<li><strong>Create a blog section</strong> to showcase technical writing</li>
-<li><strong>Add testimonials</strong> from collaborators/mentors</li>
-<li><strong>Include a CV download</strong> link</li>
-<li><strong>Add project demos</strong> or GitHub repository links</li>
-<li><strong>Consider adding a timeline</strong> of career progression</li>
-</ol>
-</section>
-<section id="files-modified" class="level2">
-<h2 class="anchored" data-anchor-id="files-modified">Files Modified</h2>
+<li><strong>Never Touch YAML-Adjacent Content</strong> (Lines 1-23)
 <ul>
-<li><code>index.qmd</code> - Enhanced with resume details</li>
-<li><code>about.qmd</code> - Complete redesign with comprehensive content</li>
-<li><code>resume_content.txt</code> - Resume content extracted for reference</li>
+<li>Keep ALL edits at least 2 section breaks away from YAML</li>
+<li>First safe edit point: Line 27 (Professional Summary content)</li>
+<li>This ensures no accidental YAML boundary crossing</li>
+</ul></li>
+<li><strong>Use Precise Context Windows</strong>
+<ul>
+<li>Include 5+ lines of unchanged code BEFORE target</li>
+<li>Include 5+ lines of unchanged code AFTER target</li>
+<li>This creates unambiguous match patterns</li>
+</ul></li>
+<li><strong>Test Incrementally</strong>
+<ul>
+<li>After each major section correction, run <code>quarto render about.qmd</code></li>
+<li>Verify no YAML errors before proceeding</li>
+<li>Catch corruption early before it cascades</li>
+</ul></li>
+<li><strong>Sequential Over Simultaneous</strong>
+<ul>
+<li>For complex documents near YAML, use sequential single replacements</li>
+<li>Only use <code>multi_replace_string_in_file</code> for sections far from YAML</li>
+<li>Trade speed for safety when working near sensitive areas</li>
+</ul></li>
+</ol>
+</section>
+<section id="successful-execution-order" class="level3">
+<h3 class="anchored" data-anchor-id="successful-execution-order">Successful Execution Order</h3>
+<p><strong>Phase 1: Safe Distance Sections (Lines 27+)</strong> 1. ✅ Professional Summary (line 27) 2. ✅ Education dates (lines 35-45) 3. ✅ Professional Experience (lines 49-120) 4. ✅ Publications (lines 122-145)</p>
+<p><strong>Phase 2: Mid-Document Updates</strong> 5. ✅ Technical Skills (lines 150-180) 6. ✅ Honors &amp; Awards (lines 182-188) 7. ✅ Professional Service (lines 190-195) 8. ✅ Certifications (lines 197-215)</p>
+<p><strong>Phase 3: Header Update (CAREFUL!)</strong> 9. ✅ CV Header contact info (lines 12-22) - Used VERY specific match with full context - Only updated content INSIDE the <code>:::</code> div boundaries - Stayed well away from line 10 (<code>---</code>)</p>
+</section>
+</section>
+<section id="technical-insights" class="level2">
+<h2 class="anchored" data-anchor-id="technical-insights">Technical Insights</h2>
+<section id="why-yaml-is-fragile" class="level3">
+<h3 class="anchored" data-anchor-id="why-yaml-is-fragile">Why YAML is Fragile</h3>
+<p>YAML parsing requires: - Exact indentation (spaces vs tabs matter) - No multiline strings in keys - Proper line break handling - Clean <code>---</code> delimiters without trailing content</p>
+<p>When <code>replace_string_in_file</code> captures content near YAML: - Line breaks can be misinterpreted - Special characters (<code>:</code>, <code>-</code>, <code>&gt;</code>, <code>|</code>) have YAML meaning - Content bleeding into YAML keys breaks parser</p>
+</section>
+<section id="tool-behavior" class="level3">
+<h3 class="anchored" data-anchor-id="tool-behavior">Tool Behavior</h3>
+<p>The <code>replace_string_in_file</code> tool: - Works perfectly for mid-document replacements - Can struggle with boundary conditions (start/end of file, near special markers) - Benefits from generous context (5+ lines) to ensure unique matching - May have issues with complete file recreation (duplication observed)</p>
+</section>
+</section>
+<section id="corrections-completed" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-completed">Corrections Completed</h2>
+<section id="all-sections-updated-with-resume-accuracy" class="level3">
+<h3 class="anchored" data-anchor-id="all-sections-updated-with-resume-accuracy">All Sections Updated with Resume Accuracy</h3>
+<p><strong>Header &amp; Contact</strong> - ✅ Title: “Research Scientist - AI/ML, Deep Learning, Genomics &amp; Drug Discovery” - ✅ Added phone: +1-757-364-1561 - ✅ Added social links: X/Twitter, Substack, Medium</p>
+<p><strong>Professional Summary</strong> - ✅ Updated to “Research Scientist with 6+ years of experience…” - ✅ Added 4 publications, 3 conference presentations, 40+ certifications</p>
+<p><strong>Education</strong> - ✅ PhD dates: Aug 2019 - July 2025 (was “Expected 2025”) - ✅ MS dates: May 2023 - Present (was “2023 - Present”) - ✅ Removed Chemistry MS and BS degrees (not in resume)</p>
+<p><strong>Professional Experience</strong> - ✅ Replaced bullet points with detailed project structure - ✅ Added 5 major projects with specific metrics - ✅ Added Research Leadership, Independent Projects, Collaborative &amp; Service subsections - ✅ Corrected Boehringer Ingelheim dates: May-Aug 2018, Connecticut</p>
+<p><strong>Publications</strong> - ✅ Replaced 4 fake publications with exact citations from resume - ✅ Added 3 papers under preparation - ✅ Removed fake Conference Presentations section</p>
+<p><strong>Technical Skills</strong> - ✅ Updated with accurate categorization (9 categories) - ✅ Correct proficiency levels (Python Expert, R Advanced, Java Intermediate)</p>
+<p><strong>Honors &amp; Awards</strong> - ✅ Best Mentor Award ODU (April 2023) - ✅ CSIR-INDIA Junior Research Fellow (Mar-Dec 2008) - ✅ 5+ IPR certificates WIPO (2016-2017) - ✅ 40+ AI/ML certificates (2016-Present)</p>
+<p><strong>Professional Service</strong> - ✅ Simplified to accurate scope: NeurIPS, ICML, ICLR, IJCAI (2021-2024) - ✅ Removed memberships not in resume</p>
+<p><strong>Certifications</strong> - ✅ Added complete list of 40+ courses - ✅ Organized by platform (Coursera, edX) - ✅ Included specific course codes (PH125.x, DAT.x series)</p>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<ul>
+<li><strong>Build Status</strong>: ✅ Success - <code>quarto render</code> completes without errors</li>
+<li><strong>Commit</strong>: <code>a7d5d56</code> - “fix: Correct CV/Resume with accurate details from actual resume PDF”</li>
+<li><strong>Pushed</strong>: ✅ Successfully pushed to GitHub main branch</li>
+<li><strong>File Size</strong>: 242 lines (was 203 lines - added detailed content)</li>
+<li><strong>Changes</strong>: 180 insertions, 156 deletions</li>
 </ul>
+</section>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h2>
+<p><strong>Heeded Advice</strong>: “Analyze which section you have a hard time and corrupting the code. If you know your mistake, only then you can correct it.”</p>
+<p>This was excellent advice. By analyzing: 1. <strong>What</strong> went wrong (YAML corruption) 2. <strong>Where</strong> it happened (lines 1-23, near YAML) 3. <strong>Why</strong> it happened (replacements too close to YAML boundary) 4. <strong>How</strong> to avoid it (safe distance strategy)</p>
+<p>I was able to successfully complete all corrections without further corruption.</p>
+<p>The lesson: <strong>Understand the failure pattern before attempting the fix.</strong></p>
 
 
 </section>

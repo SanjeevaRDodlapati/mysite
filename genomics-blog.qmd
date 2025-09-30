@@ -11,30 +11,32 @@ Discover how artificial intelligence is revolutionizing genomic research, from D
 
 ::: {.row}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-genomics}
 ::: {.card-body}
+<span class="badge-category badge-genomics">Genomics</span>
 ### [Unraveling Human Biology: From Organism to Atom](unraveling-human-biology.html)
 *Setting the Foundation for Digital Biology*
 
 A comprehensive exploration of human biology across multiple organizational levels, from the entire organism to atomic structure. This foundational article sets the stage for understanding computational genomics and digital biology approaches.
 
-::: {.text-muted}
-🏷️ Digital Biology • Multi-scale Analysis • Computational Genomics
+::: {.card-tags}
+Digital Biology • Multi-scale Analysis • Computational Genomics
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-genomics}
 ::: {.card-body}
-### [🧬 Decoding DNA: Sequence Encoding Guide](dna-sequence-encoding-guide.html)
+<span class="badge-category badge-genomics">Genomics</span>
+### [Decoding DNA: Sequence Encoding Guide](dna-sequence-encoding-guide.html)
 *Comprehensive Methods for ML Applications*
 
 Complete guide to DNA sequence encoding techniques for machine learning, covering one-hot encoding, k-mer tokenization, BPE, embeddings, and advanced methods with practical implementations and performance comparisons.
 
-::: {.text-muted}
-🏷️ DNA Encoding • Machine Learning • Bioinformatics • Sequence Analysis
+::: {.card-tags}
+DNA Encoding • Machine Learning • Bioinformatics • Sequence Analysis
 :::
 :::
 :::
@@ -43,30 +45,32 @@ Complete guide to DNA sequence encoding techniques for machine learning, coverin
 
 ::: {.row .mt-3}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-genomics}
 ::: {.card-body}
-### [ Statistical Methods in Genomics](Top10_bioinfo_stats.html)
+<span class="badge-category badge-genomics">Genomics</span>
+### [Statistical Methods in Genomics](Top10_bioinfo_stats.html)
 *Essential biostatistics for genomic analysis*
 
 Comprehensive overview of the statistical foundations underlying modern genomics research, including multiple testing correction, differential expression analysis, and population genetics methods.
 
-::: {.text-muted}
-🏷️ Genomics • Statistics • Population Genetics
+::: {.card-tags}
+Genomics • Statistics • Population Genetics
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-genomics}
 ::: {.card-body}
-### [📊 Advanced Statistical Testing](T-test-alt.html)
+<span class="badge-category badge-genomics">Genomics</span>
+### [Advanced Statistical Testing](T-test-alt.html)
 *Hypothesis testing in biological contexts*
 
 Deep exploration of statistical hypothesis testing specifically applied to genomic and biological datasets, with focus on experimental design and interpretation.
 
-::: {.text-muted}
-🏷️ Statistics • Experimental Design • Genomics
+::: {.card-tags}
+Statistics • Experimental Design • Genomics
 :::
 :::
 :::
@@ -75,15 +79,16 @@ Deep exploration of statistical hypothesis testing specifically applied to genom
 
 ::: {.row .mt-3}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-genomics}
 ::: {.card-body}
-### [🔬 Basic Statistical Testing](T-test.html)
+<span class="badge-category badge-genomics">Genomics</span>
+### [Basic Statistical Testing](T-test.html)
 *Foundational statistical concepts*
 
 Introduction to fundamental statistical testing methods used in genomics research, covering t-tests, significance testing, and data interpretation.
 
-::: {.text-muted}
-🏷️ Statistics • Hypothesis Testing • Fundamentals
+::: {.card-tags}
+Statistics • Hypothesis Testing • Fundamentals
 :::
 :::
 :::
@@ -92,31 +97,31 @@ Introduction to fundamental statistical testing methods used in genomics researc
 
 ---
 
-## 🎯 Research Areas
+## Research Areas
 
 ::: {.row}
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🔬 DNA Methylation**  
+**DNA Methylation**  
 Epigenomic analysis and imputation methods using transfer learning
 :::
 :::
 :::
 
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🧠 Deep Learning**  
+**Deep Learning**  
 Neural network architectures for genomic sequence analysis
 :::
 :::
 :::
 
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**📈 Predictive Modeling**  
+**Predictive Modeling**  
 Machine learning approaches for biomarker discovery
 :::
 :::
@@ -125,7 +130,7 @@ Machine learning approaches for biomarker discovery
 
 ---
 
-## 🔮 Upcoming Topics
+## Upcoming Topics
 
 - **Single-Cell Genomics**: AI approaches to cellular heterogeneity analysis
 - **Pharmacogenomics**: Personalized medicine through AI-driven drug discovery  
@@ -137,6 +142,6 @@ Machine learning approaches for biomarker discovery
 ::: {.text-center .mt-4}
 *Advancing genomic research through the power of artificial intelligence and computational innovation.*
 
-[🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
-[⚗️ **AI for Chemistry**](chemistry-blog.html){.btn .btn-outline-primary}
+[Machine Learning](ml-blog.html){.btn .btn-primary .me-2}
+[AI for Chemistry](chemistry-blog.html){.btn .btn-outline-primary}
 :::

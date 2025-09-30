@@ -11,30 +11,32 @@ Explore the revolutionary intersection of artificial intelligence and chemistry,
 
 ::: {.row}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-chemistry}
 ::: {.card-body}
-### [🤖 AI Agents in Biomedicine](AI_agents_BioMed.html)
+<span class="badge-category badge-chemistry">Chemistry</span>
+### [AI Agents in Biomedicine](AI_agents_BioMed.html)
 *The future of AI in biomedical research*
 
 Comprehensive exploration of autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine approaches.
 
-::: {.text-muted}
-🏷️ AI Agents • Drug Discovery • Biomedical Research
+::: {.card-tags}
+AI Agents • Drug Discovery • Biomedical Research
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-chemistry}
 ::: {.card-body}
-### [🧬 BioNumPy: Efficient Chemical Computing](bioNumpy.html)
+<span class="badge-category badge-chemistry">Chemistry</span>
+### [BioNumPy: Efficient Chemical Computing](bioNumpy.html)
 *High-performance cheminformatics with Python*
 
 Deep dive into BioNumPy's applications for molecular data analysis and computational chemistry workflows, including molecular descriptors and chemical space exploration.
 
-::: {.text-muted}
-🏷️ Python • Cheminformatics • Molecular Analysis
+::: {.card-tags}
+Python • Cheminformatics • Molecular Analysis
 :::
 :::
 :::
@@ -43,30 +45,32 @@ Deep dive into BioNumPy's applications for molecular data analysis and computati
 
 ::: {.row .mt-3}
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-chemistry}
 ::: {.card-body}
-### [📊 Statistical Methods in Cheminformatics](Top10_bioinfo_stats.html)
+<span class="badge-category badge-chemistry">Chemistry</span>
+### [Statistical Methods in Cheminformatics](Top10_bioinfo_stats.html)
 *Essential statistics for chemical data analysis*
 
 Comprehensive overview of statistical methods used in cheminformatics and drug discovery, including QSAR modeling, activity prediction, and molecular property analysis.
 
-::: {.text-muted}
-🏷️ Cheminformatics • Statistics • QSAR • Drug Discovery
+::: {.card-tags}
+Cheminformatics • Statistics • QSAR • Drug Discovery
 :::
 :::
 :::
 :::
 
 ::: {.col-lg-6}
-::: {.card}
+::: {.card .card-chemistry}
 ::: {.card-body}
-### [🧪 Coming Soon: Molecular Generation with AI]()*
+<span class="badge-category badge-chemistry">Chemistry</span>
+### [Coming Soon: Molecular Generation with AI]()*
 *Deep learning approaches to drug design*
 
 Explore cutting-edge generative models for molecular design, including VAEs, GANs, and transformer-based approaches for novel compound generation.
 
-::: {.text-muted}
-🏷️ Molecular Generation • Deep Learning • Drug Design
+::: {.card-tags}
+Molecular Generation • Deep Learning • Drug Design
 :::
 :::
 :::
@@ -75,40 +79,40 @@ Explore cutting-edge generative models for molecular design, including VAEs, GAN
 
 ---
 
-## 🎯 Research Areas
+## Research Areas
 
 ::: {.row}
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🧬 Molecular Generation**  
+**Molecular Generation**  
 AI-driven design of novel chemical compounds
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🎯 Drug-Target Prediction**  
+**Drug-Target Prediction**  
 Machine learning for therapeutic target identification
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🔗 Protein-Protein Interactions**  
+**Protein-Protein Interactions**  
 Computational approaches to molecular interactions
 :::
 :::
 :::
 
 ::: {.col-md-3}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**📈 QSAR Modeling**  
+**QSAR Modeling**  
 Quantitative structure-activity relationships
 :::
 :::
@@ -117,7 +121,7 @@ Quantitative structure-activity relationships
 
 ---
 
-## 🔬 Upcoming Topics
+## Upcoming Topics
 
 - **Generative Models for Drug Discovery**: VAEs, GANs, and flow-based models for molecular design
 - **Protein Folding Prediction**: AI approaches to understanding protein structure
@@ -128,31 +132,31 @@ Quantitative structure-activity relationships
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ::: {.row}
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🐍 Python Libraries**  
+**Python Libraries**  
 RDKit, DeepChem, PyTorch Geometric
 :::
 :::
 :::
 
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**🧠 Deep Learning**  
+**Deep Learning**  
 Graph Neural Networks, Transformers, VAEs
 :::
 :::
 :::
 
 ::: {.col-md-4}
-::: {.card .text-center}
+::: {.card .text-center .card-research}
 ::: {.card-body}
-**⚗️ Cheminformatics**  
+**Cheminformatics**  
 Molecular descriptors, fingerprints, similarity
 :::
 :::
@@ -164,6 +168,6 @@ Molecular descriptors, fingerprints, similarity
 ::: {.text-center .mt-4}
 *Accelerating chemical discovery through the power of artificial intelligence and computational innovation.*
 
-[🤖 **Machine Learning**](ml-blog.html){.btn .btn-primary .me-2}
-[🧬 **AI for Genomics**](genomics-blog.html){.btn .btn-outline-primary}
+[Machine Learning](ml-blog.html){.btn .btn-primary .me-2}
+[AI for Genomics](genomics-blog.html){.btn .btn-outline-primary}
 :::
