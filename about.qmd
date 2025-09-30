@@ -12,9 +12,10 @@ format:
 ::: {.cv-header}
 # Sanjeeva Reddy Dodlapati
 
-**AI/ML Researcher & Software Engineer**  
-� [sdodl001@odu.edu](mailto:sdodl001@odu.edu) | [sdodlapa@gmail.com](mailto:sdodlapa@gmail.com)  
+**Research Scientist - AI/ML, Deep Learning, Genomics & Drug Discovery**  
+📧 [sdodl001@odu.edu](mailto:sdodl001@odu.edu) | [sdodlapa@gmail.com](mailto:sdodlapa@gmail.com) | 📱 +1-757-364-1561  
 🔗 [GitHub](https://github.com/SanjeevaRDodlapati) | [LinkedIn](https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/) | [Google Scholar](https://scholar.google.com)  
+🐦 [X/Twitter](https://x.com) | 📝 [Substack](https://substack.com) | [Medium](https://medium.com)  
 📍 Norfolk, VA | 🌐 [sanjeevareddydodlapati.com](https://sanjeevareddydodlapati.com)
 
 ::: {.download-cv}
@@ -24,134 +25,173 @@ format:
 
 ---
 
-## � Professional Summary
+## 👤 Professional Summary
 
-**Software Engineer & AI/ML Researcher** with 6+ years of experience specializing in AI applications for biological sciences, genomics, and drug discovery. Currently pursuing dual graduate degrees (PhD at Old Dominion University, MS at Georgia Tech) while developing cutting-edge AI systems that bridge computer science and life sciences. Published researcher with 4 peer-reviewed publications and proven track record of delivering innovative solutions that improve prediction accuracy by up to 38% and reduce computational costs by 65-80%.
+**Research Scientist** with 6+ years of experience in deep learning, NLP, genomics, and drug discovery. Proven track record in leading multi-disciplinary research projects, publishing in peer-reviewed journals, and contributing to open-source ML frameworks. Specialized in uncertainty modeling, transfer learning, and scalable ML pipelines. Passionate about advancing fundamental research and translating innovations into real-world impact.
+
+Skilled in designing scalable ML pipelines and deploying models to production using CI/CD, Docker, MLflow, and Hugging Face on cloud platforms (AWS, Azure, GCP). Experienced in A/B testing, experiment tracking, and model performance evaluation aligned with business goals.
+
+Collaborated with multiple research teams resulting in **4 peer-reviewed publications** and **3 conference presentations**. Continuous learning through writing blogposts on AI for Science and earning **40+ ML course certifications**.
 
 ---
 
 ## 🎓 Education
 
-**Doctor of Philosophy (PhD) in Computer Science** | Expected 2025  
+**Doctor of Philosophy (PhD) in Computer Science** | Aug 2019 - July 2025  
 Old Dominion University, Norfolk, VA  
-*GPA: 3.9/4.0 • Dissertation: Uncertainty-Aware AI Models for Genomic Applications*
+*GPA: 3.9/4.0*
 
-**Master of Science (MS) in Computer Science** | 2023 - Present  
+**Master of Science (MS) in Computer Science** | May 2023 - Present  
 Georgia Institute of Technology, Atlanta, GA  
-*GPA: 3.5/4.0 • Specialization: Machine Learning and Deep Learning Systems*
-
-**Master of Science (MS) in Chemistry**  
-Sri Venkateswara University, India  
-*Focus: Computational Chemistry and Drug Discovery*
-
-**Bachelor of Science (BS) in Chemistry**  
-Sri Venkateswara University, India
+*GPA: 3.5/4.0*
 
 ---
 
 ## 💼 Professional Experience
 
 ### Graduate Research Assistant | Old Dominion University
-**2019 - Present** | Norfolk, VA
+**Aug 2019 - Present** | Norfolk, VA
 
-- Developed novel transfer learning approaches for DNA methylation prediction, improving accuracy by 38% and increasing methylome coverage from 1.5% to 50% in sparse single-cell data
-- Created OmicsOracle, an autonomous AI agent system for automated genomic data extraction and analysis using LangChain and RAG architecture
-- Implemented uncertainty-aware deep learning models for variant effect prediction, enabling more reliable genomic variant impact assessment
-- Reduced computational costs by 65-80% through innovative data-centric AI approaches and efficient neural network architectures
-- Collaborated with cross-institutional teams (LSU, University of Michigan) on multi-omics integration projects
+**Project I: Transfer Learning for Methylation Prediction (Publication 1 & 3)**
+- Developed novel transfer learning method for DNA methylation using transformer models, improving F1-score by 38% over state-of-the-art and expanding methylome coverage from 1.5% to 50% in sparse single-cell data
+- Integrated multi-omics data (WGS, RNA-seq, ATAC-seq) using graph neural networks
+- Collaborated with University of Michigan researchers, contributing to 2 peer-reviewed publications
+
+**Project II: Data-Centric AI for Cost Reduction (Publication 4)**
+- Implemented data-centric AI framework optimizing training data, achieving 50% reduction in data needs with maintained performance
+- Reduced computational costs by 65-80% through efficient pipeline design
+- Published findings in peer-reviewed journal with reproducible benchmarks
+
+**Project III: Uncertainty Quantification for Genomic Variants**
+- Developed uncertainty-aware deep learning models using Bayesian neural networks and Monte Carlo dropout
+- Achieved 80% cost reduction in variant prioritization through reliable confidence estimates
+- Resulted in 2 submitted manuscripts under review
+
+**Project IV: Collaborative Research with Louisiana State University**
+- Contributed to multi-omics integration using machine learning (1 publication)
+- Analyzed single-cell RNA-seq and epigenetic data for disease mechanisms
+
+**Project V: Collaborative Research with University of Michigan**
+- Co-authored transfer learning methylation paper (Publication 3)
+- Worked on cancer and cardiovascular disease applications
+
+**Research Leadership & Impact**
+- Led cross-functional teams combining biologists, clinicians, and computer scientists
+- Mentored undergraduate and graduate students on ML projects
+- Winner of 2023 Speed Notes Competition (Best Mentor Award)
+
+**Independent Research Projects**
+- **OmicsOracle**: Agentic AI system for automated genomic data extraction, analysis, and interpretation from scientific literature using LangChain and RAG
+- **Drug-Drug Interaction Prediction**: Graph neural networks for predicting adverse drug interactions
+- **ML4Trading**: Algorithmic trading system using reinforcement learning and decision trees
+- **ClinicalNormBERT**: Transformer-based clinical text normalization achieving 92% accuracy
+- **Healthcare Analytics Apps**: COVID-19 data analysis and visualization platforms
+- **APT Prediction**: Advanced persistent threat detection using deep learning
+- **Protein Structure Prediction**: U-Net architecture for secondary structure prediction
+- **Portfolio Website**: Personal website showcasing research and projects (Quarto/HTML/CSS)
+
+**Collaborative & Service Experience**
+- Peer reviewer for NeurIPS, ICML, ICLR, IJCAI (2021-2024)
+- Teaching Assistant for multiple CS courses (data structures, algorithms, machine learning)
+- Mentored students resulting in Best Mentor Award (April 2023)
+- Cross-functional team collaboration with biologists, clinicians, and software engineers
 
 ### Research Intern | Boehringer Ingelheim Pharmaceuticals
-**Summer 2018** | Ridgefield, CT
+**May 2018 - Aug 2018** | Connecticut
 
-- Developed chiral drug candidates achieving >99% enantioselectivity for respiratory disease treatments
-- Optimized molecular structures using computational chemistry methods and machine learning
-- Contributed to drug discovery pipeline reducing synthesis time by 40% through rational design
-
-### Teaching Assistant | Old Dominion University
-**2019 - 2023** | Norfolk, VA
-
-- Instructed undergraduate students in Computer Science fundamentals, data structures, and algorithms
-- Mentored student team to victory in 2023 Speed Notes Competition (Best Mentor Award)
-- Developed course materials and automated grading systems using Python
+- Developed chiral drug candidates for respiratory disease treatments using computational cheminformatics
+- Achieved >99% enantioselectivity in asymmetric synthesis of sulfanilamide derivatives
+- Optimized molecular structures using machine learning and rational design approaches
 
 ---
 
 ## 📚 Publications
 
-1. **Dodlapati, S. R.**, et al. (2023). "Transfer Learning Approaches for DNA Methylation Prediction in Sparse Single-Cell Data." *Frontiers in Genetics*, 14:1234567. [Impact Factor: 4.8]
+**Published (4 papers)**
 
-2. **Dodlapati, S. R.**, et al. (2022). "Uncertainty Quantification in Deep Learning Models for Genomic Variant Effect Prediction." *Bioinformatics*, 38(12):3245-3252. [Impact Factor: 6.9]
+1. **Dodlapati, S. R.**, et al. "Enhancing methylation prediction in sparse single-cell data through transfer learning." *Frontiers in Genetics*, 2022, vol. 13, p. 910439.
 
-3. Smith, J., **Dodlapati, S. R.**, et al. (2021). "Multi-Omics Integration Using Graph Neural Networks." *Journal of Molecular and Cellular Cardiology*, 155:89-99. [Impact Factor: 5.2]
+2. **Dodlapati, S. R.**, et al. "Epigenetic regulation in cardiovascular disease: Role of histone modifications." *Epigenetics*, 2022, vol. 17, no. 9, pp. 1020-1039.
 
-4. **Dodlapati, S. R.**, et al. (2020). "Data-Centric AI for Improving Training Data Quality in Genomics." *Nature Communications*, 11:5678. [Impact Factor: 17.7]
+3. **Dodlapati, S. R.**, et al. "Multi-omics integration for cardiac disease mechanisms." *Journal of Molecular and Cellular Cardiology*, 2022, vol. 171, pp. 117-132.
 
----
+4. **Dodlapati, S. R.**, et al. "Synthesis of chiral sulfanilamide derivatives with applications in drug discovery." *European Journal of Organic Chemistry*, 2019, vol. 2019, no. 6, pp. 1189-1194.
 
-## 🎤 Conference Presentations
+**Under Preparation (3 papers)**
 
-- "Agentic AI Systems for Automated Genomic Analysis" - **NeurIPS Workshop** (2023)
-- "Transfer Learning in Sparse Biological Data" - **ICML Workshop** (2022)
-- "Uncertainty-Aware Deep Learning for Genomics" - **ISMB** (2021)
+1. **Dodlapati, S. R.**, et al. "Data-centric AI approaches for optimizing genomic training datasets." (In preparation)
+
+2. **Dodlapati, S. R.**, et al. "Uncertainty quantification in deep learning models for variant effect prediction." (In preparation)
+
+3. **Dodlapati, S. R.**, et al. "Agentic AI systems for automated literature-based genomic data extraction." (Under review)
 
 ---
 
 ## 🛠️ Technical Skills
 
 **Programming Languages**  
-Python (Expert), R (Advanced), Java, JavaScript, C/C++, SQL, Bash/Shell
+Python (Expert), R (Advanced), Java (Intermediate), JavaScript, C, C++, Bash, SQL, Matlab
 
-**AI/ML Frameworks & Libraries**  
-PyTorch, TensorFlow, scikit-learn, Keras, LangChain, LlamaIndex, Hugging Face Transformers, OpenAI API
+**ML Packages**  
+PyTorch, TensorFlow, DeepSpeed, NLTK, Deepchem, RDKit, Scikit-learn, SciPy
 
-**Deep Learning Architectures**  
-CNNs, RNNs, LSTMs, Transformers (BERT, GPT), Graph Neural Networks, Autoencoders, GANs
+**ML Techniques**  
+Deep Learning, RL, NLP, Transfer Learning, Multi-task Learning, Graph Learning, Decision Trees, Experiment Design, Evaluation Metrics, Benchmarking, Meta Learning
 
-**Specialized Domain Tools**  
-- **Bioinformatics:** Biopython, Bioconductor, GATK, SAMtools, Seurat (single-cell analysis)
-- **Cheminformatics:** RDKit, DeepChem, Molecular Descriptors, SMILES notation
-- **MLOps:** Docker, Kubernetes, MLflow, Weights & Biases, Git/GitHub
+**ML Architectures**  
+LLMs, Transformers, CNNs, RNNs, LSTMs, Graph-NN, SSMs, Generative Models, Autoencoders
 
-**Cloud & Infrastructure**  
-AWS (EC2, S3, SageMaker), Google Cloud Platform, Azure, High-Performance Computing (HPC)
+**Bioinformatics**  
+Bioconductor, DESeq2, Samtools, MEME-suite, caret, ggplot2, dplyr, ChemProp, Matplotlib
 
-**Data Science Stack**  
-Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Jupyter Notebooks
+**Database & Tools**  
+SQL, Spark, Hadoop, Pandas, Dask, Numpy, Snowflake, AWS S3, MongoDB (basic)
+
+**MLOps & CI/CD**  
+GitHub, Cloud-native Deployment, Docker, mlflow, Amazon Sagemaker, Azure ML, Hugging Face
+
+**Web Apps**  
+HTML, CSS, PHP, flask, Django, fastAPI, Shiny, Quarto
+
+**OS & Cloud**  
+Linux, HPC Cluster, macOS, Cloud (AWS, Azure, GCP)
 
 ---
 
 ## 🏆 Honors & Awards
 
-- **Best Mentor Award** - Old Dominion University (2023)
-- **Outstanding Research Award** - ODU Computer Science Department (2022)
-- **Graduate Student Excellence Award** - ODU Graduate School (2021)
-- **Dean's List** - Multiple semesters at Sri Venkateswara University
+- **Best Mentor Award**, Old Dominion University (April 2023)
+- **CSIR-INDIA Junior Research Fellow** (March 2008 - December 2008)
+- **5+ IPR certificates**, World Intellectual Property Organization (2016-2017)
+- **40+ AI/ML course certificates**, edx/coursera (2016-Present)
 
 ---
 
-## � Professional Service
+## 🤝 Professional Service
 
-**Peer Reviewer** for Top-Tier Conferences  
-NeurIPS, ICML, ICLR, IJCAI, AAAI, ACM-BCB
-
-**Academic Community**  
-- Member, Association for Computing Machinery (ACM)
-- Member, International Society for Computational Biology (ISCB)
-- Contributor, Open Source ML Projects on GitHub
+**Peer Reviewer**  
+NeurIPS, ICML, ICLR, IJCAI (2021-2024)
 
 ---
 
 ## 🎓 Certifications & Continuous Learning
 
-**40+ Professional Certifications** from leading platforms including:
+**40+ Professional Certifications** from leading platforms:
 
-- Deep Learning Specialization - **DeepLearning.AI** (Coursera)
-- Machine Learning Engineering for Production (MLOps) - **DeepLearning.AI**
-- Natural Language Processing Specialization - **DeepLearning.AI**
-- TensorFlow Developer Professional Certificate - **Google**
-- Applied Data Science with Python - **University of Michigan**
-- Bioinformatics Specialization - **UC San Diego**
-- AWS Certified Machine Learning - Specialty - **Amazon Web Services**
+**Coursera (DeepLearning.AI, Google, IBM, Stanford)**
+- Agentic AI with Langraph, RAG with LlamaIndex, Google Prompting Essentials
+- DevOps & MLOps with Python, MLOps Tools: MLflow, Hugging Face
+- Genomic Technologies, Python for Genomic Data Science
+- Generative AI with Langchain, LangChain Chat with Your Data
+- Build a Portfolio Website with HTML and CSS
+- Spark, Hadoop, Snowflake Specializations
+
+**edX (Harvard, Microsoft)**
+- C Programming: Getting Started (DART.IMT.C), Modular Programming (IMTx), Using Linux Tools (Dartmouth)
+- Data Science: R Basics (PH125.1x), Visualization (PH125.2x), Probability (PH125.3x), Inference (PH125.4x), Productivity Tools (PH125.5x), Wrangling (PH125.6x), Linear Regression (PH125.7x)
+- DAT101x-DAT210x Series, DS101X-DS103x Series
+
+*Plus 10+ additional ML/AI specialized certifications covering deep learning, NLP, reinforcement learning, and bioinformatics*
 
 ---
 
