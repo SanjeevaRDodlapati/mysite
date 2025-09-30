@@ -1,0 +1,431 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero-section}
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-8">
+
+# Sanjeeva Reddy Dodlapati
+
+## AI/ML Researcher Advancing Computational Biology & Drug Discovery
+
+<p class="lead">
+Designing AI-powered systems that integrate generative AI, agentic AI, and retrieval-augmented generation (RAG) for genomics and healthcare applications.
+</p>
+
+<div class="hero-actions">
+[View Research](research.html){.btn .btn-primary .btn-lg .me-2}
+[Read Blog](blog.html){.btn .btn-outline-primary .btn-lg .me-2}
+[Contact Me](mailto:sdodl001@odu.edu){.btn .btn-outline-secondary .btn-lg}
+</div>
+
+<div class="hero-stats">
+<div class="stat">
+  <div class="stat-value">6+</div>
+  <div class="stat-label">Years Experience</div>
+</div>
+<div class="stat">
+  <div class="stat-value">7</div>
+  <div class="stat-label">Publications</div>
+</div>
+<div class="stat">
+  <div class="stat-value">40+</div>
+  <div class="stat-label">Certifications</div>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-4 text-center">
+<img src="Profile.jpeg" alt="Sanjeeva Reddy Dodlapati" class="hero-image rounded-circle shadow-lg" style="max-width: 280px;">
+</div>
+</div>
+</div>
+:::
+
+---
+
+::: {.section-featured}
+## 🌟 Featured Research
+
+<div class="row">
+<div class="col-lg-4">
+<div class="feature-card">
+<div class="feature-icon">🧬</div>
+<h3>OmicsOracle AI Agent</h3>
+<p>Intelligent data agent that extracts, analyzes, and visualizes genomic data from NCBI GEO automatically.</p>
+<div class="feature-tags">
+<span class="tag">Python</span>
+<span class="tag">LangChain</span>
+<span class="tag">RAG</span>
+</div>
+<a href="#" class="feature-link">Learn More →</a>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card">
+<div class="feature-icon">🤖</div>
+<h3>ClinicalNormBERT</h3>
+<p>Personalized clinical text normalization model improving healthcare data extraction accuracy.</p>
+<div class="feature-tags">
+<span class="tag">BERT</span>
+<span class="tag">NLP</span>
+<span class="tag">Healthcare</span>
+</div>
+<a href="#" class="feature-link">Learn More →</a>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="feature-card">
+<div class="feature-icon">💊</div>
+<h3>DNA Methylation Prediction</h3>
+<p>Transfer learning approach improving methylome coverage from 1.5% to 50% in single-cell data.</p>
+<div class="feature-tags">
+<span class="tag">Deep Learning</span>
+<span class="tag">Genomics</span>
+<span class="tag">Transfer Learning</span>
+</div>
+<a href="https://www.frontiersin.org/articles/10.3389/fgene.2022.910439/full" class="feature-link">Read Paper →</a>
+</div>
+</div>
+</div>
+:::
+
+---
+
+::: {.section-posts}
+## 📚 Latest from the Blog
+
+<div class="row">
+<div class="col-lg-4">
+<div class="post-card">
+<div class="post-category">Machine Learning</div>
+<h3>Multi-Teacher Knowledge Distillation</h3>
+<p>Advanced AI techniques for model efficiency combining multiple teacher models into efficient student architectures.</p>
+<a href="multi-teacher-knowledge-distillation.html" class="post-link">Read Article →</a>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="post-card">
+<div class="post-category">Genomics</div>
+<h3>DNA Sequence Encoding Guide</h3>
+<p>Comprehensive methods for encoding DNA sequences for machine learning applications with practical implementations.</p>
+<a href="dna-sequence-encoding-guide.html" class="post-link">Read Article →</a>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="post-card">
+<div class="post-category">Biology</div>
+<h3>AI Agents in Biomedicine</h3>
+<p>Exploring autonomous AI agents revolutionizing drug discovery, clinical research, and personalized medicine.</p>
+<a href="AI_agents_BioMed.html" class="post-link">Read Article →</a>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-4">
+[View All Posts](blog.html){.btn .btn-primary}
+</div>
+:::
+
+---
+
+::: {.section-expertise}
+## 💻 Core Expertise
+
+<div class="row">
+<div class="col-md-3">
+<div class="expertise-card">
+<h4>🤖 AI/ML</h4>
+<ul>
+<li>Deep Learning</li>
+<li>LLM Orchestration</li>
+<li>RAG Systems</li>
+<li>Transfer Learning</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="expertise-card">
+<h4>🧬 Genomics</h4>
+<ul>
+<li>Single-cell Analysis</li>
+<li>Epigenomics</li>
+<li>Variant Calling</li>
+<li>Multi-omics</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="expertise-card">
+<h4>💊 Drug Discovery</h4>
+<ul>
+<li>Cheminformatics</li>
+<li>Molecular Modeling</li>
+<li>DDI Prediction</li>
+<li>ADME Analysis</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="expertise-card">
+<h4>☁️ MLOps</h4>
+<ul>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>MLflow</li>
+<li>CI/CD</li>
+</ul>
+</div>
+</div>
+</div>
+:::
+
+---
+
+::: {.section-cta .text-center}
+<div class="container">
+<h2>Interested in Collaboration?</h2>
+<p class="lead">I'm always open to discussing research opportunities, consulting projects, or academic partnerships.</p>
+<div class="cta-buttons">
+[📧 Email Me](mailto:sdodl001@odu.edu){.btn .btn-primary .btn-lg .me-2}
+[💼 LinkedIn](https://www.linkedin.com/in/sanjeeva-reddy-dodlapati-ab4ab490/){.btn .btn-outline-primary .btn-lg .me-2}
+[🐙 GitHub](https://github.com/SanjeevaRDodlapati){.btn .btn-outline-secondary .btn-lg}
+</div>
+</div>
+:::
+
+<style>
+/* Hero Section */
+.hero-section {
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: -2rem -2rem 3rem -2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.hero-section h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    border: none;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    margin-bottom: 2rem;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.hero-stats .stat {
+    text-align: left;
+}
+
+.hero-stats .stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.hero-stats .stat-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-image {
+    border: 6px solid white;
+    width: 100%;
+}
+
+/* Feature Cards */
+.section-featured {
+    padding: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.feature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.feature-tags .tag {
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.feature-link {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Post Cards */
+.section-posts {
+    background: #f8fafc;
+    padding: 3rem 0;
+    margin: 0 -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.post-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-category {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.post-card h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.post-card p {
+    font-size: 0.9375rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+.post-link {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Expertise Cards */
+.section-expertise {
+    padding: 3rem 0;
+}
+
+.expertise-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.expertise-card h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.expertise-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expertise-card li {
+    padding: 0.375rem 0;
+    color: #64748b;
+}
+
+/* CTA Section */
+.section-cta {
+    background: #f8fafc;
+    padding: 4rem 0;
+    margin: 3rem -2rem 0;
+}
+
+.section-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+</style>
