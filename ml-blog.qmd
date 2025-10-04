@@ -10,6 +10,26 @@ Explore cutting-edge machine learning techniques, deep learning applications, an
 ---
 
 ::: {.row}
+::: {.col-lg-12}
+::: {.card .card-ml .featured-post}
+::: {.card-body}
+### [Vector Databases, Demystified: From Embeddings to Production-Grade Search](vector-databases-demystified.html) {.featured}
+
+*Complete guide to production vector search systems*
+
+**NEW!** Comprehensive deep-dive into vector databases covering embeddings, ANN indexes (HNSW, IVF-PQ), distance metrics, hybrid search, and production deployment. Includes working FAISS implementation achieving 3,334 QPS on 100K vectors with complete code examples and visualizations.
+
+**Highlights:** Real performance benchmarks • 9 interactive visualizations • Production-ready code • Evaluation metrics • Operational best practices
+
+::: {.card-tags}
+Vector Search • Embeddings • FAISS • RAG • Production ML • Database Systems • ANN Indexes
+:::
+:::
+:::
+:::
+:::
+
+::: {.row .mt-3}
 ::: {.col-lg-6}
 ::: {.card .card-ml}
 ::: {.card-body}
