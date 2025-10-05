@@ -399,6 +399,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 data-number="1"><span class="header-section-number">1</span> What is a Vector Database?</h1>
 <p>A <strong>vector database</strong> stores and indexes embeddings—dense vectors (e.g., 384–4096 dimensions) produced by models such as: - Sentence transformers - CLIP (vision-language models) - Whisper (audio) - Multimodal foundation models - Domain-specific encoders</p>
 <p>The core task is <strong>nearest neighbor search</strong>: given a query vector, return the most similar stored vectors under a metric (cosine, L2, inner product).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+When You DON’T Need a Vector Database
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For small datasets (&lt; 10,000 documents): - <strong>Exact search</strong> or in-memory libraries may suffice - <strong>Elasticsearch/OpenSearch</strong> with vector fields work well - Use vector DBs when you have: millions+ vectors, strict latency SLAs (&lt; 50ms P95), complex filtering, or high QPS (100s-1000s)</p>
+</div>
+</div>
 <section id="why-vectors" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="why-vectors"><span class="header-section-number">1.1</span> Why vectors?</h2>
 <p>Because similar concepts map to nearby points in embedding space. “puppy on grass” and “dog on lawn” sit close even if they share few keywords.</p>
@@ -624,12 +637,14 @@ Inner Product:
 <h2 data-number="4.1" class="anchored" data-anchor-id="graph-based-hnsw---hierarchical-navigable-small-world"><span class="header-section-number">4.1</span> Graph-based (HNSW - Hierarchical Navigable Small World)</h2>
 <p><strong>Pros:</strong> - Excellent recall/speed trade-off - Dynamic insert capabilities - Strong default for ≤ few hundred million points in RAM</p>
 <p><strong>Cons:</strong> - Memory-heavy (stores graph structure) - Deletions are lazy or complicated - Filtering can be non-trivial</p>
+<p><strong>Reference:</strong> <a href="https://arxiv.org/abs/1603.09320">HNSW paper (Malkov &amp; Yashunin, 2018)</a></p>
 </section>
 <section id="inverted-file-ivf-pqopq" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="inverted-file-ivf-pqopq"><span class="header-section-number">4.2</span> Inverted File (IVF) + [PQ/OPQ]</h2>
-<p>Cluster vectors into <code>nlist</code> centroids (coarse quantizer), search only a few lists (<code>nprobe</code>). Optional <strong>Product Quantization (PQ)</strong> to compress.</p>
+<p>Cluster vectors into <code>nlist</code> centroids (coarse quantizer), search only a few lists (<code>nprobe</code>). Optional Product Quantization (PQ) to compress.</p>
 <p><strong>Pros:</strong> - Scales well to billions of vectors - Great for GPU acceleration (e.g., FAISS) - Good recall/latency trade-off - Compresses memory usage</p>
 <p><strong>Cons:</strong> - Build time can be significant - Requires tuning <code>nlist</code>, <code>nprobe</code>, and PQ bits - Recall loss under heavy compression</p>
+<p><strong>Reference:</strong> <a href="https://github.com/facebookresearch/faiss">FAISS library (Facebook AI)</a></p>
 </section>
 <section id="tree-like-annoy" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="tree-like-annoy"><span class="header-section-number">4.3</span> Tree-like (Annoy)</h2>
@@ -638,51 +653,9 @@ Inner Product:
 </section>
 <section id="specialized-indexes" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="specialized-indexes"><span class="header-section-number">4.4</span> Specialized Indexes</h2>
-<ul>
-<li><strong>ScaNN:</strong> Anisotropic quantization for better compression</li>
-<li><strong>DiskANN:</strong> I/O-aware for large-scale cloud disk storage</li>
-<li><strong>Flat/Brute-force:</strong> Exact search, costly but useful for small collections or re-ranking</li>
-</ul>
-<hr>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Rule of Thumb: Choose Your Index
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<table class="table">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 68%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Scale</th>
-<th>Recommendation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Up to tens of millions in RAM</td>
-<td><strong>HNSW</strong></td>
-</tr>
-<tr class="even">
-<td>Hundreds of millions / GPU</td>
-<td><strong>IVF-PQ</strong> with FAISS or vendor GPU index</td>
-</tr>
-<tr class="odd">
-<td>On disk at web scale</td>
-<td><strong>DiskANN</strong>-style or sharded IVF-PQ + caching</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Start with HNSW for prototyping, move to IVF-PQ when you need to scale or optimize costs.</strong></p>
-</div>
-</div>
+<p>• <strong>ScaNN:</strong> Anisotropic quantization for better compression (<a href="https://github.com/google-research/google-research/tree/master/scann">Google Research</a>)<br>
+• <strong>DiskANN:</strong> I/O-aware for large-scale cloud disk storage (<a href="https://github.com/microsoft/DiskANN">Microsoft Research</a>)<br>
+• <strong>Flat/Brute-force:</strong> Exact search, costly but useful for small collections or re-ranking</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing index performance characteristics</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -749,6 +722,7 @@ Flat       | Recall: 1.00 | Speed: 0.20 | Memory: 0.30
 <section id="deep-dive-how-hnsw-works" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Deep Dive: How HNSW Works</h1>
 <p><strong>Hierarchical Navigable Small World (HNSW)</strong> builds a multi-layer graph for efficient approximate nearest neighbor search.</p>
+<p><strong>Reference:</strong> <a href="https://arxiv.org/abs/1603.09320">HNSW paper (Malkov &amp; Yashunin, 2018)</a></p>
 <section id="architecture" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="architecture"><span class="header-section-number">5.1</span> Architecture</h2>
 <ul>
@@ -826,6 +800,25 @@ Flat       | Recall: 1.00 | Speed: 0.20 | Memory: 0.30
 <li><strong>Complexity</strong>: Near log-like behavior empirically</li>
 <li><strong>Memory</strong>: <span class="math inline">\(\approx O(N \times M)\)</span> edges + vectors</li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Memory Estimation for HNSW
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For practical sizing, use this formula:</p>
+<p><strong>Memory ≈ N × (d × 4 bytes + M × 8 bytes)</strong></p>
+<p><strong>Example:</strong> 100M vectors, d=768, M=16<br>
+= 100M × (768×4 + 16×8) bytes<br>
+= 100M × 3,200 bytes<br>
+= <strong>~320 GB RAM</strong></p>
+<p>This is why HNSW works best for RAM-scale datasets (≤ few hundred million vectors).</p>
+</div>
+</div>
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing HNSW layer structure</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -2566,7 +2559,7 @@ First query results:
 <section id="appendix-environment-setup" class="level1" data-number="16">
 <h1 data-number="16"><span class="header-section-number">16</span> Appendix: Environment Setup</h1>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -2575,7 +2568,7 @@ Package Installation &amp; Verification (Click to expand)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If you want to run the code examples in this guide, you’ll need the following packages:</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install numpy pandas matplotlib scikit-learn faiss-cpu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
