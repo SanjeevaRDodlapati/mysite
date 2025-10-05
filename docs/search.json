@@ -2104,7 +2104,7 @@
     "href": "vector-databases-demystified.html",
     "title": "Vector Databases, Demystified",
     "section": "",
-    "text": "Reading time: ~15 minutes • Jump to code →\nWhy your keyword search keeps missing obvious matches: A user searches for “laptop repair near me”—your system returns “computer fixing services nearby.” Perfect match semantically, but zero keyword overlap. That’s the vector database advantage.\nVector databases power the “semantic” layer of modern AI systems. Instead of matching exact strings, they compare embeddings—high-dimensional vectors that capture meaning from text, images, audio, code, molecules, and more.\nWhat you’ll learn: - 🎯 When you need a vector DB (and when you don’t)"
+    "text": "Reading time: ~15 minutes • Jump to code →\nWhat you’ll learn: - 🎯 When you need a vector DB (and when you don’t)"
   },
   {
     "objectID": "vector-databases-demystified.html#setup-and-package-verification",
